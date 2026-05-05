@@ -1,0 +1,33 @@
+erDiagram
+  SERVICE_REQUEST {
+    string id PK
+    string startupName
+    string founderName
+    string email
+    string phone
+    string city
+    string stage
+    string service
+    string budget
+    string message
+    string status
+    datetime createdAt
+    datetime updatedAt
+  }
+
+  SERVICE {
+    string id PK
+    string name
+    string category
+    string description
+  }
+
+  ADMIN {
+    string id PK
+    string name
+    string email
+    string role
+  }
+
+  SERVICE ||--o{ SERVICE_REQUEST : selected_for
+  ADMIN ||--o{ SERVICE_REQUEST : manages

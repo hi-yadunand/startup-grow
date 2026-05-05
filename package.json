@@ -1,0 +1,37 @@
+{
+  "name": "startupgrow",
+  "version": "1.0.0",
+  "private": true,
+  "description": "StartupGrow is a digital solutions platform for Indian startups.",
+  "scripts": {
+    "dev": "next dev",
+    "dev:api": "nodemon server/index.js",
+    "dev:all": "concurrently \"npm run dev\" \"npm run dev:api\"",
+    "build": "next build",
+    "start": "next start",
+    "api:start": "node server/index.js",
+    "docs:ppt": "python3 scripts/generate_presentation.py",
+    "docs:ppt:node": "node scripts/generate-presentation.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "lucide-react": "^0.468.0",
+    "mongoose": "^8.9.5",
+    "next": "^15.1.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9",
+    "postcss": "^8.5.10",
+    "pptxgenjs": "^3.12.0",
+    "tailwindcss": "^3.4.17"
+  },
+  "overrides": {
+    "postcss": "^8.5.10"
+  }
+}

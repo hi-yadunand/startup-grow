@@ -1,0 +1,14 @@
+flowchart TD
+  StartupGrow["StartupGrow System"]
+  StartupGrow --> UI["User Interface Module"]
+  StartupGrow --> Service["Service Module"]
+  StartupGrow --> Contact["Contact and Request Module"]
+  StartupGrow --> Admin["Admin Module"]
+
+  UI --> Pages["Home, Services, Portfolio"]
+  Service --> Listings["SEO, PPC, Social, Content, Email, Web"]
+  Contact --> Form["Request Form"]
+  Contact --> API["Express API"]
+  Admin --> Dashboard["Request Dashboard"]
+  API --> Database[("MongoDB")]
+  Dashboard --> API

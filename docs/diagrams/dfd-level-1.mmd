@@ -1,0 +1,10 @@
+flowchart LR
+  Founder["Startup Founder"] --> P1["1. Explore Services"]
+  Founder --> P2["2. Submit Service Request"]
+  P1 --> P2
+  P2 --> P3["3. Validate Request"]
+  P3 --> Store[("D1: MongoDB Requests")]
+  Store --> P4["4. Manage Requests"]
+  Admin["Admin Team"] --> P4
+  P4 --> Store
+  P4 --> Admin

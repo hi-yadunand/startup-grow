@@ -1,0 +1,7 @@
+flowchart LR
+  Founder["Startup Founder"] --> Frontend["Next.js Frontend<br/>Services, portfolio, quote form"]
+  Admin["StartupGrow Admin"] --> Frontend
+  Frontend --> API["Express.js API<br/>Validation and request handling"]
+  API --> Database[("MongoDB<br/>service_requests")]
+  Database --> API
+  API --> Frontend
