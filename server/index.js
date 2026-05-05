@@ -7,7 +7,7 @@ const ServiceRequest = require("./models/ServiceRequest");
 
 const app = express();
 const port = Number(process.env.PORT) || 4000;
-const allowedOrigin = cleanEnv(process.env.CLIENT_ORIGIN || "http://localhost:3000").replace(/\/$/, "");
+const allowedOrigins = getAllowedOrigins();
 
 const validStatuses = ["New", "Contacted", "In progress", "Closed"];
 const memoryRequests = [];
@@ -25,6 +25,29 @@ function cleanEnv(value) {
   return String(value || "").trim().replace(/^["']|["']$/g, "");
 }
 
+function getAllowedOrigins() {
+  const origins = cleanEnv(process.env.CLIENT_ORIGIN || "http://localhost:3000")
+    .split(",")
+    .map((origin) => origin.trim().replace(/\/$/, ""))
+    .filter(Boolean);
+
+  return new Set(origins);
+}
+
+function isAllowedOrigin(origin) {
+  if (!origin) {
+    return true;
+  }
+
+  const cleanOrigin = origin.replace(/\/$/, "");
+
+  if (allowedOrigins.has(cleanOrigin)) {
+    return true;
+  }
+
+  return /^https:\/\/startup-grow-[a-z0-9-]+-yadunand-pavithrans-projects\.vercel\.app$/i.test(cleanOrigin);
+}
+
 app.get("/api/health", async (request, response) => {
   await connectDatabase();
   const database = getDatabaseStatus();
@@ -39,7 +62,7 @@ app.get("/api/health", async (request, response) => {
 app.use(
   cors({
     origin(origin, callback) {
-      if (!origin || origin.replace(/\/$/, "") === allowedOrigin) {
+      if (isAllowedOrigin(origin)) {
         return callback(null, true);
       }
 
@@ -217,6 +240,6 @@ connectDatabase()
   .then(() => {
     app.listen(port, () => {
       console.log(`StartupGrow API running on port ${port}`);
-      console.log(`Allowed client origin: ${allowedOrigin}`);
+      console.log(`Allowed client origins: ${Array.from(allowedOrigins).join(", ")}`);
     });
   });
