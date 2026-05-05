@@ -6,8 +6,8 @@ const { connectDatabase, isDatabaseConnected } = require("./db");
 const ServiceRequest = require("./models/ServiceRequest");
 
 const app = express();
-const port = process.env.PORT || 4000;
-const allowedOrigin = process.env.CLIENT_ORIGIN || "http://localhost:3000";
+const port = Number(process.env.PORT) || 4000;
+const allowedOrigin = cleanEnv(process.env.CLIENT_ORIGIN || "http://localhost:3000").replace(/\/$/, "");
 
 const validStatuses = ["New", "Contacted", "In progress", "Closed"];
 const memoryRequests = [];
@@ -21,9 +21,26 @@ const services = [
   "Web Design & Development"
 ];
 
+function cleanEnv(value) {
+  return String(value || "").trim().replace(/^["']|["']$/g, "");
+}
+
+app.get("/api/health", (request, response) => {
+  response.json({
+    status: "ok",
+    database: isDatabaseConnected() ? "mongodb" : "memory"
+  });
+});
+
 app.use(
   cors({
-    origin: allowedOrigin,
+    origin(origin, callback) {
+      if (!origin || origin.replace(/\/$/, "") === allowedOrigin) {
+        return callback(null, true);
+      }
+
+      return callback(null, false);
+    },
     credentials: true
   })
 );
@@ -87,13 +104,6 @@ function validateRequest(body) {
 
   return { payload };
 }
-
-app.get("/api/health", (request, response) => {
-  response.json({
-    status: "ok",
-    database: isDatabaseConnected() ? "mongodb" : "memory"
-  });
-});
 
 app.get("/api/services", (request, response) => {
   response.json({ data: services });
@@ -181,8 +191,22 @@ app.patch("/api/requests/:id/status", async (request, response) => {
   }
 });
 
-connectDatabase().then(() => {
-  app.listen(port, () => {
-    console.log(`StartupGrow API running at http://localhost:${port}`);
+app.use((error, request, response, next) => {
+  console.error("Unhandled API error:", error);
+  response.status(500).json({
+    message: "Internal server error",
+    detail: process.env.NODE_ENV === "production" ? undefined : error.message
   });
 });
+
+connectDatabase()
+  .catch((error) => {
+    console.error("Database bootstrap failed:", error);
+    return false;
+  })
+  .then(() => {
+    app.listen(port, () => {
+      console.log(`StartupGrow API running on port ${port}`);
+      console.log(`Allowed client origin: ${allowedOrigin}`);
+    });
+  });

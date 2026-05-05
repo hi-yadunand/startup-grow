@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 let connected = false;
 
 async function connectDatabase() {
-  const mongoUri = process.env.MONGODB_URI;
+  const mongoUri = String(process.env.MONGODB_URI || "").trim().replace(/^["']|["']$/g, "");
 
   if (!mongoUri) {
     console.warn("MONGODB_URI is not set. API will use in-memory storage for this run.");
