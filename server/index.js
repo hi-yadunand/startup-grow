@@ -2,7 +2,7 @@ require("dotenv").config();
 
 const cors = require("cors");
 const express = require("express");
-const { connectDatabase, isDatabaseConnected } = require("./db");
+const { connectDatabase, getDatabaseStatus, isDatabaseConnected } = require("./db");
 const ServiceRequest = require("./models/ServiceRequest");
 
 const app = express();
@@ -25,10 +25,14 @@ function cleanEnv(value) {
   return String(value || "").trim().replace(/^["']|["']$/g, "");
 }
 
-app.get("/api/health", (request, response) => {
+app.get("/api/health", async (request, response) => {
+  await connectDatabase();
+  const database = getDatabaseStatus();
+
   response.json({
     status: "ok",
-    database: isDatabaseConnected() ? "mongodb" : "memory"
+    database: database.connected ? "mongodb" : "memory",
+    databaseError: database.connected ? undefined : database.lastError
   });
 });
 
@@ -117,6 +121,8 @@ app.post("/api/requests", async (request, response) => {
   }
 
   try {
+    await connectDatabase();
+
     if (isDatabaseConnected()) {
       const created = await ServiceRequest.create(validation.payload);
       return response.status(201).json({ data: formatRequest(created) });
@@ -139,6 +145,8 @@ app.post("/api/requests", async (request, response) => {
 
 app.get("/api/requests", async (request, response) => {
   try {
+    await connectDatabase();
+
     if (isDatabaseConnected()) {
       const requests = await ServiceRequest.find().sort({ createdAt: -1 }).limit(50);
       return response.json({ data: requests.map(formatRequest) });
@@ -159,6 +167,8 @@ app.patch("/api/requests/:id/status", async (request, response) => {
   }
 
   try {
+    await connectDatabase();
+
     if (isDatabaseConnected()) {
       const updated = await ServiceRequest.findByIdAndUpdate(
         request.params.id,
