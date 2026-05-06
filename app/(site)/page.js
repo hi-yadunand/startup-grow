@@ -377,7 +377,7 @@ export default function HomePage() {
           <div className="copyright-area">
             <div className="container large">
               <div className="copyright-area-inner">
-                <p className="text">© 2026 STARTUPGROW - A Digital Solutions Platform for Indian Startups</p>
+                <p className="text">© 2026 STARTUPGROW – Academic Innovation Project for Indian Startups</p>
               </div>
             </div>
           </div>

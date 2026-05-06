@@ -248,8 +248,7 @@ export default function WorksPage() {
             <div className="container">
               <div className="copyright-area-inner">
                 <div className="copyright-text">
-                  <p className="text">© 2026 STARTUPGROW <br />
-                    A Digital Solutions Platform for Indian Startups</p>
+                  <p className="text">© 2026 STARTUPGROW – Academic Innovation Project for Indian Startups</p>
                 </div>
                 <ul className="footer-nav-list">
                   <li><a href="#">Introduction</a></li>
