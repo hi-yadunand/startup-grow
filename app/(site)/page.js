@@ -10,12 +10,18 @@ export default function HomePage() {
       <div className="animation-preloader">
         <div className="spinner"></div>
         <div className="txt-loading">
+          <span data-text="S" className="characters">S</span>
+          <span data-text="T" className="characters">T</span>
           <span data-text="A" className="characters">A</span>
           <span data-text="R" className="characters">R</span>
+          <span data-text="T" className="characters">T</span>
+          <span data-text="U" className="characters">U</span>
+          <span data-text="P" className="characters">P</span>
+          <span data-text=" " className="characters">&nbsp;</span>
+          <span data-text="G" className="characters">G</span>
+          <span data-text="R" className="characters">R</span>
           <span data-text="O" className="characters">O</span>
-          <span data-text="L" className="characters">L</span>
-          <span data-text="A" className="characters">A</span>
-          <span data-text="X" className="characters">X</span>
+          <span data-text="W" className="characters">W</span>
         </div>
       </div>
       <div className="loader-section section-left"></div>
