@@ -159,7 +159,7 @@ export default function HomePage() {
       <div className="header-area__inner">
         <div className="header__logo">
           <a href="/">
-            <img src="assets/imgs/logo/logo.png" alt="Site Logo" />
+            <span className="startupgrow-wordmark">STARTUPGROW</span>
           </a>
         </div>
         <div className="header__nav pos-center">
@@ -334,7 +334,7 @@ export default function HomePage() {
             <div className="footer-area-inner section-spacing-top">
               <div className="footer-widget-wrapper">
                 <div className="footer-logo">
-                  <a href="#"><img src="assets/imgs/logo/logo-light-2.png" alt="site-logo" /></a>
+                  <a href="/"><span className="startupgrow-wordmark light">STARTUPGROW</span></a>
                 </div>
               </div>
               <div className="footer-widget-wrapper">

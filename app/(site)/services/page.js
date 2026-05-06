@@ -157,8 +157,7 @@ export default function ServicesPage() {
       <div className="header-area__inner">
         <div className="header__logo">
           <a href="/">
-            <img className="show-light" src="assets/imgs/logo/logo.png" alt="Site Logo" />
-            <img className="show-dark" src="assets/imgs/logo/logo-light.png" alt="Site Logo" />
+            <span className="startupgrow-wordmark">STARTUPGROW</span>
           </a>
         </div>
         <div className="header__nav pos-center">
