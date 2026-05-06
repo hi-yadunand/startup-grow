@@ -232,20 +232,6 @@ export default function WorksPage() {
                 </div>
               </div>
               <div className="footer-cta">
-                <div className="footer-widget-wrapper">
-                  <h2 className="title">Frontend</h2>
-                  <ul className="footer-nav-list">
-                    <li>HTML5, CSS3, Tailwind CSS, <br />
-                      JavaScript, Next.js</li>
-                  </ul>
-                </div>
-                <div className="footer-widget-wrapper">
-                  <h2 className="title">Backend</h2>
-                  <ul className="footer-nav-list">
-                    <li>Node.js, Express.js, <br />
-                      MongoDB</li>
-                  </ul>
-                </div>
                 <div className="footer-widget-wrapper newsletter">
                   <form action="#" className="subscribe-form">
                     <div className="input-field">

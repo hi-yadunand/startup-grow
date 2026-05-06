@@ -372,20 +372,6 @@ export default function HomePage() {
                   </div>
                 </form>
               </div>
-              <div className="footer-widget-wrapper location">
-                <h2 className="title">Backend</h2>
-                <ul className="footer-nav-list">
-                  <li><a href="#">Node.js, Express.js, <br />
-                      MongoDB</a></li>
-                </ul>
-              </div>
-              <div className="footer-widget-wrapper location">
-                <h2 className="title">Frontend</h2>
-                <ul className="footer-nav-list">
-                  <li><a href="#">HTML5, CSS3, Tailwind CSS, <br />
-                      JavaScript, Next.js</a></li>
-                </ul>
-              </div>
             </div>
           </div>
           <div className="copyright-area">
