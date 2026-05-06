@@ -1,0 +1,49 @@
+/* Contact page: footer CTA layout fix (prevents overlap at medium widths). */
+
+.footer-area .footer-area-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: clamp(24px, 4vw, 56px);
+}
+
+.footer-area .footer-area-inner > .section-header {
+  flex: 1 1 520px;
+  min-width: min(520px, 100%);
+}
+
+.footer-area .footer-area-inner > .footer-cta {
+  flex: 1 1 520px;
+  min-width: min(520px, 100%);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(180px, 1fr)) minmax(240px, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.footer-area .footer-widget-wrapper {
+  width: auto;
+  min-width: 0;
+}
+
+.footer-area .footer-widget-wrapper.newsletter {
+  min-width: 240px;
+}
+
+@media (max-width: 991px) {
+  .footer-area .footer-area-inner > .footer-cta {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+  }
+
+  .footer-area .footer-widget-wrapper.newsletter {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer-area .footer-area-inner > .footer-cta {
+    grid-template-columns: 1fr;
+  }
+}
+
