@@ -1,5 +1,15 @@
 
+"use client";
+import { useEffect } from "react";
+
 export default function HomePage() {
+  useEffect(() => {
+    // Re-initialize any scripts that need it after React mounts
+    if (typeof window !== "undefined" && window.initArolax) {
+      window.initArolax();
+    }
+  }, []);
+
   return (
     <>
       
@@ -9,20 +19,7 @@ export default function HomePage() {
     <div id="container" className="container-preloader">
       <div className="animation-preloader">
         <div className="spinner"></div>
-        <div className="txt-loading">
-          <span data-text="S" className="characters">S</span>
-          <span data-text="T" className="characters">T</span>
-          <span data-text="A" className="characters">A</span>
-          <span data-text="R" className="characters">R</span>
-          <span data-text="T" className="characters">T</span>
-          <span data-text="U" className="characters">U</span>
-          <span data-text="P" className="characters">P</span>
-          <span data-text=" " className="characters">&nbsp;</span>
-          <span data-text="G" className="characters">G</span>
-          <span data-text="R" className="characters">R</span>
-          <span data-text="O" className="characters">O</span>
-          <span data-text="W" className="characters">W</span>
-        </div>
+        <div className="txt-loading"><span data-text="S" className="characters">S</span><span data-text="T" className="characters">T</span><span data-text="A" className="characters">A</span><span data-text="R" className="characters">R</span><span data-text="T" className="characters">T</span><span data-text="U" className="characters">U</span><span data-text="P" className="characters">P</span><span data-text=" " className="characters">&nbsp;</span><span data-text="G" className="characters">G</span><span data-text="R" className="characters">R</span><span data-text="O" className="characters">O</span><span data-text="W" className="characters">W</span></div>
       </div>
       <div className="loader-section section-left"></div>
       <div className="loader-section section-right"></div>
@@ -122,15 +119,15 @@ export default function HomePage() {
       <div className="offcanvas-3__menu-wrapper">
         <nav className="nav-menu offcanvas-3__menu">
           <ul>
-            <li><a href="branding-agency.html">home</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="services.html">services</a></li>
-            <li><a href="works.html">projects</a></li>
-            <li><a href="team.html">team</a></li>
-            <li><a href="career.html">career</a></li>
-            <li><a href="faq.html">faq</a></li>
-            <li><a href="blog.html">blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="/">home</a></li>
+            <li><a href="/about">about</a></li>
+            <li><a href="/services">services</a></li>
+            <li><a href="/works">projects</a></li>
+            <li><a href="/team">team</a></li>
+            <li><a href="#">career</a></li>
+            <li><a href="#">faq</a></li>
+            <li><a href="/blog">blog</a></li>
+            <li><a href="/contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -161,37 +158,37 @@ export default function HomePage() {
     <div className="container large">
       <div className="header-area__inner">
         <div className="header__logo">
-          <a href="branding-agency.html">
+          <a href="/">
             <img src="assets/imgs/logo/logo.png" alt="Site Logo" />
           </a>
         </div>
         <div className="header__nav pos-center">
           <nav className="main-menu">
             <ul>
-              <li><a href="branding-agency.html">home</a></li>
-              <li><a href="about.html">about</a></li>
-              <li><a href="services.html">services</a></li>
+              <li><a href="/">home</a></li>
+              <li><a href="/about">about</a></li>
+              <li><a href="/services">services</a></li>
               <li className="menu-item-has-children">
                 <a href="#">Pages</a>
                 <ul className="dp-menu">
-                  <li><a href="works.html">project pages</a></li>
-                  <li><a href="team.html">team pages</a></li>
-                  <li><a href="career.html">career pages</a></li>
-                  <li><a href="faq.html">faq</a></li>
+                  <li><a href="/works">project pages</a></li>
+                  <li><a href="/team">team pages</a></li>
+                  <li><a href="#">career pages</a></li>
+                  <li><a href="#">faq</a></li>
                 </ul>
               </li>
-              <li><a href="blog.html">blog</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="/blog">blog</a></li>
+              <li><a href="/contact">Contact</a></li>
             </ul>
           </nav>
         </div>
         <div className="header__button">
           <div className="wc-btn-group">
-            <a className="wc-btn wc-btn-circle" href="contact.html">
+            <a className="wc-btn wc-btn-circle" href="/contact">
               <i className="fa-solid fa-arrow-right"></i>
             </a>
-            <a className="wc-btn wc-btn-primary" href="contact.html">Get started</a>
-            <a className="wc-btn wc-btn-circle" href="contact.html">
+            <a className="wc-btn wc-btn-primary" href="/contact">Get started</a>
+            <a className="wc-btn wc-btn-circle" href="/contact">
               <i className="fa-solid fa-arrow-right"></i>
             </a>
           </div>
@@ -257,9 +254,9 @@ export default function HomePage() {
                       </div>
                       <div className="btn-wrapper has_fade_anim" data-fade-from="left">
                         <div className="wc-btn-group">
-                          <a className="wc-btn wc-btn-circle" href="contact.html"><i className="fa-solid fa-arrow-right"></i></a>
-                          <a className="wc-btn wc-btn-primary" href="contact.html">Get started</a>
-                          <a className="wc-btn wc-btn-circle" href="contact.html"><i className="fa-solid fa-arrow-right"></i></a>
+                          <a className="wc-btn wc-btn-circle" href="/contact"><i className="fa-solid fa-arrow-right"></i></a>
+                          <a className="wc-btn wc-btn-primary" href="/contact">Get started</a>
+                          <a className="wc-btn wc-btn-circle" href="/contact"><i className="fa-solid fa-arrow-right"></i></a>
                         </div>
                       </div>
                     </div>
@@ -280,13 +277,13 @@ export default function HomePage() {
                 </div>
                 <div className="works-wrapper-box">
                   <div className="works-wrapper">
-                    <div className="work-box"><div className="thumb"><a href="works.html"><img src="assets/imgs/works/img-s-31.webp" alt="work image" /></a></div><div className="content"><h3 className="title">Smart T-shirt <br />Artwork</h3><div className="tags"><div className="tag">Branding</div><div className="tag">Business</div></div></div></div>
-                    <div className="work-box"><div className="thumb"><a href="works.html"><img src="assets/imgs/works/img-s-32.webp" alt="work image" /></a></div><div className="content"><h3 className="title">Crafted Payment <br />Get-way</h3><div className="tags"><div className="tag">Branding</div><div className="tag">Business</div></div></div></div>
-                    <div className="work-box"><div className="thumb"><a href="works.html"><img src="assets/imgs/works/img-s-33.webp" alt="work image" /></a></div><div className="content"><h3 className="title">Wild Code Zem <br />Boxes</h3><div className="tags"><div className="tag">Branding</div><div className="tag">Business</div></div></div></div>
-                    <div className="work-box"><div className="thumb"><a href="works.html"><img src="assets/imgs/works/img-s-34.webp" alt="work image" /></a></div><div className="content"><h3 className="title">Floral Business <br />Card</h3><div className="tags"><div className="tag">Branding</div><div className="tag">Business</div></div></div></div>
+                    <div className="work-box"><div className="thumb"><a href="/works"><img src="assets/imgs/works/img-s-31.webp" alt="work image" /></a></div><div className="content"><h3 className="title">Smart T-shirt <br />Artwork</h3><div className="tags"><div className="tag">Branding</div><div className="tag">Business</div></div></div></div>
+                    <div className="work-box"><div className="thumb"><a href="/works"><img src="assets/imgs/works/img-s-32.webp" alt="work image" /></a></div><div className="content"><h3 className="title">Crafted Payment <br />Get-way</h3><div className="tags"><div className="tag">Branding</div><div className="tag">Business</div></div></div></div>
+                    <div className="work-box"><div className="thumb"><a href="/works"><img src="assets/imgs/works/img-s-33.webp" alt="work image" /></a></div><div className="content"><h3 className="title">Wild Code Zem <br />Boxes</h3><div className="tags"><div className="tag">Branding</div><div className="tag">Business</div></div></div></div>
+                    <div className="work-box"><div className="thumb"><a href="/works"><img src="assets/imgs/works/img-s-34.webp" alt="work image" /></a></div><div className="content"><h3 className="title">Floral Business <br />Card</h3><div className="tags"><div className="tag">Branding</div><div className="tag">Business</div></div></div></div>
                   </div>
                 </div>
-                <div className="section-content section-spacing-top"><div></div><div className="content-last"><div className="text-wrapper"><p className="text has_text_move_anim">We are delivering brands with high objectives the strategy and the creativity it takes to have that impact, by the professional team with any creativity.</p></div><div className="btn-wrapper has_fade_anim" data-fade-from="left"><div className="wc-btn-group"><a className="wc-btn wc-btn-circle" href="works.html"><i className="fa-solid fa-arrow-right"></i></a><a className="wc-btn wc-btn-primary" href="works.html">View all works</a><a className="wc-btn wc-btn-circle" href="works.html"><i className="fa-solid fa-arrow-right"></i></a></div></div></div></div>
+                <div className="section-content section-spacing-top"><div></div><div className="content-last"><div className="text-wrapper"><p className="text has_text_move_anim">We are delivering brands with high objectives the strategy and the creativity it takes to have that impact, by the professional team with any creativity.</p></div><div className="btn-wrapper has_fade_anim" data-fade-from="left"><div className="wc-btn-group"><a className="wc-btn wc-btn-circle" href="/works"><i className="fa-solid fa-arrow-right"></i></a><a className="wc-btn wc-btn-primary" href="/works">View all works</a><a className="wc-btn wc-btn-circle" href="/works"><i className="fa-solid fa-arrow-right"></i></a></div></div></div></div>
               </div>
             </div>
           </section>
@@ -304,11 +301,11 @@ export default function HomePage() {
           
           <section className="service-area section-style section-item">
             <div className="container large"><div className="service-area-inner section-spacing"><div className="section-header"><div className="section-title-wrapper"><div className="title-wrapper"><h2 className="section-title has_fade_anim">We solve your brand problem in a different method</h2></div></div></div><div className="services-wrapper-box"><div className="services-wrapper">
-              <div className="has_fade_anim" data-delay="0.15"><a href="services.html"><div className="service-box"><span className="number">01</span><div className="icon"><img src="assets/imgs/icon/icon-s-1-light.webp" alt="service icon" /></div><div className="content"><h3 className="title">Brand Strategy</h3><p className="text">We closely collaborate with our clients to understand the needs and goals of the key to design</p></div></div></a></div>
-              <div className="has_fade_anim" data-delay="0.30"><a href="services.html"><div className="service-box"><span className="number">02</span><div className="icon"><img src="assets/imgs/icon/icon-s-2-light.webp" alt="service icon" /></div><div className="content"><h3 className="title">Brand Identity</h3><p className="text">We closely collaborate with our clients to understand the needs and goals of the key to design</p></div></div></a></div>
-              <div className="has_fade_anim" data-delay="0.45"><a href="services.html"><div className="service-box"><span className="number">03</span><div className="icon"><img src="assets/imgs/icon/icon-s-3-light.webp" alt="service icon" /></div><div className="content"><h3 className="title">Brand Guidelines</h3><p className="text">We closely collaborate with our clients to understand the needs and goals of the key to design</p></div></div></a></div>
-              <div className="has_fade_anim" data-delay="0.60"><a href="services.html"><div className="service-box"><span className="number">04</span><div className="icon"><img src="assets/imgs/icon/icon-s-4-light.webp" alt="service icon" /></div><div className="content"><h3 className="title">Brand Support</h3><p className="text">We closely collaborate with our clients to understand the needs and goals of the key to design</p></div></div></a></div>
-            </div></div><div className="info-text has_fade_anim" data-fade-from="left"><p className="text">Save your precious time for finding a solution. <br /><a className="wc-btn wc-btn-underline" href="contact.html">Contact us now</a></p></div></div></div>
+              <div className="has_fade_anim" data-delay="0.15"><a href="/services"><div className="service-box"><span className="number">01</span><div className="icon"><img src="assets/imgs/icon/icon-s-1-light.webp" alt="service icon" /></div><div className="content"><h3 className="title">Brand Strategy</h3><p className="text">We closely collaborate with our clients to understand the needs and goals of the key to design</p></div></div></a></div>
+              <div className="has_fade_anim" data-delay="0.30"><a href="/services"><div className="service-box"><span className="number">02</span><div className="icon"><img src="assets/imgs/icon/icon-s-2-light.webp" alt="service icon" /></div><div className="content"><h3 className="title">Brand Identity</h3><p className="text">We closely collaborate with our clients to understand the needs and goals of the key to design</p></div></div></a></div>
+              <div className="has_fade_anim" data-delay="0.45"><a href="/services"><div className="service-box"><span className="number">03</span><div className="icon"><img src="assets/imgs/icon/icon-s-3-light.webp" alt="service icon" /></div><div className="content"><h3 className="title">Brand Guidelines</h3><p className="text">We closely collaborate with our clients to understand the needs and goals of the key to design</p></div></div></a></div>
+              <div className="has_fade_anim" data-delay="0.60"><a href="/services"><div className="service-box"><span className="number">04</span><div className="icon"><img src="assets/imgs/icon/icon-s-4-light.webp" alt="service icon" /></div><div className="content"><h3 className="title">Brand Support</h3><p className="text">We closely collaborate with our clients to understand the needs and goals of the key to design</p></div></div></a></div>
+            </div></div><div className="info-text has_fade_anim" data-fade-from="left"><p className="text">Save your precious time for finding a solution. <br /><a className="wc-btn wc-btn-underline" href="/contact">Contact us now</a></p></div></div></div>
           </section>
           
 
@@ -317,9 +314,9 @@ export default function HomePage() {
             <div className="container large"><div className="team-area-inner section-spacing"><div className="section-header"><div className="section-title-wrapper"><div className="title-wrapper"><h2 className="section-title has_fade_anim">The talented team
                         behind the creative
                         design</h2></div></div><div className="text-wrapper"><p className="text has_fade_anim">Our dedication and commitment to excellence ensure that your business thrives in the ever-evolving digital realm.</p></div></div><div className="team-wrapper-box"><div className="team-wrapper">
-              <div className="team-box"><div className="thumb"><a href="team.html"><img src="assets/imgs/team/img-s-15.webp" alt="team image" /></a></div><div className="content"><div className="top"><h3 className="name"><a href="team.html">Kamal Abraham</a></h3><p className="post">CEO, Alaska</p></div></div></div>
-              <div className="team-box"><div className="thumb"><a href="team.html"><img src="assets/imgs/team/img-s-16.webp" alt="team image" /></a></div><div className="content"><div className="top"><h3 className="name"><a href="team.html">Selina Gomaze</a></h3><p className="post">Jr. Executive</p></div></div></div>
-              <div className="team-box"><div className="thumb"><a href="team.html"><img src="assets/imgs/team/img-s-17.webp" alt="team image" /></a></div><div className="content"><div className="top"><h3 className="name"><a href="team.html">Pedrik Vadra</a></h3><p className="post">Logo Designer</p></div></div></div>
+              <div className="team-box"><div className="thumb"><a href="/team"><img src="assets/imgs/team/img-s-15.webp" alt="team image" /></a></div><div className="content"><div className="top"><h3 className="name"><a href="/team">Kamal Abraham</a></h3><p className="post">CEO, Alaska</p></div></div></div>
+              <div className="team-box"><div className="thumb"><a href="/team"><img src="assets/imgs/team/img-s-16.webp" alt="team image" /></a></div><div className="content"><div className="top"><h3 className="name"><a href="/team">Selina Gomaze</a></h3><p className="post">Jr. Executive</p></div></div></div>
+              <div className="team-box"><div className="thumb"><a href="/team"><img src="assets/imgs/team/img-s-17.webp" alt="team image" /></a></div><div className="content"><div className="top"><h3 className="name"><a href="/team">Pedrik Vadra</a></h3><p className="post">Logo Designer</p></div></div></div>
             </div></div></div></div>
           </section>
           
@@ -327,13 +324,13 @@ export default function HomePage() {
           
           <section className="blog-area section-style section-item">
             <div className="container large"><div className="blog-area-inner section-spacing"><div className="section-header"><div className="section-title-wrapper"><div className="title-wrapper"><h2 className="section-title has_fade_anim">Journal from
-                        arolax</h2></div></div><div className="btn-wrapper has_fade_anim" data-fade-from="right"><div className="wc-btn-group"><a className="wc-btn wc-btn-circle" href="blog.html"><i className="fa-solid fa-arrow-right"></i></a><a className="wc-btn wc-btn-primary" href="blog.html">read all posts</a><a className="wc-btn wc-btn-circle" href="blog.html"><i className="fa-solid fa-arrow-right"></i></a></div></div></div><div className="blogs-wrapper-box"><div className="blogs-wrapper"><article className="blog has_fade_anim" data-fade-from="right" data-delay="0.15"><div className="thumb"><a href="blog.html"><img src="assets/imgs/blog/img-s-8.webp" alt="blog image" /></a></div><div className="content"><h2 className="title"><a href="blog.html">A simple guide to retrieval auto generated read content models</a></h2><div className="meta-list"><a href="#"><span className="meta tag">Branding</span></a><span className="meta date">14 Jan 2024</span></div></div></article><article className="blog has_fade_anim" data-fade-from="right" data-delay="0.30"><div className="thumb"><a href="blog.html"><img src="assets/imgs/blog/img-s-9.webp" alt="blog image" /></a></div><div className="content"><h2 className="title"><a href="blog.html">The complex but awesome CSS border-image property for web design</a></h2><div className="meta-list"><a href="#"><span className="meta tag">Branding</span></a><span className="meta date">14 Jan 2024</span></div></div></article></div></div></div></div>
+                        arolax</h2></div></div><div className="btn-wrapper has_fade_anim" data-fade-from="right"><div className="wc-btn-group"><a className="wc-btn wc-btn-circle" href="/blog"><i className="fa-solid fa-arrow-right"></i></a><a className="wc-btn wc-btn-primary" href="/blog">read all posts</a><a className="wc-btn wc-btn-circle" href="/blog"><i className="fa-solid fa-arrow-right"></i></a></div></div></div><div className="blogs-wrapper-box"><div className="blogs-wrapper"><article className="blog has_fade_anim" data-fade-from="right" data-delay="0.15"><div className="thumb"><a href="/blog"><img src="assets/imgs/blog/img-s-8.webp" alt="blog image" /></a></div><div className="content"><h2 className="title"><a href="/blog">A simple guide to retrieval auto generated read content models</a></h2><div className="meta-list"><a href="#"><span className="meta tag">Branding</span></a><span className="meta date">14 Jan 2024</span></div></div></article><article className="blog has_fade_anim" data-fade-from="right" data-delay="0.30"><div className="thumb"><a href="/blog"><img src="assets/imgs/blog/img-s-9.webp" alt="blog image" /></a></div><div className="content"><h2 className="title"><a href="/blog">The complex but awesome CSS border-image property for web design</a></h2><div className="meta-list"><a href="#"><span className="meta tag">Branding</span></a><span className="meta date">14 Jan 2024</span></div></div></article></div></div></div></div>
           </section>
           
 
           
           <section className="cta-area section-style section-item"><div className="container large"><div className="cta-area-inner section-spacing"><div className="section-content"><div className="section-title-wrapper"><div className="subtitle-wrapper"><span className="section-subtitle has_fade_anim">Have a project in mind?</span></div><div className="title-wrapper"><h2 className="section-title has_fade_anim">Let’s work
-                        together</h2></div></div><div className="btn-wrapper has_fade_anim"><div className="wc-btn-group"><a className="wc-btn wc-btn-circle" href="contact.html"><i className="fa-solid fa-arrow-right"></i></a><a className="wc-btn wc-btn-primary" href="contact.html">contact us</a><a className="wc-btn wc-btn-circle" href="contact.html"><i className="fa-solid fa-arrow-right"></i></a></div></div></div></div></div></section>
+                        together</h2></div></div><div className="btn-wrapper has_fade_anim"><div className="wc-btn-group"><a className="wc-btn wc-btn-circle" href="/contact"><i className="fa-solid fa-arrow-right"></i></a><a className="wc-btn wc-btn-primary" href="/contact">contact us</a><a className="wc-btn wc-btn-circle" href="/contact"><i className="fa-solid fa-arrow-right"></i></a></div></div></div></div></div></section>
           
 
         </main>
@@ -360,11 +357,11 @@ export default function HomePage() {
               <div className="footer-widget-wrapper">
                 <h2 className="title">Company</h2>
                 <ul className="footer-nav-list">
-                  <li><a href="branding-agency.html">Home</a></li>
-                  <li><a href="about.html">Agency</a></li>
-                  <li><a href="works.html">Achievement</a></li>
-                  <li><a href="career.html">Career</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/about">Agency</a></li>
+                  <li><a href="/works">Achievement</a></li>
+                  <li><a href="#">Career</a></li>
+                  <li><a href="/contact">Contact Us</a></li>
                 </ul>
               </div>
               <div className="footer-widget-wrapper newsletter">

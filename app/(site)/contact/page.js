@@ -1,5 +1,15 @@
 
+"use client";
+import { useEffect } from "react";
+
 export default function ContactPage() {
+  useEffect(() => {
+    // Re-initialize any scripts that need it after React mounts
+    if (typeof window !== "undefined" && window.initArolax) {
+      window.initArolax();
+    }
+  }, []);
+
   return (
     <>
       
@@ -9,20 +19,7 @@ export default function ContactPage() {
     <div id="container" className="container-preloader">
       <div className="animation-preloader">
         <div className="spinner"></div>
-        <div className="txt-loading">
-          <span data-text="S" className="characters">S</span>
-          <span data-text="T" className="characters">T</span>
-          <span data-text="A" className="characters">A</span>
-          <span data-text="R" className="characters">R</span>
-          <span data-text="T" className="characters">T</span>
-          <span data-text="U" className="characters">U</span>
-          <span data-text="P" className="characters">P</span>
-          <span data-text=" " className="characters">&nbsp;</span>
-          <span data-text="G" className="characters">G</span>
-          <span data-text="R" className="characters">R</span>
-          <span data-text="O" className="characters">O</span>
-          <span data-text="W" className="characters">W</span>
-        </div>
+        <div className="txt-loading"><span data-text="S" className="characters">S</span><span data-text="T" className="characters">T</span><span data-text="A" className="characters">A</span><span data-text="R" className="characters">R</span><span data-text="T" className="characters">T</span><span data-text="U" className="characters">U</span><span data-text="P" className="characters">P</span><span data-text=" " className="characters">&nbsp;</span><span data-text="G" className="characters">G</span><span data-text="R" className="characters">R</span><span data-text="O" className="characters">O</span><span data-text="W" className="characters">W</span></div>
       </div>
       <div className="loader-section section-left"></div>
       <div className="loader-section section-right"></div>
@@ -122,15 +119,15 @@ export default function ContactPage() {
       <div className="offcanvas-3__menu-wrapper">
         <nav className="nav-menu offcanvas-3__menu">
           <ul>
-            <li><a href="branding-agency.html">home</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="services.html">services</a></li>
-            <li><a href="works.html">projects</a></li>
-            <li><a href="team.html">team</a></li>
-            <li><a href="career.html">career</a></li>
-            <li><a href="faq.html">faq</a></li>
-            <li><a href="blog.html">blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="/">home</a></li>
+            <li><a href="/about">about</a></li>
+            <li><a href="/services">services</a></li>
+            <li><a href="/works">projects</a></li>
+            <li><a href="/team">team</a></li>
+            <li><a href="#">career</a></li>
+            <li><a href="#">faq</a></li>
+            <li><a href="/blog">blog</a></li>
+            <li><a href="/contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -161,7 +158,7 @@ export default function ContactPage() {
     <div className="container large">
       <div className="header-area__inner">
         <div className="header__logo">
-          <a href="branding-agency.html">
+          <a href="/">
             <img className="show-light" src="assets/imgs/logo/logo.png" alt="Site Logo" />
             <img className="show-dark" src="assets/imgs/logo/logo-light.png" alt="Site Logo" />
           </a>
@@ -169,25 +166,25 @@ export default function ContactPage() {
         <div className="header__nav pos-center">
           <nav className="main-menu">
             <ul>
-              <li><a href="branding-agency.html">home</a></li>
-              <li><a href="about.html">about</a></li>
-              <li><a href="services.html">services</a></li>
+              <li><a href="/">home</a></li>
+              <li><a href="/about">about</a></li>
+              <li><a href="/services">services</a></li>
               <li className="menu-item-has-children">
                 <a href="#">Pages</a>
                 <ul className="dp-menu">
-                  <li><a href="works.html">project pages</a></li>
-                  <li><a href="team.html">team pages</a></li>
-                  <li><a href="career.html">career pages</a></li>
-                  <li><a href="faq.html">faq</a></li>
+                  <li><a href="/works">project pages</a></li>
+                  <li><a href="/team">team pages</a></li>
+                  <li><a href="#">career pages</a></li>
+                  <li><a href="#">faq</a></li>
                 </ul>
               </li>
-              <li><a href="blog.html">blog</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="/blog">blog</a></li>
+              <li><a href="/contact">Contact</a></li>
             </ul>
           </nav>
         </div>
         <div className="header__button">
-          <a className="wc-btn wc-btn-primary btn-text-flip" href="contact.html"><span data-text="Get started">Get
+          <a className="wc-btn wc-btn-primary btn-text-flip" href="/contact"><span data-text="Get started">Get
               started</span></a>
         </div>
         <div className="header__navicon d-xl-none">

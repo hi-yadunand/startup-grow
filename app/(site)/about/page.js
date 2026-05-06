@@ -1,5 +1,15 @@
 
+"use client";
+import { useEffect } from "react";
+
 export default function AboutPage() {
+  useEffect(() => {
+    // Re-initialize any scripts that need it after React mounts
+    if (typeof window !== "undefined" && window.initArolax) {
+      window.initArolax();
+    }
+  }, []);
+
   return (
     <>
       
@@ -9,20 +19,7 @@ export default function AboutPage() {
     <div id="container" className="container-preloader">
       <div className="animation-preloader">
         <div className="spinner"></div>
-        <div className="txt-loading">
-          <span data-text="S" className="characters">S</span>
-          <span data-text="T" className="characters">T</span>
-          <span data-text="A" className="characters">A</span>
-          <span data-text="R" className="characters">R</span>
-          <span data-text="T" className="characters">T</span>
-          <span data-text="U" className="characters">U</span>
-          <span data-text="P" className="characters">P</span>
-          <span data-text=" " className="characters">&nbsp;</span>
-          <span data-text="G" className="characters">G</span>
-          <span data-text="R" className="characters">R</span>
-          <span data-text="O" className="characters">O</span>
-          <span data-text="W" className="characters">W</span>
-        </div>
+        <div className="txt-loading"><span data-text="S" className="characters">S</span><span data-text="T" className="characters">T</span><span data-text="A" className="characters">A</span><span data-text="R" className="characters">R</span><span data-text="T" className="characters">T</span><span data-text="U" className="characters">U</span><span data-text="P" className="characters">P</span><span data-text=" " className="characters">&nbsp;</span><span data-text="G" className="characters">G</span><span data-text="R" className="characters">R</span><span data-text="O" className="characters">O</span><span data-text="W" className="characters">W</span></div>
       </div>
       <div className="loader-section section-left"></div>
       <div className="loader-section section-right"></div>
@@ -122,15 +119,15 @@ export default function AboutPage() {
       <div className="offcanvas-3__menu-wrapper">
         <nav className="nav-menu offcanvas-3__menu">
           <ul>
-            <li><a href="branding-agency.html">home</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="services.html">services</a></li>
-            <li><a href="works.html">projects</a></li>
-            <li><a href="team.html">team</a></li>
-            <li><a href="career.html">career</a></li>
-            <li><a href="faq.html">faq</a></li>
-            <li><a href="blog.html">blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="/">home</a></li>
+            <li><a href="/about">about</a></li>
+            <li><a href="/services">services</a></li>
+            <li><a href="/works">projects</a></li>
+            <li><a href="/team">team</a></li>
+            <li><a href="#">career</a></li>
+            <li><a href="#">faq</a></li>
+            <li><a href="/blog">blog</a></li>
+            <li><a href="/contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -161,7 +158,7 @@ export default function AboutPage() {
     <div className="container large">
       <div className="header-area__inner">
         <div className="header__logo">
-          <a href="branding-agency.html">
+          <a href="/">
             <img className="show-light" src="assets/imgs/logo/logo.png" alt="Site Logo" />
             <img className="show-dark" src="assets/imgs/logo/logo-light.png" alt="Site Logo" />
           </a>
@@ -169,25 +166,25 @@ export default function AboutPage() {
         <div className="header__nav pos-center">
           <nav className="main-menu">
             <ul>
-              <li><a href="branding-agency.html">home</a></li>
-              <li><a href="about.html">about</a></li>
-              <li><a href="services.html">services</a></li>
+              <li><a href="/">home</a></li>
+              <li><a href="/about">about</a></li>
+              <li><a href="/services">services</a></li>
               <li className="menu-item-has-children">
                 <a href="#">Pages</a>
                 <ul className="dp-menu">
-                  <li><a href="works.html">project pages</a></li>
-                  <li><a href="team.html">team pages</a></li>
-                  <li><a href="career.html">career pages</a></li>
-                  <li><a href="faq.html">faq</a></li>
+                  <li><a href="/works">project pages</a></li>
+                  <li><a href="/team">team pages</a></li>
+                  <li><a href="#">career pages</a></li>
+                  <li><a href="#">faq</a></li>
                 </ul>
               </li>
-              <li><a href="blog.html">blog</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="/blog">blog</a></li>
+              <li><a href="/contact">Contact</a></li>
             </ul>
           </nav>
         </div>
         <div className="header__button">
-          <a className="wc-btn wc-btn-primary btn-text-flip" href="contact.html"><span data-text="Get started">Get
+          <a className="wc-btn wc-btn-primary btn-text-flip" href="/contact"><span data-text="Get started">Get
               started</span></a>
         </div>
         <div className="header__navicon d-xl-none">
@@ -228,16 +225,16 @@ export default function AboutPage() {
           
           <section className="about-area container-hd"><div className="about-area-inner"><div className="thumb"><img src="assets/imgs/gallery/img-s-30.webp" alt="gallery image" /></div><div className="section-content"><div className="bg"><img src="assets/imgs/gallery/img-s-31.webp" alt="image" /></div><div className="section-title-wrapper"><div className="title-wrapper"><h2 className="section-title has_fade_anim">We’re simple
                       but pro-level
-                      agency</h2></div></div><div className="text-wrapper"><p className="text has_fade_anim" data-fade-from="left">Theme Builder, you have complete control over the <span>static elements</span> of your website</p></div><div className="btn-wrapper has_fade_anim" data-ease="bounce"><a href="contact.html" className="wc-btn wc-btn-primary btn-text-flip"><span data-text="Learn More">Learn More</span></a></div></div></div></section>
+                      agency</h2></div></div><div className="text-wrapper"><p className="text has_fade_anim" data-fade-from="left">Theme Builder, you have complete control over the <span>static elements</span> of your website</p></div><div className="btn-wrapper has_fade_anim" data-ease="bounce"><a href="/contact" className="wc-btn wc-btn-primary btn-text-flip"><span data-text="Learn More">Learn More</span></a></div></div></div></section>
           
 
           
-          <section className="team-area"><div className="container"><div className="team-area-inner section-spacing"><div className="section-header"><div className="section-title-wrapper"><div className="title-wrapper"><h2 className="section-title has_fade_anim">Quality team</h2></div></div><div className="text-wrapper"><p className="text has_fade_anim">We deploy world-class creative design, team on demand. that can design surest measure's of success is when a client partner with more than once build, ship scale your vision most efficient.</p></div></div><div className="team-wrapper-box"><div className="team-wrapper"><div className="team-box has_fade_anim" data-fade-from="left" data-delay="0.15"><a href="team.html"><div className="thumb"><img src="assets/imgs/team/img-s-1.webp" alt="team icon" /></div><div className="content"><h3 className="title">Kamal Abraham</h3><p className="text">CEO, Wealcoder</p></div></a></div><div className="team-box has_fade_anim" data-fade-from="left" data-delay="0.30"><a href="team.html"><div className="thumb"><img src="assets/imgs/team/img-s-2.webp" alt="team icon" /></div><div className="content"><h3 className="title">Selina Gomaze</h3><p className="text">Junior Executive</p></div></a></div><div className="team-box has_fade_anim" data-fade-from="left" data-delay="0.45"><a href="team.html"><div className="thumb"><img src="assets/imgs/team/img-s-3.webp" alt="team icon" /></div><div className="content"><h3 className="title">Pedrik Vadra</h3><p className="text">Sr. Developer</p></div></a></div><div className="team-box has_fade_anim" data-fade-from="left" data-delay="0.60"><a href="team.html"><div className="thumb"><img src="assets/imgs/team/img-s-4.webp" alt="team icon" /></div><div className="content"><h3 className="title">Thomas Ribbon</h3><p className="text">UX Designer</p></div></a></div></div></div></div></div></section>
+          <section className="team-area"><div className="container"><div className="team-area-inner section-spacing"><div className="section-header"><div className="section-title-wrapper"><div className="title-wrapper"><h2 className="section-title has_fade_anim">Quality team</h2></div></div><div className="text-wrapper"><p className="text has_fade_anim">We deploy world-class creative design, team on demand. that can design surest measure's of success is when a client partner with more than once build, ship scale your vision most efficient.</p></div></div><div className="team-wrapper-box"><div className="team-wrapper"><div className="team-box has_fade_anim" data-fade-from="left" data-delay="0.15"><a href="/team"><div className="thumb"><img src="assets/imgs/team/img-s-1.webp" alt="team icon" /></div><div className="content"><h3 className="title">Kamal Abraham</h3><p className="text">CEO, Wealcoder</p></div></a></div><div className="team-box has_fade_anim" data-fade-from="left" data-delay="0.30"><a href="/team"><div className="thumb"><img src="assets/imgs/team/img-s-2.webp" alt="team icon" /></div><div className="content"><h3 className="title">Selina Gomaze</h3><p className="text">Junior Executive</p></div></a></div><div className="team-box has_fade_anim" data-fade-from="left" data-delay="0.45"><a href="/team"><div className="thumb"><img src="assets/imgs/team/img-s-3.webp" alt="team icon" /></div><div className="content"><h3 className="title">Pedrik Vadra</h3><p className="text">Sr. Developer</p></div></a></div><div className="team-box has_fade_anim" data-fade-from="left" data-delay="0.60"><a href="/team"><div className="thumb"><img src="assets/imgs/team/img-s-4.webp" alt="team icon" /></div><div className="content"><h3 className="title">Thomas Ribbon</h3><p className="text">UX Designer</p></div></a></div></div></div></div></div></section>
           
 
           
           <section className="contact-area"><div className="container"><div className="contact-area-inner section-spacing"><div className="shape-1"><img src="assets/imgs/shape/img-s-73.webp" alt="shape" /></div><div className="section-content"><div className="section-title-wrapper"><div className="title-wrapper"><h2 className="section-title has_fade_anim">Start your experience
-                        with Arolax</h2></div></div><div className="btn-wrapper has_fade_anim"><a href="contact.html" className="wc-btn wc-btn-underline btn-text-flip"><span data-text="Let’s get in touch">Let’s get in touch</span> <img src="assets/imgs/icon/arrow-right-half-light.webp" alt="icon image" /></a></div></div></div></div></section>
+                        with Arolax</h2></div></div><div className="btn-wrapper has_fade_anim"><a href="/contact" className="wc-btn wc-btn-underline btn-text-flip"><span data-text="Let’s get in touch">Let’s get in touch</span> <img src="assets/imgs/icon/arrow-right-half-light.webp" alt="icon image" /></a></div></div></div></div></section>
           
 
         </main>
