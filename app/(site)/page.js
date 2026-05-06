@@ -222,10 +222,10 @@ export default function HomePage() {
                 <div className="section-content">
                   <div className="section-title-wrapper">
                     <div className="title-wrapper">
-                      <h1 className="section-title has_char_anim" data-delay="0.15" data-translateX="50">Digital <br />
-                        Solutions
-                        for Indian
-                        Startups
+                      <h1 className="section-title has_char_anim" data-delay="0.15" data-translateX="50">STARTUP <br />
+                        GROWTH
+                        MADE
+                        SIMPLE
                       </h1>
                     </div>
                   </div>
