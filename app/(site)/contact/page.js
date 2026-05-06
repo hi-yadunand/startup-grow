@@ -99,14 +99,14 @@ export default function ContactPage() {
         <div className="">
           <div className="offcanvas-3__meta mb-145 d-none d-md-block">
             <ul>
-              <li><a href="tel:+2-352698102" className="unnerline"><u>+2-352 698 102</u></a></li>
-              <li><a href="mailto:contact@me.com">contact@me.com</a></li>
-              <li><a href="">27 Division St, <br />
-                  New York, NY 10002, USA</a></li>
+              <li><a href="tel:+2-352698102" className="unnerline"><u>Contact and Request Module</u></a></li>
+              <li><a href="mailto:startupgrow@example.com">startupgrow@example.com</a></li>
+              <li><a href="">A Digital Solutions Platform <br />
+                  for Indian Startups</a></li>
             </ul>
           </div>
           <div className="offcanvas-3__social d-none d-md-block">
-            <p className="title">Follow Me</p>
+            <p className="title">Team Members</p>
             <div className="offcanvas-3__social-links">
               <a href=""><i className="fa-brands fa-facebook-f"></i></a>
               <a href=""><i className="fa-brands fa-twitter"></i></a>
@@ -124,8 +124,8 @@ export default function ContactPage() {
             <li><a href="/services">services</a></li>
             <li><a href="/works">projects</a></li>
             <li><a href="/team">team</a></li>
-            <li><a href="#">career</a></li>
-            <li><a href="#">faq</a></li>
+            <li><a href="#">scope</a></li>
+            <li><a href="#">requirements</a></li>
             <li><a href="/blog">blog</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
@@ -144,7 +144,7 @@ export default function ContactPage() {
       <div className="modal-content">
         <div className="modal-body">
           <form action="#" className="form-search">
-            <input type="text" placeholder="Search" />
+            <input type="text" placeholder="Search project" />
             <button type="submit"><i className="fa-solid fa-magnifying-glass"></i></button>
           </form>
         </div>
@@ -170,12 +170,12 @@ export default function ContactPage() {
               <li><a href="/about">about</a></li>
               <li><a href="/services">services</a></li>
               <li className="menu-item-has-children">
-                <a href="#">Pages</a>
+                <a href="#">Project</a>
                 <ul className="dp-menu">
-                  <li><a href="/works">project pages</a></li>
-                  <li><a href="/team">team pages</a></li>
-                  <li><a href="#">career pages</a></li>
-                  <li><a href="#">faq</a></li>
+                  <li><a href="/works">portfolio</a></li>
+                  <li><a href="/team">team members</a></li>
+                  <li><a href="#">future scope</a></li>
+                  <li><a href="#">requirements</a></li>
                 </ul>
               </li>
               <li><a href="/blog">blog</a></li>
@@ -207,17 +207,13 @@ export default function ContactPage() {
         <main>
 
           
-          <section className="hero-area"><div className="container"><div className="hero-area-inner"><div className="section-content"><div className="section-title-wrapper"><div className="title-wrapper"><h1 className="section-title large has_fade_anim">Any
-                        questions? <br />
-                        simply
-                        ask us. <br />
-                        this is your
-                        home!</h1></div></div><div className="content-last"><div className="col-first"><div className="image-box overflow-hidden"><img src="assets/imgs/gallery/img-s-106.webp" data-speed="0.9" alt="image" /></div><div className="contact-box"><div className="shape-1"><img src="assets/imgs/shape/img-s-89.webp" alt="shape" /></div><span className="title">Direct contact: </span><p className="link"><a href="#">Skype.arolax007</a></p></div></div><div className="col-second"><div className="image-box"><img src="assets/imgs/gallery/img-s-107.webp" alt="image" /></div><div className="image-box overflow-hidden"><img src="assets/imgs/gallery/img-s-108.webp" data-speed="0.9" alt="image" /></div></div></div></div></div></div></section><div className="image-wrapper overflow-hidden"><img className="w-100" src="assets/imgs/gallery/img-s-105.webp" data-speed="0.9" alt="image" /></div>
+          <section className="hero-area"><div className="container"><div className="hero-area-inner"><div className="section-content"><div className="section-title-wrapper"><div className="title-wrapper"><h1 className="section-title large has_fade_anim">Contact and <br />
+                        request module <br />
+                        for StartupGrow</h1></div></div><div className="content-last"><div className="col-first"><div className="image-box overflow-hidden"><img src="assets/imgs/gallery/img-s-106.webp" data-speed="0.9" alt="image" /></div><div className="contact-box"><div className="shape-1"><img src="assets/imgs/shape/img-s-89.webp" alt="shape" /></div><span className="title">Module: </span><p className="link"><a href="#">Contact and Request Module</a></p></div></div><div className="col-second"><div className="image-box"><img src="assets/imgs/gallery/img-s-107.webp" alt="image" /></div><div className="image-box overflow-hidden"><img src="assets/imgs/gallery/img-s-108.webp" data-speed="0.9" alt="image" /></div></div></div></div></div></div></section><div className="image-wrapper overflow-hidden"><img className="w-100" src="assets/imgs/gallery/img-s-105.webp" data-speed="0.9" alt="image" /></div>
           
 
           
-          <section className="contact-area"><div className="container"><div className="contact-area-inner section-spacing"><div className="section-header"><div className="section-title-wrapper"><div className="title-wrapper"><h2 className="section-title large has_fade_anim">We’ve been
-                        waiting for you!</h2></div></div><div className="text-wrapper"><p className="text has_fade_anim">Add the best talent on the market, an agile skilled management & seamless involvement</p></div></div><div className="section-content"><div className="info-box has_fade_anim"><div className="text-wrapper"><p className="text">We want to hear from you. let’s us know how we can help!</p></div><ul className="contact-list"><li><a href="tel:+881750660600">+881 750 6606 00</a></li><li><a href="#">hello@arolax.com</a></li><li>230 alaska street dunasia <br />QC (USA) H8R 1A1</li></ul></div><div className="contact-wrap has_fade_anim" data-delay="0.30"><form action="#"><div className="contact-formwrap"><div className="contact-formfield"><input type="text" name="Name" id="Name" placeholder="Name*" /></div><div className="contact-formfield"><input type="text" name="Email" id="Email" placeholder="Email*" /></div><div className="contact-formfield"><input type="text" name="Phone" id="Phone" placeholder="Phone" /></div><div className="contact-formfield"><input type="text" name="Subject" id="Subject" placeholder="Subject*" /></div><div className="contact-formfield messages"><input type="text" name="Messages" id="Messages" placeholder="Messages*" /></div></div><div className="submit-btn"><button type="submit" className="wc-btn wc-btn-primary btn-text-flip"><span data-text="Send Message">Send Message</span></button></div></form></div></div></div></div></section>
+          <section className="contact-area"><div className="container"><div className="contact-area-inner section-spacing"><div className="section-header"><div className="section-title-wrapper"><div className="title-wrapper"><h2 className="section-title large has_fade_anim">Create a service inquiry</h2></div></div><div className="text-wrapper"><p className="text has_fade_anim">The contact module allows users to submit inquiries and share client information for digital services.</p></div></div><div className="section-content"><div className="info-box has_fade_anim"><div className="text-wrapper"><p className="text">Use this page to contact the StartupGrow team, request quotes, and begin building an online presence.</p></div><ul className="contact-list"><li><a href="tel:+881750660600">Indian startups</a></li><li><a href="#">startupgrow@example.com</a></li><li>A Digital Solutions Platform <br />for Indian Startups</li></ul></div><div className="contact-wrap has_fade_anim" data-delay="0.30"><form action="#"><div className="contact-formwrap"><div className="contact-formfield"><input type="text" name="Name" id="Name" placeholder="Startup name*" /></div><div className="contact-formfield"><input type="text" name="Email" id="Email" placeholder="Email*" /></div><div className="contact-formfield"><input type="text" name="Phone" id="Phone" placeholder="Phone" /></div><div className="contact-formfield"><input type="text" name="Subject" id="Subject" placeholder="Required service*" /></div><div className="contact-formfield messages"><input type="text" name="Messages" id="Messages" placeholder="Project details*" /></div></div><div className="submit-btn"><button type="submit" className="wc-btn wc-btn-primary btn-text-flip"><span data-text="Send Inquiry">Send Inquiry</span></button></div></form></div></div></div></div></section>
           
 
         </main>
@@ -233,29 +229,27 @@ export default function ContactPage() {
               <div className="section-header">
                 <div className="section-title-wrapper">
                   <div className="title-wrapper">
-                    <h2 className="section-title has_fade_anim"><span>Get started</span> <br />
-                      now</h2>
+                    <h2 className="section-title has_fade_anim"><span>Build online</span> <br />
+                      presence</h2>
                   </div>
                 </div>
                 <div className="text-wrapper">
-                  <p className="text has_fade_anim">If you would like to work with us or
-                    just want to get in touch, we’d love
-                    to hear from you!</p>
+                  <p className="text has_fade_anim">StartupGrow helps Indian startups request digital services, communicate with the team, and grow online through one simple platform.</p>
                 </div>
               </div>
               <div className="footer-cta">
                 <div className="footer-widget-wrapper">
-                  <h2 className="title">London</h2>
+                  <h2 className="title">Frontend</h2>
                   <ul className="footer-nav-list">
-                    <li>Baltia Squar, Mark Street, <br />
-                      London</li>
+                    <li>HTML5, CSS3, Tailwind CSS, <br />
+                      JavaScript, Next.js</li>
                   </ul>
                 </div>
                 <div className="footer-widget-wrapper">
-                  <h2 className="title">New York</h2>
+                  <h2 className="title">Backend</h2>
                   <ul className="footer-nav-list">
-                    <li>Nenuya Centre, Elia Street <br />
-                      New York, USA</li>
+                    <li>Node.js, Express.js, <br />
+                      MongoDB</li>
                   </ul>
                 </div>
                 <div className="footer-widget-wrapper newsletter">
@@ -274,14 +268,14 @@ export default function ContactPage() {
             <div className="container">
               <div className="copyright-area-inner">
                 <div className="copyright-text">
-                  <p className="text">© 2022 - 2025 | Alrights reserved <br />
-                    by <a href="https://themeforest.net/user/crowdytheme" target="_blank">crowdyTheme</a></p>
+                  <p className="text">© 2026 STARTUPGROW <br />
+                    A Digital Solutions Platform for Indian Startups</p>
                 </div>
                 <ul className="footer-nav-list">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Career</a></li>
-                  <li><a href="#">Sitemap</a></li>
+                  <li><a href="#">Introduction</a></li>
+                  <li><a href="#">Objective</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">References</a></li>
                 </ul>
               </div>
             </div>

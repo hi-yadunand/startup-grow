@@ -99,14 +99,14 @@ export default function TeamPage() {
         <div className="">
           <div className="offcanvas-3__meta mb-145 d-none d-md-block">
             <ul>
-              <li><a href="tel:+2-352698102" className="unnerline"><u>+2-352 698 102</u></a></li>
-              <li><a href="mailto:contact@me.com">contact@me.com</a></li>
-              <li><a href="">27 Division St, <br />
-                  New York, NY 10002, USA</a></li>
+              <li><a href="tel:+2-352698102" className="unnerline"><u>Contact and Request Module</u></a></li>
+              <li><a href="mailto:startupgrow@example.com">startupgrow@example.com</a></li>
+              <li><a href="">A Digital Solutions Platform <br />
+                  for Indian Startups</a></li>
             </ul>
           </div>
           <div className="offcanvas-3__social d-none d-md-block">
-            <p className="title">Follow Me</p>
+            <p className="title">Team Members</p>
             <div className="offcanvas-3__social-links">
               <a href=""><i className="fa-brands fa-facebook-f"></i></a>
               <a href=""><i className="fa-brands fa-twitter"></i></a>
@@ -124,8 +124,8 @@ export default function TeamPage() {
             <li><a href="/services">services</a></li>
             <li><a href="/works">projects</a></li>
             <li><a href="/team">team</a></li>
-            <li><a href="#">career</a></li>
-            <li><a href="#">faq</a></li>
+            <li><a href="#">scope</a></li>
+            <li><a href="#">requirements</a></li>
             <li><a href="/blog">blog</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
@@ -144,7 +144,7 @@ export default function TeamPage() {
       <div className="modal-content">
         <div className="modal-body">
           <form action="#" className="form-search">
-            <input type="text" placeholder="Search" />
+            <input type="text" placeholder="Search project" />
             <button type="submit"><i className="fa-solid fa-magnifying-glass"></i></button>
           </form>
         </div>
@@ -170,12 +170,12 @@ export default function TeamPage() {
               <li><a href="/about">about</a></li>
               <li><a href="/services">services</a></li>
               <li className="menu-item-has-children">
-                <a href="#">Pages</a>
+                <a href="#">Project</a>
                 <ul className="dp-menu">
-                  <li><a href="/works">project pages</a></li>
-                  <li><a href="/team">team pages</a></li>
-                  <li><a href="#">career pages</a></li>
-                  <li><a href="#">faq</a></li>
+                  <li><a href="/works">portfolio</a></li>
+                  <li><a href="/team">team members</a></li>
+                  <li><a href="#">future scope</a></li>
+                  <li><a href="#">requirements</a></li>
                 </ul>
               </li>
               <li><a href="/blog">blog</a></li>
@@ -207,16 +207,15 @@ export default function TeamPage() {
         <main>
 
           
-          <section className="hero-area"><div className="container large"><div className="hero-area-inner"><div className="section-content"><div className="btn-wrapper has_fade_anim" data-fade-from="left"><a href="/contact" className="wc-btn wc-btn-underline">Want to our serve global audiences and take your career next level?<i className="fa-solid fa-arrow-right"></i></a></div><div className="content-last"><div className="section-title-wrapper"><div className="title-wrapper"><h1 className="section-title large has_text_move_anim">Work together for
-                          success.</h1></div></div><div className="text-wrapper"><p className="text has_fade_anim" data-fade-from="left">Arolax is a beacon of best innovation and the dynamic parent a company of wealcoder and many other subsidiaries.</p></div><div className="fun-fact has_fade_anim" data-fade-from="bottom"><span className="number wc-counter">4,000 +</span><p className="text">Happy Clients</p></div></div></div></div></div></section><div className="image-wrapper"><div className="container large"><div className="p-relative"><div className="experience has_fade_anim" data-fade-from="top" data-ease="bounce"><h2 className="number wc-counter">99+</h2><h2 className="text">Expertise <br />employees</h2></div></div></div><img className="w-100 has_fade_anim" data-on-scroll="0" src="assets/imgs/gallery/img-s-104.webp" alt="image" /></div>
+          <section className="hero-area"><div className="container large"><div className="hero-area-inner"><div className="section-content"><div className="btn-wrapper has_fade_anim" data-fade-from="left"><a href="/contact" className="wc-btn wc-btn-underline">Team members behind StartupGrow<i className="fa-solid fa-arrow-right"></i></a></div><div className="content-last"><div className="section-title-wrapper"><div className="title-wrapper"><h1 className="section-title large has_text_move_anim">Team members</h1></div></div><div className="text-wrapper"><p className="text has_fade_anim" data-fade-from="left">StartupGrow is developed by Yadunand Pavithran, Nashid Nihal C, and Gokul Krishna as a practical digital solutions platform for startups.</p></div><div className="fun-fact has_fade_anim" data-fade-from="bottom"><span className="number wc-counter">3</span><p className="text">Team Members</p></div></div></div></div></div></section><div className="image-wrapper"><div className="container large"><div className="p-relative"><div className="experience has_fade_anim" data-fade-from="top" data-ease="bounce"><h2 className="number wc-counter">27</h2><h2 className="text">Project <br />Sections</h2></div></div></div><img className="w-100 has_fade_anim" data-on-scroll="0" src="assets/imgs/gallery/img-s-104.webp" alt="image" /></div>
           
 
           
-          <section className="team-area"><div className="container"><div className="team-area-inner section-spacing"><div className="section-header"><div className="section-title-wrapper"><div className="title-wrapper"><h2 className="section-title has_text_move_anim">Bringing passion and our expertise together!</h2></div></div><div className="text-wrapper"><p className="text has_fade_anim">We bet on brands that shift categories and add value to people's lives; and on founders who are motivated to shape</p></div></div><div className="team-wrapper-box"><div className="team-wrapper"><div className="team-box has_fade_anim" data-delay="0.15"><a href="/team"><div className="thumb"><img src="assets/imgs/team/img-s-1.webp" alt="team icon" /></div><div className="content"><h3 className="title">Kamal Abraham</h3><p className="text">CEO, Wealcoder</p></div></a></div><div className="team-box has_fade_anim" data-delay="0.30"><a href="/team"><div className="thumb"><img src="assets/imgs/team/img-s-2.webp" alt="team icon" /></div><div className="content"><h3 className="title">Selina Gomaze</h3><p className="text">Junior Executive</p></div></a></div><div className="team-box has_fade_anim" data-delay="0.45"><a href="/team"><div className="thumb"><img src="assets/imgs/team/img-s-3.webp" alt="team icon" /></div><div className="content"><h3 className="title">Pedrik Vadra</h3><p className="text">Sr. Developer</p></div></a></div><div className="team-box has_fade_anim" data-delay="0.60"><a href="/team"><div className="thumb"><img src="assets/imgs/team/img-s-4.webp" alt="team icon" /></div><div className="content"><h3 className="title">Thomas Ribbon</h3><p className="text">UX Designer</p></div></a></div></div></div></div></div></section>
+          <section className="team-area"><div className="container"><div className="team-area-inner section-spacing"><div className="section-header"><div className="section-title-wrapper"><div className="title-wrapper"><h2 className="section-title has_text_move_anim">Yadunand Pavithran, Nashid Nihal C, and Gokul Krishna</h2></div></div><div className="text-wrapper"><p className="text has_fade_anim">We thank our faculty and institution for their support and guidance in completing this project.</p></div></div><div className="team-wrapper-box"><div className="team-wrapper"><div className="team-box has_fade_anim" data-delay="0.15"><a href="/team"><div className="thumb"><img src="assets/imgs/team/img-s-1.webp" alt="team icon" /></div><div className="content"><h3 className="title">Yadunand Pavithran</h3><p className="text">Team Member</p></div></a></div><div className="team-box has_fade_anim" data-delay="0.30"><a href="/team"><div className="thumb"><img src="assets/imgs/team/img-s-2.webp" alt="team icon" /></div><div className="content"><h3 className="title">Nashid Nihal C</h3><p className="text">Team Member</p></div></a></div><div className="team-box has_fade_anim" data-delay="0.45"><a href="/team"><div className="thumb"><img src="assets/imgs/team/img-s-3.webp" alt="team icon" /></div><div className="content"><h3 className="title">Gokul Krishna</h3><p className="text">Team Member</p></div></a></div><div className="team-box has_fade_anim" data-delay="0.60"><a href="/team"><div className="thumb"><img src="assets/imgs/team/img-s-4.webp" alt="team icon" /></div><div className="content"><h3 className="title">Faculty and Institution</h3><p className="text">Acknowledgement</p></div></a></div></div></div></div></div></section>
           
 
           
-          <section className="community-area"><div className="container"><div className="community-area-inner section-spacing"><div className="section-content"><div className="section-title-wrapper"><div className="title-wrapper"><h2 className="section-title has_fade_anim">Future . Community . Honor </h2></div></div><div className="text-wrapper"><p className="text has_fade_anim">What sets us apart is what brings us together – a shared passion for solving business challenges through strategy, design, and engineering. We are the sum total of our team, their unique perspectives, capabilities, and our ability to collaborate from ideation to deployment.</p></div><div className="gallery-wrapper-box"><div className="gallery-wrapper has_fade_anim"><div><div className="thumb"><img src="assets/imgs/gallery/img-s-94.webp" alt="image" /></div></div><div><div className="thumb"><img src="assets/imgs/gallery/img-s-95.webp" alt="image" /></div></div><div><div className="thumb"><img src="assets/imgs/gallery/img-s-96.webp" alt="image" /></div><div className="thumb"><img src="assets/imgs/gallery/img-s-97.webp" alt="image" /></div></div></div></div></div></div></div></section>
+          <section className="community-area"><div className="container"><div className="community-area-inner section-spacing"><div className="section-content"><div className="section-title-wrapper"><div className="title-wrapper"><h2 className="section-title has_fade_anim">Future enhancements</h2></div></div><div className="text-wrapper"><p className="text has_fade_anim">Future enhancements include a client login dashboard, project tracking, online payments, automation features, analytics, and AI-based suggestions.</p></div><div className="gallery-wrapper-box"><div className="gallery-wrapper has_fade_anim"><div><div className="thumb"><img src="assets/imgs/gallery/img-s-94.webp" alt="image" /></div></div><div><div className="thumb"><img src="assets/imgs/gallery/img-s-95.webp" alt="image" /></div></div><div><div className="thumb"><img src="assets/imgs/gallery/img-s-96.webp" alt="image" /></div><div className="thumb"><img src="assets/imgs/gallery/img-s-97.webp" alt="image" /></div></div></div></div></div></div></div></section>
           
 
         </main>
@@ -232,29 +231,27 @@ export default function TeamPage() {
               <div className="section-header">
                 <div className="section-title-wrapper">
                   <div className="title-wrapper">
-                    <h2 className="section-title has_fade_anim"><span>Get started</span> <br />
-                      now</h2>
+                    <h2 className="section-title has_fade_anim"><span>Build online</span> <br />
+                      presence</h2>
                   </div>
                 </div>
                 <div className="text-wrapper">
-                  <p className="text has_fade_anim">If you would like to work with us or
-                    just want to get in touch, we’d love
-                    to hear from you!</p>
+                  <p className="text has_fade_anim">StartupGrow helps Indian startups request digital services, communicate with the team, and grow online through one simple platform.</p>
                 </div>
               </div>
               <div className="footer-cta">
                 <div className="footer-widget-wrapper">
-                  <h2 className="title">London</h2>
+                  <h2 className="title">Frontend</h2>
                   <ul className="footer-nav-list">
-                    <li>Baltia Squar, Mark Street, <br />
-                      London</li>
+                    <li>HTML5, CSS3, Tailwind CSS, <br />
+                      JavaScript, Next.js</li>
                   </ul>
                 </div>
                 <div className="footer-widget-wrapper">
-                  <h2 className="title">New York</h2>
+                  <h2 className="title">Backend</h2>
                   <ul className="footer-nav-list">
-                    <li>Nenuya Centre, Elia Street <br />
-                      New York, USA</li>
+                    <li>Node.js, Express.js, <br />
+                      MongoDB</li>
                   </ul>
                 </div>
                 <div className="footer-widget-wrapper newsletter">
@@ -273,14 +270,14 @@ export default function TeamPage() {
             <div className="container">
               <div className="copyright-area-inner">
                 <div className="copyright-text">
-                  <p className="text">© 2022 - 2025 | Alrights reserved <br />
-                    by <a href="https://themeforest.net/user/crowdytheme" target="_blank">crowdyTheme</a></p>
+                  <p className="text">© 2026 STARTUPGROW <br />
+                    A Digital Solutions Platform for Indian Startups</p>
                 </div>
                 <ul className="footer-nav-list">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Career</a></li>
-                  <li><a href="#">Sitemap</a></li>
+                  <li><a href="#">Introduction</a></li>
+                  <li><a href="#">Objective</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">References</a></li>
                 </ul>
               </div>
             </div>

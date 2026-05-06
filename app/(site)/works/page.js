@@ -99,14 +99,14 @@ export default function WorksPage() {
         <div className="">
           <div className="offcanvas-3__meta mb-145 d-none d-md-block">
             <ul>
-              <li><a href="tel:+2-352698102" className="unnerline"><u>+2-352 698 102</u></a></li>
-              <li><a href="mailto:contact@me.com">contact@me.com</a></li>
-              <li><a href="">27 Division St, <br />
-                  New York, NY 10002, USA</a></li>
+              <li><a href="tel:+2-352698102" className="unnerline"><u>Contact and Request Module</u></a></li>
+              <li><a href="mailto:startupgrow@example.com">startupgrow@example.com</a></li>
+              <li><a href="">A Digital Solutions Platform <br />
+                  for Indian Startups</a></li>
             </ul>
           </div>
           <div className="offcanvas-3__social d-none d-md-block">
-            <p className="title">Follow Me</p>
+            <p className="title">Team Members</p>
             <div className="offcanvas-3__social-links">
               <a href=""><i className="fa-brands fa-facebook-f"></i></a>
               <a href=""><i className="fa-brands fa-twitter"></i></a>
@@ -124,8 +124,8 @@ export default function WorksPage() {
             <li><a href="/services">services</a></li>
             <li><a href="/works">projects</a></li>
             <li><a href="/team">team</a></li>
-            <li><a href="#">career</a></li>
-            <li><a href="#">faq</a></li>
+            <li><a href="#">scope</a></li>
+            <li><a href="#">requirements</a></li>
             <li><a href="/blog">blog</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
@@ -144,7 +144,7 @@ export default function WorksPage() {
       <div className="modal-content">
         <div className="modal-body">
           <form action="#" className="form-search">
-            <input type="text" placeholder="Search" />
+            <input type="text" placeholder="Search project" />
             <button type="submit"><i className="fa-solid fa-magnifying-glass"></i></button>
           </form>
         </div>
@@ -170,12 +170,12 @@ export default function WorksPage() {
               <li><a href="/about">about</a></li>
               <li><a href="/services">services</a></li>
               <li className="menu-item-has-children">
-                <a href="#">Pages</a>
+                <a href="#">Project</a>
                 <ul className="dp-menu">
-                  <li><a href="/works">project pages</a></li>
-                  <li><a href="/team">team pages</a></li>
-                  <li><a href="#">career pages</a></li>
-                  <li><a href="#">faq</a></li>
+                  <li><a href="/works">portfolio</a></li>
+                  <li><a href="/team">team members</a></li>
+                  <li><a href="#">future scope</a></li>
+                  <li><a href="#">requirements</a></li>
                 </ul>
               </li>
               <li><a href="/blog">blog</a></li>
@@ -207,7 +207,7 @@ export default function WorksPage() {
         <main>
 
           
-          <section className="work-area"><div className="container"><div className="work-area-inner section-spacing-bottom"><div className="section-content"><div className="section-title-wrapper"><div className="title-wrapper"><h1 className="section-title large has_text_move_anim">Work</h1></div></div><div className="text-wrapper"><p className="text has_fade_anim"> We take a similar approach to design commercial we do impactfully approache, over the flowchart of user friendly wireframe.</p></div><div className="icon has_fade_anim"><img className="show-light" src="assets/imgs/shape/img-s-82.webp" alt="image" /><img className="show-dark" src="assets/imgs/shape/img-s-82-light.webp" alt="image" /></div></div><div className="works-wrapper-box"><div className="works-wrapper"><div className="has_fade_anim"><a href="#"><div className="work-box"><div className="thumb"><img src="assets/imgs/works/img-s-12.webp" alt="work image" /></div><div className="content"><h3 className="title">Victoria kinko</h3><div className="meta"><span className="tag">Design - 2019</span></div></div></div></a></div><div className="has_fade_anim"><a href="#"><div className="work-box"><div className="thumb"><img src="assets/imgs/works/img-s-13.webp" alt="work image" /></div><div className="content"><h3 className="title">Jimmy Fermin</h3><div className="meta"><span className="tag">Design - 2019</span></div></div></div></a></div><div className="has_fade_anim"><a className="large" href="#"><div className="work-box"><div className="thumb"><img src="assets/imgs/works/img-s-14.webp" alt="work image" /></div><div className="content"><h3 className="title">Briyokath Woody</h3><div className="meta"><span className="tag">Design - 2019</span></div></div></div></a></div><div className="has_fade_anim"><a href="#"><div className="work-box"><div className="thumb"><img src="assets/imgs/works/img-s-15.webp" alt="work image" /></div><div className="content"><h3 className="title">Mastartery</h3><div className="meta"><span className="tag">Design - 2019</span></div></div></div></a></div><div className="has_fade_anim"><a href="#"><div className="work-box"><div className="thumb"><img src="assets/imgs/works/img-s-16.webp" alt="work image" /></div><div className="content"><h3 className="title">Festonax Card</h3><div className="meta"><span className="tag">Design - 2019</span></div></div></div></a></div></div></div></div></div></section>
+          <section className="work-area"><div className="container"><div className="work-area-inner section-spacing-bottom"><div className="section-content"><div className="section-title-wrapper"><div className="title-wrapper"><h1 className="section-title large has_text_move_anim">Project scope</h1></div></div><div className="text-wrapper"><p className="text has_fade_anim">StartupGrow focuses on Indian startups with website development, digital marketing, portfolio display, service request forms, and a basic admin dashboard.</p></div><div className="icon has_fade_anim"><img className="show-light" src="assets/imgs/shape/img-s-82.webp" alt="image" /><img className="show-dark" src="assets/imgs/shape/img-s-82-light.webp" alt="image" /></div></div><div className="works-wrapper-box"><div className="works-wrapper"><div className="has_fade_anim"><a href="#"><div className="work-box"><div className="thumb"><img src="assets/imgs/works/img-s-12.webp" alt="work image" /></div><div className="content"><h3 className="title">Website Development</h3><div className="meta"><span className="tag">Project Scope</span></div></div></div></a></div><div className="has_fade_anim"><a href="#"><div className="work-box"><div className="thumb"><img src="assets/imgs/works/img-s-13.webp" alt="work image" /></div><div className="content"><h3 className="title">Digital Marketing</h3><div className="meta"><span className="tag">Project Scope</span></div></div></div></a></div><div className="has_fade_anim"><a className="large" href="#"><div className="work-box"><div className="thumb"><img src="assets/imgs/works/img-s-14.webp" alt="work image" /></div><div className="content"><h3 className="title">Portfolio Display</h3><div className="meta"><span className="tag">Project Scope</span></div></div></div></a></div><div className="has_fade_anim"><a href="#"><div className="work-box"><div className="thumb"><img src="assets/imgs/works/img-s-15.webp" alt="work image" /></div><div className="content"><h3 className="title">Service Request Form</h3><div className="meta"><span className="tag">Project Scope</span></div></div></div></a></div><div className="has_fade_anim"><a href="#"><div className="work-box"><div className="thumb"><img src="assets/imgs/works/img-s-16.webp" alt="work image" /></div><div className="content"><h3 className="title">Admin Dashboard</h3><div className="meta"><span className="tag">Project Scope</span></div></div></div></a></div></div></div></div></div></section>
           
 
         </main>
@@ -223,29 +223,27 @@ export default function WorksPage() {
               <div className="section-header">
                 <div className="section-title-wrapper">
                   <div className="title-wrapper">
-                    <h2 className="section-title has_fade_anim"><span>Get started</span> <br />
-                      now</h2>
+                    <h2 className="section-title has_fade_anim"><span>Build online</span> <br />
+                      presence</h2>
                   </div>
                 </div>
                 <div className="text-wrapper">
-                  <p className="text has_fade_anim">If you would like to work with us or
-                    just want to get in touch, we’d love
-                    to hear from you!</p>
+                  <p className="text has_fade_anim">StartupGrow helps Indian startups request digital services, communicate with the team, and grow online through one simple platform.</p>
                 </div>
               </div>
               <div className="footer-cta">
                 <div className="footer-widget-wrapper">
-                  <h2 className="title">London</h2>
+                  <h2 className="title">Frontend</h2>
                   <ul className="footer-nav-list">
-                    <li>Baltia Squar, Mark Street, <br />
-                      London</li>
+                    <li>HTML5, CSS3, Tailwind CSS, <br />
+                      JavaScript, Next.js</li>
                   </ul>
                 </div>
                 <div className="footer-widget-wrapper">
-                  <h2 className="title">New York</h2>
+                  <h2 className="title">Backend</h2>
                   <ul className="footer-nav-list">
-                    <li>Nenuya Centre, Elia Street <br />
-                      New York, USA</li>
+                    <li>Node.js, Express.js, <br />
+                      MongoDB</li>
                   </ul>
                 </div>
                 <div className="footer-widget-wrapper newsletter">
@@ -264,14 +262,14 @@ export default function WorksPage() {
             <div className="container">
               <div className="copyright-area-inner">
                 <div className="copyright-text">
-                  <p className="text">© 2022 - 2025 | Alrights reserved <br />
-                    by <a href="https://themeforest.net/user/crowdytheme" target="_blank">crowdyTheme</a></p>
+                  <p className="text">© 2026 STARTUPGROW <br />
+                    A Digital Solutions Platform for Indian Startups</p>
                 </div>
                 <ul className="footer-nav-list">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Career</a></li>
-                  <li><a href="#">Sitemap</a></li>
+                  <li><a href="#">Introduction</a></li>
+                  <li><a href="#">Objective</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">References</a></li>
                 </ul>
               </div>
             </div>
