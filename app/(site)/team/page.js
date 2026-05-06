@@ -101,7 +101,7 @@ export default function TeamPage() {
             <ul>
               <li><a href="tel:+2-352698102" className="unnerline"><u>Contact and Request Module</u></a></li>
               <li><a href="mailto:startupgrow@example.com">startupgrow@example.com</a></li>
-              <li><a href="">A Digital Solutions Platform <br />
+              <li><a href="">Digital Solutions <br />
                   for Indian Startups</a></li>
             </ul>
           </div>

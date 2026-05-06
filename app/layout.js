@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "STARTUPGROW | A Digital Solutions Platform for Indian Startups",
+  title: "STARTUPGROW | Digital Solutions for Indian Startups",
   description:
     "StartupGrow is a web-based digital solutions platform that helps Indian startups build their online presence through web development and marketing services."
 };

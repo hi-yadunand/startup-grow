@@ -101,7 +101,7 @@ export default function HomePage() {
             <ul>
               <li><a href="tel:+2-352698102" className="unnerline"><u>Contact and Request Module</u></a></li>
               <li><a href="mailto:startupgrow@example.com">startupgrow@example.com</a></li>
-              <li><a href="">A Digital Solutions Platform <br />
+              <li><a href="">Digital Solutions <br />
                   for Indian Startups</a></li>
             </ul>
           </div>
@@ -222,8 +222,8 @@ export default function HomePage() {
                 <div className="section-content">
                   <div className="section-title-wrapper">
                     <div className="title-wrapper">
-                      <h1 className="section-title has_char_anim" data-delay="0.15" data-translateX="50">A Digital <br />
-                        Solutions <span className="has_fade_anim" data-fade-from="left" data-delay="1">Platform</span>
+                      <h1 className="section-title has_char_anim" data-delay="0.15" data-translateX="50">Digital <br />
+                        Solutions
                         for Indian
                         Startups
                       </h1>

@@ -99,7 +99,7 @@ export default function BlogPage() {
             <ul>
               <li><a href="tel:+91-0000000000" className="unnerline"><u>Contact and Request Module</u></a></li>
               <li><a href="mailto:startupgrow@example.com">startupgrow@example.com</a></li>
-              <li><a href="">A Digital Solutions Platform <br />
+              <li><a href="">Digital Solutions <br />
                   for Indian Startups</a></li>
             </ul>
           </div>
