@@ -1,5 +1,3 @@
-import "./globals.css";
-
 export const metadata = {
   title: "StartupGrow | Digital Solutions for Indian Startups",
   description:

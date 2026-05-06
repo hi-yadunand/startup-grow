@@ -1,3 +1,5 @@
+import "../../globals.css";
+
 export const metadata = {
   title: "StartupGrow | Admin Dashboard",
   description: "Secure admin dashboard for StartupGrow operations.",
