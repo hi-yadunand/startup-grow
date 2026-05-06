@@ -37,56 +37,6 @@ export default function HomePage() {
     </svg>
   </div>
 
-
-  <div className="switcher__area">
-    <div className="switcher__icon">
-      <button id="switcher_open"><i className="fa-solid fa-gear"></i></button>
-      <button id="switcher_close"><i className="fa-solid fa-xmark"></i></button>
-    </div>
-    <div className="switcher__items">
-      <div className="switcher__item">
-        <div className="switch__title-wrap">
-          <p className="switcher__title">mode</p>
-        </div>
-        <div className="switcher__btn mode-type wc-col-2">
-          <button className="active" data-mode="light">light</button>
-          <button data-mode="dark">dark</button>
-        </div>
-      </div>
-      <div className="switcher__item">
-        <div className="switch__title-wrap">
-          <p className="switcher__title">Language Support</p>
-        </div>
-        <div className="switcher__btn lang_dir wc-col-2">
-          <button className="active" data-mode="ltr">LTR</button>
-          <button data-mode="rtl">RTL</button>
-        </div>
-      </div>
-      <div className="switcher__item">
-        <div className="switch__title-wrap">
-          <p className="switcher__title">Layout</p>
-        </div>
-        <div className="switcher__btn layout-type wc-col-2">
-          <button className="active" data-mode="full-width">Full Width</button>
-          <button data-mode="box-layout">Box Layout</button>
-        </div>
-      </div>
-      <div className="switcher__item">
-        <div className="switch__title-wrap">
-          <p className="switcher__title">Cursor</p>
-        </div>
-        <div className="switcher__btn">
-          <select name="cursor-style" id="cursor_style">
-            <option value="1">default</option>
-            <option selected value="2">animated</option>
-          </select>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
   <div className="offcanvas-3__area">
     <div className="offcanvas-3__inner">
       <div className="offcanvas-3__meta-wrapper">
