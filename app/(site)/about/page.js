@@ -1,10 +1,8 @@
-
 "use client";
 import { useEffect } from "react";
 
 export default function AboutPage() {
   useEffect(() => {
-    // Re-initialize any scripts that need it after React mounts
     if (typeof window !== "undefined" && window.initArolax) {
       window.initArolax();
     }
@@ -99,7 +97,7 @@ export default function AboutPage() {
         <div className="">
           <div className="offcanvas-3__meta mb-145 d-none d-md-block">
             <ul>
-              <li><a href="tel:+2-352698102" className="unnerline"><u>Contact and Request Module</u></a></li>
+              <li><a href="tel:+91-0000000000" className="unnerline"><u>Contact and Request Module</u></a></li>
               <li><a href="mailto:startupgrow@example.com">startupgrow@example.com</a></li>
               <li><a href="">A Digital Solutions Platform <br />
                   for Indian Startups</a></li>
@@ -124,8 +122,8 @@ export default function AboutPage() {
             <li><a href="/services">services</a></li>
             <li><a href="/works">projects</a></li>
             <li><a href="/team">team</a></li>
-            <li><a href="#">scope</a></li>
-            <li><a href="#">requirements</a></li>
+            <li><a href="#">career</a></li>
+            <li><a href="#">faq</a></li>
             <li><a href="/blog">blog</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
@@ -137,14 +135,14 @@ export default function AboutPage() {
 
 
   
-  <div className="modal fade" id="search-template" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  <div className="modal fade" id="search-template" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1"
     aria-labelledby="search-template" aria-hidden="true">
     <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     <div className="modal-dialog modal-dialog-centered">
       <div className="modal-content">
         <div className="modal-body">
           <form action="#" className="form-search">
-            <input type="text" placeholder="Search project" />
+            <input type="text" placeholder="Search" />
             <button type="submit"><i className="fa-solid fa-magnifying-glass"></i></button>
           </form>
         </div>
@@ -170,12 +168,12 @@ export default function AboutPage() {
               <li><a href="/about">about</a></li>
               <li><a href="/services">services</a></li>
               <li className="menu-item-has-children">
-                <a href="#">Project</a>
+                <a href="#">Pages</a>
                 <ul className="dp-menu">
-                  <li><a href="/works">portfolio</a></li>
-                  <li><a href="/team">team members</a></li>
-                  <li><a href="#">future scope</a></li>
-                  <li><a href="#">requirements</a></li>
+                  <li><a href="/works">project pages</a></li>
+                  <li><a href="/team">team pages</a></li>
+                  <li><a href="#">career pages</a></li>
+                  <li><a href="#">faq</a></li>
                 </ul>
               </li>
               <li><a href="/blog">blog</a></li>
@@ -210,26 +208,26 @@ export default function AboutPage() {
           <section className="hero-area">
             <div className="container large"><div className="hero-area-inner"><div className="section-content"><div className="section-title-wrapper"><div className="title-wrapper"><h1 className="section-title large has_fade_anim">We are “StartupGrow” - digital and
                         marketing platform built
-                        for Indian startups</h1></div></div><div className="content-last"><div className="subtitle-wrapper has_fade_anim" data-fade-from="right"><span className="section-subtitle has-right-line">01. StartupGrow</span></div><div className="text-wrapper"><p className="text has_fade_anim" data-fade-from="left">StartupGrow helps Indian startups build websites, brands, and marketing systems that make digital growth simple.</p></div></div></div></div></div>
+                        for Indian startups</h1></div></div><div className="content-last"><div className="subtitle-wrapper has_fade_anim" data-fade-from="right"><span className="section-subtitle has-right-line">01. about us</span></div><div className="text-wrapper"><p className="text has_fade_anim" data-fade-from="left">Building digital presence: the story behind StartupGrow, a practical platform helping Indian startups create websites, marketing, and growth.</p></div></div></div></div></div>
           </section>
           
 
           
-          <div className="counter-area"><div className="counter-area-inner"><div className="thumb"><img src="assets/imgs/gallery/img-s-27.webp" alt="image" /></div><div className="counter-wrapper-box"><div className="counter-wrapper"><div className="thumb overflow-hidden"><img src="assets/imgs/gallery/img-s-28.webp" data-speed="0.9" alt="image" /></div><div className="counter-box"><h2 className="text has_fade_anim">We support Indian <br />startup growth</h2><h2 className="number wc-counter has_fade_anim">6</h2></div><div className="counter-box dark"><h2 className="text has_fade_anim">We connect <br />frontend, backend, and <br />database requests</h2><h2 className="number wc-counter has_fade_anim">3</h2></div><div className="thumb overflow-hidden"><img src="assets/imgs/gallery/img-s-29.webp" data-speed="0.9" alt="image" /></div></div></div></div></div>
+          <div className="counter-area"><div className="counter-area-inner"><div className="thumb"><img src="assets/imgs/gallery/img-s-27.webp" alt="image" /></div><div className="counter-wrapper-box"><div className="counter-wrapper"><div className="thumb overflow-hidden"><img src="assets/imgs/gallery/img-s-28.webp" data-speed="0.9" alt="image" /></div><div className="counter-box"><h2 className="text has_fade_anim">We provide six <br />core services</h2><h2 className="number wc-counter has_fade_anim">6</h2></div><div className="counter-box dark"><h2 className="text has_fade_anim">We built with <br />three project team <br />members</h2><h2 className="number wc-counter has_fade_anim">3</h2></div><div className="thumb overflow-hidden"><img src="assets/imgs/gallery/img-s-29.webp" data-speed="0.9" alt="image" /></div></div></div></div></div>
           
 
           
-          <section className="awards-area"><div className="container"><div className="awards-area-inner section-spacing"><div className="section-header"><div className="section-title-wrapper"><div className="subtitle-wrapper"><span className="section-subtitle has-left-line">02. Problem</span></div><div className="title-wrapper"><h2 className="section-title has_fade_anim">We make digital growth simple for Indian startup teams!</h2></div></div></div><div className="section-content"><div className="text-wrapper"><p className="text has_fade_anim" data-fade-from="left">We help founders move from idea to online presence with affordable websites, SEO, social campaigns, content, email, and a basic request system that keeps service planning clear.</p></div><div className="awards-list has_fade_anim"><ul><li><div className="meta"><div className="icon"><img className="show-light" src="assets/imgs/icon/icon-s-40.webp" alt="icon" /><img className="show-dark" src="assets/imgs/icon/icon-s-40-light.webp" alt="icon" /></div><div className="content"><h3 className="number wc-counter">4</h3><p className="text">startup problems solved</p></div></div></li><li><div className="meta"><div className="icon"><img className="show-light" src="assets/imgs/icon/icon-s-41.webp" alt="icon" /><img className="show-dark" src="assets/imgs/icon/icon-s-41-light.webp" alt="icon" /></div><div className="content"><h3 className="number wc-counter">6</h3><p className="text">core digital services</p></div></div></li></ul></div></div><div className="about-thumbs"><div className="thumb-first"><img src="assets/imgs/gallery/img-s-3.webp" className="has_fade_anim" data-fade-from="right" alt="image" /></div><div className="thumb-second"><img src="assets/imgs/gallery/img-s-4.webp" className="has_fade_anim" data-fade-from="left" alt="image" /></div></div></div></div></section>
+          <section className="awards-area"><div className="container"><div className="awards-area-inner section-spacing"><div className="section-header"><div className="section-title-wrapper"><div className="subtitle-wrapper"><span className="section-subtitle has-left-line">02. Who we are</span></div><div className="title-wrapper"><h2 className="section-title has_fade_anim">We make digital growth simple for Indian startup teams!</h2></div></div></div><div className="section-content"><div className="text-wrapper"><p className="text has_fade_anim" data-fade-from="left">We bring websites, branding, SEO, social, content, email, and service requests into one affordable platform for early-stage startup growth.</p></div><div className="awards-list has_fade_anim"><ul><li><div className="meta"><div className="icon"><img className="show-light" src="assets/imgs/icon/icon-s-40.webp" alt="icon" /><img className="show-dark" src="assets/imgs/icon/icon-s-40-light.webp" alt="icon" /></div><div className="content"><h3 className="number wc-counter">4</h3><p className="text">startup problems solved</p></div></div></li><li><div className="meta"><div className="icon"><img className="show-light" src="assets/imgs/icon/icon-s-41.webp" alt="icon" /><img className="show-dark" src="assets/imgs/icon/icon-s-41-light.webp" alt="icon" /></div><div className="content"><h3 className="number wc-counter">6</h3><p className="text">core digital services</p></div></div></li></ul></div></div><div className="about-thumbs"><div className="thumb-first"><img src="assets/imgs/gallery/img-s-3.webp" className="has_fade_anim" data-fade-from="right" alt="image" /></div><div className="thumb-second"><img src="assets/imgs/gallery/img-s-4.webp" className="has_fade_anim" data-fade-from="left" alt="image" /></div></div></div></div></section>
           
 
           
-          <section className="about-area container-hd"><div className="about-area-inner"><div className="thumb"><img src="assets/imgs/gallery/img-s-30.webp" alt="gallery image" /></div><div className="section-content"><div className="bg"><img src="assets/imgs/gallery/img-s-31.webp" alt="image" /></div><div className="section-title-wrapper"><div className="title-wrapper"><h2 className="section-title has_fade_anim">Simple
-                      but scalable
-                      platform</h2></div></div><div className="text-wrapper"><p className="text has_fade_anim" data-fade-from="left">Startups explore services, request quotes, contact the team, and grow online from one place</p></div><div className="btn-wrapper has_fade_anim" data-ease="bounce"><a href="/contact" className="wc-btn wc-btn-primary btn-text-flip"><span data-text="View details">View details</span></a></div></div></div></section>
+          <section className="about-area container-hd"><div className="about-area-inner"><div className="thumb"><img src="assets/imgs/gallery/img-s-30.webp" alt="gallery image" /></div><div className="section-content"><div className="bg"><img src="assets/imgs/gallery/img-s-31.webp" alt="image" /></div><div className="section-title-wrapper"><div className="title-wrapper"><h2 className="section-title has_fade_anim">We’re simple
+                      and scalable
+                      platform</h2></div></div><div className="text-wrapper"><p className="text has_fade_anim" data-fade-from="left">Startups explore services, request quotes, contact the <span>team</span>, and grow online</p></div><div className="btn-wrapper has_fade_anim" data-ease="bounce"><a href="/contact" className="wc-btn wc-btn-primary btn-text-flip"><span data-text="Learn More">Learn More</span></a></div></div></div></section>
           
 
           
-          <section className="team-area"><div className="container"><div className="team-area-inner section-spacing"><div className="section-header"><div className="section-title-wrapper"><div className="title-wrapper"><h2 className="section-title has_fade_anim">Project team</h2></div></div><div className="text-wrapper"><p className="text has_fade_anim">Yadunand, Nashid, and Gokul built StartupGrow as a practical college project with faculty support, service discovery, request collection, and simple admin management.</p></div></div><div className="team-wrapper-box"><div className="team-wrapper"><div className="team-box has_fade_anim" data-fade-from="left" data-delay="0.15"><a href="/team"><div className="thumb"><img src="assets/imgs/team/img-s-1.webp" alt="team icon" /></div><div className="content"><h3 className="title">Yadunand Pavithran</h3><p className="text">Team Member</p></div></a></div><div className="team-box has_fade_anim" data-fade-from="left" data-delay="0.30"><a href="/team"><div className="thumb"><img src="assets/imgs/team/img-s-2.webp" alt="team icon" /></div><div className="content"><h3 className="title">Nashid Nihal C</h3><p className="text">Team Member</p></div></a></div><div className="team-box has_fade_anim" data-fade-from="left" data-delay="0.45"><a href="/team"><div className="thumb"><img src="assets/imgs/team/img-s-3.webp" alt="team icon" /></div><div className="content"><h3 className="title">Gokul Krishna</h3><p className="text">Team Member</p></div></a></div><div className="team-box has_fade_anim" data-fade-from="left" data-delay="0.60"><a href="/team"><div className="thumb"><img src="assets/imgs/team/img-s-4.webp" alt="team icon" /></div><div className="content"><h3 className="title">Faculty Support</h3><p className="text">Guidance</p></div></a></div></div></div></div></div></section>
+          <section className="team-area"><div className="container"><div className="team-area-inner section-spacing"><div className="section-header"><div className="section-title-wrapper"><div className="title-wrapper"><h2 className="section-title has_fade_anim">Project team</h2></div></div><div className="text-wrapper"><p className="text has_fade_anim">We bring websites, branding, SEO, social, content, email, and service requests into one affordable platform for early-stage startup growth.</p></div></div><div className="team-wrapper-box"><div className="team-wrapper"><div className="team-box has_fade_anim" data-fade-from="left" data-delay="0.15"><a href="/team"><div className="thumb"><img src="assets/imgs/team/img-s-1.webp" alt="team icon" /></div><div className="content"><h3 className="title">Yadunand Pavithran</h3><p className="text">Team Member</p></div></a></div><div className="team-box has_fade_anim" data-fade-from="left" data-delay="0.30"><a href="/team"><div className="thumb"><img src="assets/imgs/team/img-s-2.webp" alt="team icon" /></div><div className="content"><h3 className="title">Nashid Nihal C</h3><p className="text">Team Member</p></div></a></div><div className="team-box has_fade_anim" data-fade-from="left" data-delay="0.45"><a href="/team"><div className="thumb"><img src="assets/imgs/team/img-s-3.webp" alt="team icon" /></div><div className="content"><h3 className="title">Gokul Krishna</h3><p className="text">Team Member</p></div></a></div><div className="team-box has_fade_anim" data-fade-from="left" data-delay="0.60"><a href="/team"><div className="thumb"><img src="assets/imgs/team/img-s-4.webp" alt="team icon" /></div><div className="content"><h3 className="title">Faculty Support</h3><p className="text">Guidance</p></div></a></div></div></div></div></div></section>
           
 
           
@@ -250,8 +248,7 @@ export default function AboutPage() {
               <div className="section-header">
                 <div className="section-title-wrapper">
                   <div className="title-wrapper">
-                    <h2 className="section-title has_fade_anim"><span>Build online</span> <br />
-                      presence</h2>
+                    <h2 className="section-title has_fade_anim"><span>Build online</span> <br />presence</h2>
                   </div>
                 </div>
                 <div className="text-wrapper">
@@ -289,8 +286,7 @@ export default function AboutPage() {
             <div className="container">
               <div className="copyright-area-inner">
                 <div className="copyright-text">
-                  <p className="text">© 2026 STARTUPGROW <br />
-                    A Digital Solutions Platform for Indian Startups</p>
+                  <p className="text">© 2026 STARTUPGROW <br />A Digital Solutions Platform for Indian Startups</p>
                 </div>
                 <ul className="footer-nav-list">
                   <li><a href="#">Introduction</a></li>

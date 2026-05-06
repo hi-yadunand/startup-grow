@@ -1,10 +1,8 @@
-
 "use client";
 import { useEffect } from "react";
 
 export default function BlogPage() {
   useEffect(() => {
-    // Re-initialize any scripts that need it after React mounts
     if (typeof window !== "undefined" && window.initArolax) {
       window.initArolax();
     }
@@ -99,7 +97,7 @@ export default function BlogPage() {
         <div className="">
           <div className="offcanvas-3__meta mb-145 d-none d-md-block">
             <ul>
-              <li><a href="tel:+2-352698102" className="unnerline"><u>Contact and Request Module</u></a></li>
+              <li><a href="tel:+91-0000000000" className="unnerline"><u>Contact and Request Module</u></a></li>
               <li><a href="mailto:startupgrow@example.com">startupgrow@example.com</a></li>
               <li><a href="">A Digital Solutions Platform <br />
                   for Indian Startups</a></li>
@@ -124,8 +122,8 @@ export default function BlogPage() {
             <li><a href="/services">services</a></li>
             <li><a href="/works">projects</a></li>
             <li><a href="/team">team</a></li>
-            <li><a href="#">scope</a></li>
-            <li><a href="#">requirements</a></li>
+            <li><a href="#">career</a></li>
+            <li><a href="#">faq</a></li>
             <li><a href="/blog">blog</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
@@ -137,14 +135,14 @@ export default function BlogPage() {
 
 
   
-  <div className="modal fade" id="search-template" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  <div className="modal fade" id="search-template" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1"
     aria-labelledby="search-template" aria-hidden="true">
     <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     <div className="modal-dialog modal-dialog-centered">
       <div className="modal-content">
         <div className="modal-body">
           <form action="#" className="form-search">
-            <input type="text" placeholder="Search project" />
+            <input type="text" placeholder="Search" />
             <button type="submit"><i className="fa-solid fa-magnifying-glass"></i></button>
           </form>
         </div>
@@ -170,12 +168,12 @@ export default function BlogPage() {
               <li><a href="/about">about</a></li>
               <li><a href="/services">services</a></li>
               <li className="menu-item-has-children">
-                <a href="#">Project</a>
+                <a href="#">Pages</a>
                 <ul className="dp-menu">
-                  <li><a href="/works">portfolio</a></li>
-                  <li><a href="/team">team members</a></li>
-                  <li><a href="#">future scope</a></li>
-                  <li><a href="#">requirements</a></li>
+                  <li><a href="/works">project pages</a></li>
+                  <li><a href="/team">team pages</a></li>
+                  <li><a href="#">career pages</a></li>
+                  <li><a href="#">faq</a></li>
                 </ul>
               </li>
               <li><a href="/blog">blog</a></li>
@@ -216,7 +214,7 @@ export default function BlogPage() {
           
           <section className="blog-area"><div className="container"><div className="blog-area-inner section-spacing"><div className="section-content"><div className="section-title-wrapper"><div className="title-wrapper"><h2 className="section-title has_fade_anim">Latest
                         project
-                        notes</h2></div></div><div className="text-wrapper"><p className="text has_fade_anim">StartupGrow records objectives, scope, architecture, requirements, implementation, testing, result, conclusion, references, and appendix.</p></div></div><div className="blogs-wrapper-box"><div className="blogs-wrapper has_fade_anim"><a href="/blog"><div className="blog-box"><div className="thumb"><img src="assets/imgs/blog/img-s-20.webp" alt="image" /></div><div className="content"><span className="number">01</span><h3 className="title">Existing <br />System</h3><span className="icon"><i className="fa-solid fa-arrow-right"></i></span></div></div></a><a href="/blog"><div className="blog-box"><div className="thumb"><img src="assets/imgs/blog/img-s-21.webp" alt="image" /></div><div className="content"><span className="number">02</span><h3 className="title">Proposed <br />System</h3><span className="icon"><i className="fa-solid fa-arrow-right"></i></span></div></div></a><a href="/blog"><div className="blog-box"><div className="thumb"><img src="assets/imgs/blog/img-s-22.webp" alt="image" /></div><div className="content"><span className="number">03</span><h3 className="title">Feasibility <br />Study</h3><span className="icon"><i className="fa-solid fa-arrow-right"></i></span></div></div></a></div></div></div></div></section>
+                        notes</h2></div></div><div className="text-wrapper"><p className="text has_fade_anim">StartupGrow documents objectives, scope, architecture, requirements, testing, result, conclusion, and future enhancements.</p></div></div><div className="blogs-wrapper-box"><div className="blogs-wrapper has_fade_anim"><a href="/blog"><div className="blog-box"><div className="thumb"><img src="assets/imgs/blog/img-s-20.webp" alt="image" /></div><div className="content"><span className="number">01</span><h3 className="title">Existing <br />System</h3><span className="icon"><i className="fa-solid fa-arrow-right"></i></span></div></div></a><a href="/blog"><div className="blog-box"><div className="thumb"><img src="assets/imgs/blog/img-s-21.webp" alt="image" /></div><div className="content"><span className="number">02</span><h3 className="title">Proposed <br />System</h3><span className="icon"><i className="fa-solid fa-arrow-right"></i></span></div></div></a><a href="/blog"><div className="blog-box"><div className="thumb"><img src="assets/imgs/blog/img-s-22.webp" alt="image" /></div><div className="content"><span className="number">03</span><h3 className="title">Feasibility <br />Study</h3><span className="icon"><i className="fa-solid fa-arrow-right"></i></span></div></div></a></div></div></div></div></section>
           
 
         </main>
@@ -232,8 +230,7 @@ export default function BlogPage() {
               <div className="section-header">
                 <div className="section-title-wrapper">
                   <div className="title-wrapper">
-                    <h2 className="section-title has_fade_anim"><span>Build online</span> <br />
-                      presence</h2>
+                    <h2 className="section-title has_fade_anim"><span>Build online</span> <br />presence</h2>
                   </div>
                 </div>
                 <div className="text-wrapper">
@@ -271,8 +268,7 @@ export default function BlogPage() {
             <div className="container">
               <div className="copyright-area-inner">
                 <div className="copyright-text">
-                  <p className="text">© 2026 STARTUPGROW <br />
-                    A Digital Solutions Platform for Indian Startups</p>
+                  <p className="text">© 2026 STARTUPGROW <br />A Digital Solutions Platform for Indian Startups</p>
                 </div>
                 <ul className="footer-nav-list">
                   <li><a href="#">Introduction</a></li>

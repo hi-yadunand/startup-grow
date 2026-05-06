@@ -1,10 +1,8 @@
-
 "use client";
 import { useEffect } from "react";
 
 export default function ServicesPage() {
   useEffect(() => {
-    // Re-initialize any scripts that need it after React mounts
     if (typeof window !== "undefined" && window.initArolax) {
       window.initArolax();
     }
@@ -99,7 +97,7 @@ export default function ServicesPage() {
         <div className="">
           <div className="offcanvas-3__meta mb-145 d-none d-md-block">
             <ul>
-              <li><a href="tel:+2-352698102" className="unnerline"><u>Contact and Request Module</u></a></li>
+              <li><a href="tel:+91-0000000000" className="unnerline"><u>Contact and Request Module</u></a></li>
               <li><a href="mailto:startupgrow@example.com">startupgrow@example.com</a></li>
               <li><a href="">A Digital Solutions Platform <br />
                   for Indian Startups</a></li>
@@ -124,8 +122,8 @@ export default function ServicesPage() {
             <li><a href="/services">services</a></li>
             <li><a href="/works">projects</a></li>
             <li><a href="/team">team</a></li>
-            <li><a href="#">scope</a></li>
-            <li><a href="#">requirements</a></li>
+            <li><a href="#">career</a></li>
+            <li><a href="#">faq</a></li>
             <li><a href="/blog">blog</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
@@ -137,14 +135,14 @@ export default function ServicesPage() {
 
 
   
-  <div className="modal fade" id="search-template" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  <div className="modal fade" id="search-template" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1"
     aria-labelledby="search-template" aria-hidden="true">
     <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
     <div className="modal-dialog modal-dialog-centered">
       <div className="modal-content">
         <div className="modal-body">
           <form action="#" className="form-search">
-            <input type="text" placeholder="Search project" />
+            <input type="text" placeholder="Search" />
             <button type="submit"><i className="fa-solid fa-magnifying-glass"></i></button>
           </form>
         </div>
@@ -170,12 +168,12 @@ export default function ServicesPage() {
               <li><a href="/about">about</a></li>
               <li><a href="/services">services</a></li>
               <li className="menu-item-has-children">
-                <a href="#">Project</a>
+                <a href="#">Pages</a>
                 <ul className="dp-menu">
-                  <li><a href="/works">portfolio</a></li>
-                  <li><a href="/team">team members</a></li>
-                  <li><a href="#">future scope</a></li>
-                  <li><a href="#">requirements</a></li>
+                  <li><a href="/works">project pages</a></li>
+                  <li><a href="/team">team pages</a></li>
+                  <li><a href="#">career pages</a></li>
+                  <li><a href="#">faq</a></li>
                 </ul>
               </li>
               <li><a href="/blog">blog</a></li>
@@ -207,25 +205,25 @@ export default function ServicesPage() {
         <main>
 
           
-          <section className="hero-area"><div className="container"><div className="hero-area-inner"><div className="section-content"><div className="section-title-wrapper"><div className="title-wrapper"><h1 className="section-title large has_text_move_anim">We build
-                        services that
-                        grow and
-                        convert.</h1></div></div><div className="text-wrapper"><p className="text has_fade_anim">StartupGrow brings SEO, PPC, social, content, email, and web support into one clean startup system.</p></div><div className="icon has_fade_anim" data-on-scroll="0"><img className="show-light" src="assets/imgs/shape/img-s-82.webp" alt="image" /><img className="show-dark" src="assets/imgs/shape/img-s-82-light.webp" alt="image" /></div></div><div className="thumb"><img src="assets/imgs/gallery/img-s-86.webp" className="has_fade_anim" data-fade-offset="0" data-delay="0.45" alt="image" /></div></div></div></section>
+          <section className="hero-area"><div className="container"><div className="hero-area-inner"><div className="section-content"><div className="section-title-wrapper"><div className="title-wrapper"><h1 className="section-title large has_text_move_anim">We make
+                        startups grow
+                        online and
+                        convert.</h1></div></div><div className="text-wrapper"><p className="text has_fade_anim">StartupGrow brings SEO, PPC, social media, content, email, and website development into one platform.</p></div><div className="icon has_fade_anim" data-on-scroll="0"><img className="show-light" src="assets/imgs/shape/img-s-82.webp" alt="image" /><img className="show-dark" src="assets/imgs/shape/img-s-82-light.webp" alt="image" /></div></div><div className="thumb"><img src="assets/imgs/gallery/img-s-86.webp" className="has_fade_anim" data-fade-offset="0" data-delay="0.45" alt="image" /></div></div></div></section>
           
 
           
-          <section className="service-area section-spacing"><div className="container"><div className="service-top-wrapper"><div className="section-heading"><h2 className="section-title has_text_move_anim">Our core <br />services</h2></div><div className="content"><p className="text has_fade_anim">We help founders access digital services without juggling vendors or paying high agency costs.</p></div></div><div className="services-wrapper-box"><div className="services-grid"><div className="service-item has_fade_anim" data-delay="0.15"><div className="icon"><img className="show-light" src="assets/imgs/icon/icon-s-1.webp" alt="service-icon" /><img className="show-dark" src="assets/imgs/icon/icon-s-1-light.webp" alt="service-icon" /></div><h2 className="title">SEO <br />Marketing</h2><ul className="service-features"><li>Search Engine Optimisation</li><li>Website ranking</li><li>Organic traffic</li><li>Keyword focus</li><li>Search visibility</li><li>Startup discovery</li><li>Traffic growth</li></ul></div><div className="service-item has_fade_anim" data-delay="0.30"><div className="icon"><img className="show-light" src="assets/imgs/icon/icon-s-2.webp" alt="service-icon" /><img className="show-dark" src="assets/imgs/icon/icon-s-2-light.webp" alt="service-icon" /></div><h2 className="title">Pay-Per-Click <br />Advertising</h2><ul className="service-features"><li>Paid ad campaigns</li><li>Google Ads</li><li>Instagram Ads</li><li>Campaign planning</li><li>Budget-friendly launch</li><li>Lead generation</li><li>Traffic growth</li></ul></div><div className="service-item has_fade_anim" data-delay="0.45"><div className="icon"><img className="show-light" src="assets/imgs/icon/icon-s-3.webp" alt="service-icon" /><img className="show-dark" src="assets/imgs/icon/icon-s-3-light.webp" alt="service-icon" /></div><h2 className="title">Social Media <br />Marketing</h2><ul className="service-features"><li>Social media accounts</li><li>Content scheduling</li><li>Brand awareness</li><li>Audience engagement</li><li>Platform planning</li><li>Startup visibility</li><li>Growth support</li></ul></div><div className="service-item has_fade_anim" data-delay="0.60"><div className="icon"><img className="show-light" src="assets/imgs/icon/icon-s-4.webp" alt="service-icon" /><img className="show-dark" src="assets/imgs/icon/icon-s-4-light.webp" alt="service-icon" /></div><h2 className="title">Content <br />Marketing</h2><ul className="service-features"><li>Blogs and articles</li><li>Videos</li><li>Social posts</li><li>User attraction</li><li>Content planning</li><li>Campaign assets</li><li>Brand storytelling</li></ul></div><div className="service-item has_fade_anim" data-delay="0.75"><div className="icon"><img className="show-light" src="assets/imgs/icon/icon-s-5.webp" alt="service-icon" /><img className="show-dark" src="assets/imgs/icon/icon-s-13-light.webp" alt="service-icon" /></div><h2 className="title">Email <br />Marketing</h2><ul className="service-features"><li>Promotional emails</li><li>Email campaigns</li><li>Customer updates</li><li>Launch messages</li><li>Retention support</li><li>Offer communication</li><li>Campaign tracking</li></ul></div><div className="service-item has_fade_anim" data-delay="0.90"><div className="icon"><img className="show-light" src="assets/imgs/icon/icon-s-6.webp" alt="service-icon" /><img className="show-dark" src="assets/imgs/icon/icon-s-14-light.webp" alt="service-icon" /></div><h2 className="title">Web Design <br />Development</h2><ul className="service-features"><li>Professional websites</li><li>Responsive design</li><li>Conversion pages</li><li>HTML5 and CSS3</li><li>JavaScript and Next.js</li><li>Scalable structure</li><li>Online presence</li></ul></div></div></div></div></section>
+          <section className="service-area section-spacing"><div className="container"><div className="service-top-wrapper"><div className="section-heading"><h2 className="section-title has_text_move_anim">Our core <br />services</h2></div><div className="content"><p className="text has_fade_anim">StartupGrow offers six focused services so Indian startups can build, market, and grow from one place.</p></div></div><div className="services-wrapper-box"><div className="services-grid"><div className="service-item has_fade_anim" data-delay="0.15"><div className="icon"><img className="show-light" src="assets/imgs/icon/icon-s-1.webp" alt="service-icon" /><img className="show-dark" src="assets/imgs/icon/icon-s-1-light.webp" alt="service-icon" /></div><h2 className="title">Search Engine <br />Optimisation</h2><ul className="service-features"><li>Improve website ranking</li><li>Increase traffic</li><li>Keyword planning</li><li>Search visibility</li><li>Organic growth</li><li>Startup discovery</li><li>SEO support</li></ul></div><div className="service-item has_fade_anim" data-delay="0.30"><div className="icon"><img className="show-light" src="assets/imgs/icon/icon-s-2.webp" alt="service-icon" /><img className="show-dark" src="assets/imgs/icon/icon-s-2-light.webp" alt="service-icon" /></div><h2 className="title">Pay-Per-Click <br />Advertising</h2><ul className="service-features"><li>Google ads</li><li>Instagram ads</li><li>Paid campaigns</li><li>Budget planning</li><li>Lead generation</li><li>Launch support</li><li>Traffic growth</li></ul></div><div className="service-item has_fade_anim" data-delay="0.45"><div className="icon"><img className="show-light" src="assets/imgs/icon/icon-s-3.webp" alt="service-icon" /><img className="show-dark" src="assets/imgs/icon/icon-s-3-light.webp" alt="service-icon" /></div><h2 className="title">Social Media <br />Marketing</h2><ul className="service-features"><li>Account management</li><li>Content scheduling</li><li>Brand awareness</li><li>Audience engagement</li><li>Platform planning</li><li>Startup visibility</li><li>Growth support</li></ul></div><div className="service-item has_fade_anim" data-delay="0.60"><div className="icon"><img className="show-light" src="assets/imgs/icon/icon-s-4.webp" alt="service-icon" /><img className="show-dark" src="assets/imgs/icon/icon-s-4-light.webp" alt="service-icon" /></div><h2 className="title">Content <br />Marketing</h2><ul className="service-features"><li>Blogs</li><li>Videos</li><li>Social posts</li><li>User attraction</li><li>Content planning</li><li>Campaign assets</li><li>Brand storytelling</li></ul></div><div className="service-item has_fade_anim" data-delay="0.75"><div className="icon"><img className="show-light" src="assets/imgs/icon/icon-s-5.webp" alt="service-icon" /><img className="show-dark" src="assets/imgs/icon/icon-s-13-light.webp" alt="service-icon" /></div><h2 className="title">Email <br />Marketing</h2><ul className="service-features"><li>Promotional emails</li><li>Email campaigns</li><li>Customer updates</li><li>Launch messages</li><li>Retention support</li><li>Offer communication</li><li>Campaign tracking</li></ul></div><div className="service-item has_fade_anim" data-delay="0.90"><div className="icon"><img className="show-light" src="assets/imgs/icon/icon-s-6.webp" alt="service-icon" /><img className="show-dark" src="assets/imgs/icon/icon-s-14-light.webp" alt="service-icon" /></div><h2 className="title">Web Design &<br />Development</h2><ul className="service-features"><li>Professional websites</li><li>Responsive design</li><li>Conversion pages</li><li>HTML5 and CSS3</li><li>JavaScript and Next.js</li><li>Scalable structure</li><li>Online presence</li></ul></div></div></div></div></section>
           
 
           
           <section className="about-area container-hd"><div className="about-area-inner"><div className="thumb"><img src="assets/imgs/gallery/img-s-30.webp" alt="gallery image" /></div><div className="section-content"><div className="bg"><img src="assets/imgs/gallery/img-s-31.webp" alt="image" /></div><div className="section-title-wrapper"><div className="title-wrapper"><h2 className="section-title has_text_move_anim">Simple
                       digital growth
-                      stack</h2></div></div><div className="text-wrapper"><p className="text has_fade_anim">Frontend, backend, and database pieces work together to handle requests clearly</p></div><div className="btn-wrapper has_fade_anim" data-ease="bounce"><a href="/contact" className="wc-btn wc-btn-primary btn-text-flip"><span data-text="View details">View details</span></a></div></div></div></section>
+                      stack</h2></div></div><div className="text-wrapper"><p className="text has_fade_anim">Frontend, backend, and database pieces work together for <span>startup requests</span></p></div><div className="btn-wrapper has_fade_anim" data-ease="bounce"><a href="/contact" className="wc-btn wc-btn-primary btn-text-flip"><span data-text="Learn More">Learn More</span></a></div></div></div></section>
           
 
           
           <section className="pricing-area"><div className="container"><div className="pricing-area-inner section-spacing"><div className="section-header"><div className="section-title-wrapper"><div className="title-wrapper"><h2 className="section-title has_text_move_anim">Simple plan from
-                        request to launch</h2></div></div></div><div className="pricing-wrapper-box"><div className="pricing-wrapper"><div className="pricing-box has_fade_anim" data-delay="0.15"><span className="tag">Requirement</span><h3 className="price">1</h3><div className="feature-list"><ul><li><img className="show-light" src="assets/imgs/icon/check-2.webp" alt="icon image" /><img className="show-dark" src="assets/imgs/icon/check-2-light.webp" alt="icon image" />Requirement analysis</li><li><img className="show-light" src="assets/imgs/icon/check-2.webp" alt="icon image" /><img className="show-dark" src="assets/imgs/icon/check-2-light.webp" alt="icon image" />Design and development</li><li><img className="show-light" src="assets/imgs/icon/check-2.webp" alt="icon image" /><img className="show-dark" src="assets/imgs/icon/check-2-light.webp" alt="icon image" />Deployment planning</li></ul></div><a href="/contact" className="wc-btn wc-btn-primary btn-text-flip bordered"><span data-text="View details">View details</span></a></div><div className="pricing-box has_fade_anim" data-delay="0.30"><span className="tag">Development</span><h3 className="price">2</h3><div className="feature-list"><ul><li><img className="show-light" src="assets/imgs/icon/check-2.webp" alt="icon image" /><img className="show-dark" src="assets/imgs/icon/check-2-light.webp" alt="icon image" />Frontend website</li><li><img className="show-light" src="assets/imgs/icon/check-2.webp" alt="icon image" /><img className="show-dark" src="assets/imgs/icon/check-2-light.webp" alt="icon image" />Backend requests</li><li><img className="show-light" src="assets/imgs/icon/check-2.webp" alt="icon image" /><img className="show-dark" src="assets/imgs/icon/check-2-light.webp" alt="icon image" />MongoDB database</li></ul></div><a href="/contact" className="wc-btn wc-btn-primary btn-text-flip bordered"><span data-text="View details">View details</span></a></div><div className="pricing-box has_fade_anim" data-delay="0.45"><span className="tag">Testing</span><h3 className="price">3</h3><div className="feature-list"><ul><li><img className="show-light" src="assets/imgs/icon/check-2.webp" alt="icon image" /><img className="show-dark" src="assets/imgs/icon/check-2-light.webp" alt="icon image" />Functional testing</li><li><img className="show-light" src="assets/imgs/icon/check-2.webp" alt="icon image" /><img className="show-dark" src="assets/imgs/icon/check-2-light.webp" alt="icon image" />UI testing</li><li><img className="show-light" src="assets/imgs/icon/check-2.webp" alt="icon image" /><img className="show-dark" src="assets/imgs/icon/check-2-light.webp" alt="icon image" />Performance testing</li></ul></div><a href="/contact" className="wc-btn wc-btn-primary btn-text-flip bordered"><span data-text="View details">View details</span></a></div></div></div></div></div></section>
+                        request to launch</h2></div></div></div><div className="pricing-wrapper-box"><div className="pricing-wrapper"><div className="pricing-box has_fade_anim" data-delay="0.15"><span className="tag">Requirement</span><h3 className="price">1</h3><div className="feature-list"><ul><li><img className="show-light" src="assets/imgs/icon/check-2.webp" alt="icon image" /><img className="show-dark" src="assets/imgs/icon/check-2-light.webp" alt="icon image" />Requirement analysis</li><li><img className="show-light" src="assets/imgs/icon/check-2.webp" alt="icon image" /><img className="show-dark" src="assets/imgs/icon/check-2-light.webp" alt="icon image" />Design and development</li><li><img className="show-light" src="assets/imgs/icon/check-2.webp" alt="icon image" /><img className="show-dark" src="assets/imgs/icon/check-2-light.webp" alt="icon image" />Deployment planning</li></ul></div><a href="/contact" className="wc-btn wc-btn-primary btn-text-flip bordered"><span data-text="Learn More">Learn More</span></a></div><div className="pricing-box has_fade_anim" data-delay="0.30"><span className="tag">Development</span><h3 className="price">2</h3><div className="feature-list"><ul><li><img className="show-light" src="assets/imgs/icon/check-2.webp" alt="icon image" /><img className="show-dark" src="assets/imgs/icon/check-2-light.webp" alt="icon image" />Requirement analysis</li><li><img className="show-light" src="assets/imgs/icon/check-2.webp" alt="icon image" /><img className="show-dark" src="assets/imgs/icon/check-2-light.webp" alt="icon image" />Design and development</li><li><img className="show-light" src="assets/imgs/icon/check-2.webp" alt="icon image" /><img className="show-dark" src="assets/imgs/icon/check-2-light.webp" alt="icon image" />Backend and database</li></ul></div><a href="/contact" className="wc-btn wc-btn-primary btn-text-flip bordered"><span data-text="Learn More">Learn More</span></a></div><div className="pricing-box has_fade_anim" data-delay="0.45"><span className="tag">Testing</span><h3 className="price">3</h3><div className="feature-list"><ul><li><img className="show-light" src="assets/imgs/icon/check-2.webp" alt="icon image" /><img className="show-dark" src="assets/imgs/icon/check-2-light.webp" alt="icon image" />Requirement analysis</li><li><img className="show-light" src="assets/imgs/icon/check-2.webp" alt="icon image" /><img className="show-dark" src="assets/imgs/icon/check-2-light.webp" alt="icon image" />UI testing</li><li><img className="show-light" src="assets/imgs/icon/check-2.webp" alt="icon image" /><img className="show-dark" src="assets/imgs/icon/check-2-light.webp" alt="icon image" />Performance testing</li></ul></div><a href="/contact" className="wc-btn wc-btn-primary btn-text-flip bordered"><span data-text="Learn More">Learn More</span></a></div></div></div></div></div></section>
           
 
           
@@ -246,8 +244,7 @@ export default function ServicesPage() {
               <div className="section-header">
                 <div className="section-title-wrapper">
                   <div className="title-wrapper">
-                    <h2 className="section-title has_fade_anim"><span>Build online</span> <br />
-                      presence</h2>
+                    <h2 className="section-title has_fade_anim"><span>Build online</span> <br />presence</h2>
                   </div>
                 </div>
                 <div className="text-wrapper">
@@ -285,8 +282,7 @@ export default function ServicesPage() {
             <div className="container">
               <div className="copyright-area-inner">
                 <div className="copyright-text">
-                  <p className="text">© 2026 STARTUPGROW <br />
-                    A Digital Solutions Platform for Indian Startups</p>
+                  <p className="text">© 2026 STARTUPGROW <br />A Digital Solutions Platform for Indian Startups</p>
                 </div>
                 <ul className="footer-nav-list">
                   <li><a href="#">Introduction</a></li>
