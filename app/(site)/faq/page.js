@@ -204,33 +204,8 @@ const pageHtml = `<div id="preloader">
         <main>
 
 
-          <section class="hero-area">
-            <div class="container large"><div class="hero-area-inner"><div class="section-content"><div class="section-title-wrapper"><div class="title-wrapper"><h1 class="section-title large has_fade_anim">StartupGrow helps Indian startups
-                        build a strong digital presence</h1></div></div><div class="content-last"><div class="subtitle-wrapper has_fade_anim" data-fade-from="right"><span class="section-subtitle has-right-line">01. about us</span></div><div class="text-wrapper"><p class="text has_fade_anim" data-fade-from="left">A digital solutions platform created to make websites, branding, and marketing simpler for early-stage founders.</p></div></div></div></div></div>
-          </section>
-
-
-
-          <div class="counter-area"><div class="counter-area-inner"><div class="thumb"><img src="/assets/imgs/gallery/img-s-27.webp" alt="image"></div><div class="counter-wrapper-box"><div class="counter-wrapper"><div class="thumb overflow-hidden"><img src="/assets/imgs/gallery/img-s-28.webp" data-speed="0.9" alt="image"></div><div class="counter-box"><h2 class="text has_fade_anim">We provide 6 core <br>digital services</h2><h2 class="number wc-counter has_fade_anim">6</h2></div><div class="counter-box dark"><h2 class="text has_fade_anim">We support <br>startups with simple <br>growth systems</h2><h2 class="number wc-counter has_fade_anim">1</h2></div><div class="thumb overflow-hidden"><img src="/assets/imgs/gallery/img-s-29.webp" data-speed="0.9" alt="image"></div></div></div></div></div>
-
-
-
-          <section class="awards-area"><div class="container"><div class="awards-area-inner section-spacing"><div class="section-header"><div class="section-title-wrapper"><div class="subtitle-wrapper"><span class="section-subtitle has-left-line">02. Who we are</span></div><div class="title-wrapper"><h2 class="section-title has_fade_anim">We make startup digital growth simple, affordable, and practical!</h2></div></div></div><div class="section-content"><div class="text-wrapper"><p class="text has_fade_anim" data-fade-from="left">We deploy world-class creative design, team on demand. that can design surest measure's of success is when a client partner with more than once build, ship scale your vision most efficient.</p></div><div class="awards-list has_fade_anim"><ul><li><div class="meta"><div class="icon"><img class="show-light" src="/assets/imgs/icon/icon-s-40.webp" alt="icon"><img class="show-dark" src="/assets/imgs/icon/icon-s-40-light.webp" alt="icon"></div><div class="content"><h3 class="number wc-counter">50+</h3><p class="text">projects success rate 99%</p></div></div></li><li><div class="meta"><div class="icon"><img class="show-light" src="/assets/imgs/icon/icon-s-41.webp" alt="icon"><img class="show-dark" src="/assets/imgs/icon/icon-s-41-light.webp" alt="icon"></div><div class="content"><h3 class="number wc-counter">12+</h3><p class="text">award for digital innovation</p></div></div></li></ul></div></div><div class="about-thumbs"><div class="thumb-first"><img src="/assets/imgs/gallery/img-s-3.webp" class="has_fade_anim" data-fade-from="right" alt="image"></div><div class="thumb-second"><img src="/assets/imgs/gallery/img-s-4.webp" class="has_fade_anim" data-fade-from="left" alt="image"></div></div></div></div></section>
-
-
-
-          <section class="about-area container-hd"><div class="about-area-inner"><div class="thumb"><img src="/assets/imgs/gallery/img-s-30.webp" alt="gallery image"></div><div class="section-content"><div class="bg"><img src="/assets/imgs/gallery/img-s-31.webp" alt="image"></div><div class="section-title-wrapper"><div class="title-wrapper"><h2 class="section-title has_fade_anim">Simple,
-                      scalable,
-                      startup-ready</h2></div></div><div class="text-wrapper"><p class="text has_fade_anim" data-fade-from="left">StartupGrow brings websites, branding, SEO, content, PPC, social media, and email into <span>one place</span></p></div><div class="btn-wrapper has_fade_anim" data-ease="bounce"><a href="/contact" class="wc-btn wc-btn-primary btn-text-flip"><span data-text="Learn More">Learn More</span></a></div></div></div></section>
-
-
-
-          <section class="team-area"><div class="container"><div class="team-area-inner section-spacing"><div class="section-header"><div class="section-title-wrapper"><div class="title-wrapper"><h2 class="section-title has_fade_anim">Project team</h2></div></div><div class="text-wrapper"><p class="text has_fade_anim">We deploy world-class creative design, team on demand. that can design surest measure's of success is when a client partner with more than once build, ship scale your vision most efficient.</p></div></div><div class="team-wrapper-box"><div class="team-wrapper"><div class="team-box has_fade_anim" data-fade-from="left" data-delay="0.15"><a href="/team"><div class="thumb"><img src="/assets/imgs/team/img-s-1.webp" alt="team icon"></div><div class="content"><h3 class="title">Yadunand Pavithran</h3><p class="text">Team Member</p></div></a></div><div class="team-box has_fade_anim" data-fade-from="left" data-delay="0.30"><a href="/team"><div class="thumb"><img src="/assets/imgs/team/img-s-2.webp" alt="team icon"></div><div class="content"><h3 class="title">Nashid Nihal C</h3><p class="text">Team Member</p></div></a></div><div class="team-box has_fade_anim" data-fade-from="left" data-delay="0.45"><a href="/team"><div class="thumb"><img src="/assets/imgs/team/img-s-3.webp" alt="team icon"></div><div class="content"><h3 class="title">Gokul Krishna</h3><p class="text">Team Member</p></div></a></div><div class="team-box has_fade_anim" data-fade-from="left" data-delay="0.60"><a href="/team"><div class="thumb"><img src="/assets/imgs/team/img-s-4.webp" alt="team icon"></div><div class="content"><h3 class="title">StartupGrow Team</h3><p class="text">Team Member</p></div></a></div></div></div></div></div></section>
-
-
-
-          <section class="contact-area"><div class="container"><div class="contact-area-inner section-spacing"><div class="shape-1"><img src="/assets/imgs/shape/img-s-73.webp" alt="shape"></div><div class="section-content"><div class="section-title-wrapper"><div class="title-wrapper"><h2 class="section-title has_fade_anim">Start your experience
-                        with StartupGrow</h2></div></div><div class="btn-wrapper has_fade_anim"><a href="/contact" class="wc-btn wc-btn-underline btn-text-flip"><span data-text="Let’s get in touch">Let’s get in touch</span> <img src="/assets/imgs/icon/arrow-right-half-light.webp" alt="icon image"></a></div></div></div></div></section>
+          <section class="faq-area"><div class="container large"><div class="faq-area-inner section-spacing-bottom"><div class="section-content"><div class="btn-wrapper has_fade_anim" data-fade-from="left"><a href="/contact" class="wc-btn wc-btn-underline">Simple answers about StartupGrow<i class="fa-solid fa-arrow-right"></i></a></div><div class="content-last"><div class="section-title-wrapper"><div class="title-wrapper"><h1 class="section-title large has_fade_anim">Frequently asked
+                          questions!</h1></div></div><div class="text-wrapper"><p class="text has_fade_anim" data-delay="0.30">StartupGrow is a web-based digital solutions platform for Indian startups.</p></div><div class="accordion-wrapper has_fade_anim" data-delay="0.45"><div class="accordion accordion-flush" id="accordionFlushExample"><div class="accordion-item"><h2 class="accordion-header" id="flush-headingOne"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">What is StartupGrow?</button></h2><div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample"><div class="accordion-body">StartupGrow helps early-stage teams explore digital services, request support, and plan their online growth in a simple way.</div></div></div><div class="accordion-item"><h2 class="accordion-header" id="flush-headingTwo"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Who can use StartupGrow?</button></h2><div id="flush-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample"><div class="accordion-body">StartupGrow helps early-stage teams explore digital services, request support, and plan their online growth in a simple way.</div></div></div><div class="accordion-item"><h2 class="accordion-header" id="flush-headingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">What services are included?</button></h2><div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample"><div class="accordion-body">StartupGrow helps early-stage teams explore digital services, request support, and plan their online growth in a simple way.</div></div></div><div class="accordion-item"><h2 class="accordion-header" id="flush-headingFour"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">What comes next for the project?</button></h2><div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample"><div class="accordion-body">StartupGrow helps early-stage teams explore digital services, request support, and plan their online growth in a simple way.</div></div></div></div></div></div></div></div></section>
 
 
         </main>
@@ -303,7 +278,7 @@ const pageHtml = `<div id="preloader">
     </div>
   </div>`;
 
-export default function AboutPage() {
+export default function FaqPage() {
   useEffect(() => {
     if (typeof window !== "undefined" && window.initArolax) {
       window.initArolax();
@@ -312,7 +287,7 @@ export default function AboutPage() {
 
   return (
     <>
-      <link rel="stylesheet" href="/assets/css/master-about.css" />
+      <link rel="stylesheet" href="/assets/css/master-faq.css" />
       <div
         className={`public-arolax-page font-heading-beatricetrial-regular-2`}
         dangerouslySetInnerHTML={{ __html: pageHtml }}

@@ -12,9 +12,9 @@ export default function HomePage() {
 
   return (
     <>
-      
 
-  
+
+
   <div id="preloader">
     <div id="container" className="container-preloader">
       <div className="animation-preloader">
@@ -26,18 +26,18 @@ export default function HomePage() {
     </div>
   </div>
 
-  
+
   <div className="cursor1"></div>
   <div className="cursor2"></div>
 
-  
+
   <div className="progress-wrap">
     <svg className="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
     </svg>
   </div>
 
-  
+
   <div className="switcher__area">
     <div className="switcher__icon">
       <button id="switcher_open"><i className="fa-solid fa-gear"></i></button>
@@ -84,9 +84,9 @@ export default function HomePage() {
       </div>
     </div>
   </div>
-  
 
-  
+
+
   <div className="offcanvas-3__area">
     <div className="offcanvas-3__inner">
       <div className="offcanvas-3__meta-wrapper">
@@ -122,10 +122,10 @@ export default function HomePage() {
             <li><a href="/">home</a></li>
             <li><a href="/about">about</a></li>
             <li><a href="/services">services</a></li>
-            <li><a href="/works">projects</a></li>
-            <li><a href="/team">team</a></li>
-            <li><a href="#">scope</a></li>
-            <li><a href="#">requirements</a></li>
+            <li><a href="/works">project pages</a></li>
+            <li><a href="/team">team pages</a></li>
+            <li><a href="/career">career pages</a></li>
+            <li><a href="/faq">faq</a></li>
             <li><a href="/blog">blog</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
@@ -133,10 +133,10 @@ export default function HomePage() {
       </div>
     </div>
   </div>
-  
 
 
-  
+
+
   <div className="modal fade" id="search-template" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="search-template" aria-hidden="true">
     <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -151,9 +151,9 @@ export default function HomePage() {
       </div>
     </div>
   </div>
-  
 
-  
+
+
   <header className="header-area">
     <div className="container large">
       <div className="header-area__inner">
@@ -169,12 +169,12 @@ export default function HomePage() {
               <li><a href="/about">about</a></li>
               <li><a href="/services">services</a></li>
               <li className="menu-item-has-children">
-                <a href="#">Project</a>
+                <a href="#">Pages</a>
                 <ul className="dp-menu">
-                  <li><a href="/works">portfolio</a></li>
-                  <li><a href="/team">team members</a></li>
-                  <li><a href="#">future scope</a></li>
-                  <li><a href="#">requirements</a></li>
+                  <li><a href="/works">Project Pages</a></li>
+                  <li><a href="/team">Team Pages</a></li>
+                  <li><a href="/career">Career Pages</a></li>
+                  <li><a href="/faq">Faq</a></li>
                 </ul>
               </li>
               <li><a href="/blog">blog</a></li>
@@ -200,19 +200,19 @@ export default function HomePage() {
       </div>
     </div>
   </header>
-  
+
 
   <div className="has-smooth" id="has_smooth"></div>
   <div id="smooth-wrapper">
     <div id="smooth-content">
       <div className="body-wrapper body-branding-agency">
 
-        
+
         <div className="overlay-switcher-close"></div>
 
         <main>
 
-          
+
           <section className="hero-area section-item">
             <div className="area-bg">
               <img src="assets/imgs/gallery/img-s-33.webp" alt="image" />
@@ -263,9 +263,9 @@ export default function HomePage() {
               </div>
             </div>
           </section>
-          
 
-          
+
+
           <section className="work-area section-style section-item">
             <div className="container large">
               <div className="work-area-inner section-spacing">
@@ -285,15 +285,15 @@ export default function HomePage() {
               </div>
             </div>
           </section>
-          
 
-          
+
+
           <section className="fun-fact-area section-style section-item">
             <div className="container large"><div className="fun-fact-area-inner section-spacing"><div className="section-header"><div className="section-title-wrapper"><div className="title-wrapper"><h2 className="section-title has_fade_anim">StartupGrow is planned as a digital marketing agency focused on helping Indian startups overcome their initial challenges through one digital service platform.</h2></div></div></div><div className="counter-wrapper-box"><div className="counter-box overflow-hidden"><img className="shape-1 show-light img_anim_reveal" src="assets/imgs/shape/img-s-47.webp" alt="image" /><img className="shape-1 show-dark img_anim_reveal" src="assets/imgs/shape/img-s-47-light.webp" alt="image" /><h3 className="number wc-counter has_fade_anim" data-fade-from="left">6</h3></div></div></div></div>
           </section>
-          
 
-          
+
+
           <section className="service-area section-style section-item">
             <div className="container large"><div className="service-area-inner section-spacing"><div className="section-header"><div className="section-title-wrapper"><div className="title-wrapper"><h2 className="section-title has_fade_anim">StartupGrow provides six core services for digital growth</h2></div></div></div><div className="services-wrapper-box"><div className="services-wrapper">
               <div className="has_fade_anim" data-delay="0.15"><a href="/services"><div className="service-box"><span className="number">01</span><div className="icon"><img src="assets/imgs/icon/icon-s-1-light.webp" alt="service icon" /></div><div className="content"><h3 className="title">Search Engine Optimisation</h3><p className="text">Improve website ranking on search engines to increase traffic.</p></div></div></a></div>
@@ -304,9 +304,9 @@ export default function HomePage() {
               <div className="has_fade_anim" data-delay="0.90"><a href="/services"><div className="service-box"><span className="number">06</span><div className="icon"><img src="assets/imgs/icon/icon-s-14-light.webp" alt="service icon" /></div><div className="content"><h3 className="title">Web Design and Development</h3><p className="text">Build websites that convert visitors into customers.</p></div></div></a></div>
             </div></div><div className="info-text has_fade_anim" data-fade-from="left"><p className="text">StartupGrow solves lack of technical skills, low traffic, poor marketing strategies, and high agency costs. <br /><a className="wc-btn wc-btn-underline" href="/contact">Contact us now</a></p></div></div></div>
           </section>
-          
 
-          
+
+
           <section className="team-area section-style section-item">
             <div className="container large"><div className="team-area-inner section-spacing"><div className="section-header"><div className="section-title-wrapper"><div className="title-wrapper"><h2 className="section-title has_fade_anim">Team members</h2></div></div><div className="text-wrapper"><p className="text has_fade_anim">StartupGrow was developed by a student team with guidance and support from faculty and institution.</p></div></div><div className="team-wrapper-box"><div className="team-wrapper">
               <div className="team-box"><div className="thumb"><a href="/team"><img src="assets/imgs/team/img-s-15.webp" alt="team image" /></a></div><div className="content"><div className="top"><h3 className="name"><a href="/team">Yadunand Pavithran</a></h3><p className="post">Team Member</p></div></div></div>
@@ -314,21 +314,21 @@ export default function HomePage() {
               <div className="team-box"><div className="thumb"><a href="/team"><img src="assets/imgs/team/img-s-17.webp" alt="team image" /></a></div><div className="content"><div className="top"><h3 className="name"><a href="/team">Gokul Krishna</a></h3><p className="post">Team Member</p></div></div></div>
             </div></div></div></div>
           </section>
-          
 
-          
+
+
           <section className="blog-area section-style section-item">
             <div className="container large"><div className="blog-area-inner section-spacing"><div className="section-header"><div className="section-title-wrapper"><div className="title-wrapper"><h2 className="section-title has_fade_anim">Modules of the system</h2></div></div><div className="btn-wrapper has_fade_anim" data-fade-from="right"><div className="wc-btn-group"><a className="wc-btn wc-btn-circle" href="/blog"><i className="fa-solid fa-arrow-right"></i></a><a className="wc-btn wc-btn-primary" href="/blog">view project notes</a><a className="wc-btn wc-btn-circle" href="/blog"><i className="fa-solid fa-arrow-right"></i></a></div></div></div><div className="blogs-wrapper-box"><div className="blogs-wrapper"><article className="blog has_fade_anim" data-fade-from="right" data-delay="0.15"><div className="thumb"><a href="/blog"><img src="assets/imgs/blog/img-s-8.webp" alt="blog image" /></a></div><div className="content"><h2 className="title"><a href="/blog">User Interface, Service, and Contact Modules</a></h2><div className="meta-list"><a href="#"><span className="meta tag">Project</span></a><span className="meta date">06 May 2026</span></div></div></article><article className="blog has_fade_anim" data-fade-from="right" data-delay="0.30"><div className="thumb"><a href="/blog"><img src="assets/imgs/blog/img-s-9.webp" alt="blog image" /></a></div><div className="content"><h2 className="title"><a href="/blog">Admin Module, Testing, and Deployment</a></h2><div className="meta-list"><a href="#"><span className="meta tag">Project</span></a><span className="meta date">06 May 2026</span></div></div></article></div></div></div></div>
           </section>
-          
 
-          
+
+
           <section className="cta-area section-style section-item"><div className="container large"><div className="cta-area-inner section-spacing"><div className="section-content"><div className="section-title-wrapper"><div className="subtitle-wrapper"><span className="section-subtitle has_fade_anim">22. Conclusion</span></div><div className="title-wrapper"><h2 className="section-title has_fade_anim">Simple. Affordable. Scalable.</h2></div></div><div className="btn-wrapper has_fade_anim"><div className="wc-btn-group"><a className="wc-btn wc-btn-circle" href="/contact"><i className="fa-solid fa-arrow-right"></i></a><a className="wc-btn wc-btn-primary" href="/contact">contact us</a><a className="wc-btn wc-btn-circle" href="/contact"><i className="fa-solid fa-arrow-right"></i></a></div></div></div></div></div></section>
-          
+
 
         </main>
 
-        
+
         <footer className="footer-area section-style pb-0">
           <div className="container large">
             <div className="footer-area-inner section-spacing-top">
@@ -382,7 +382,7 @@ export default function HomePage() {
             </div>
           </div>
         </footer>
-        
+
 
       </div>
     </div>
@@ -390,25 +390,25 @@ export default function HomePage() {
 
 
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
