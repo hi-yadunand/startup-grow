@@ -1,11 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
   color-scheme: light;
-  --background: #f7faf4;
-  --foreground: #17201b;
+  --background: #fdfaf8;
+  --foreground: #121212;
 }
 
 * {
@@ -20,7 +22,7 @@ body {
   margin: 0;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Instrument Sans", Arial, Helvetica, sans-serif;
 }
 
 button,
@@ -31,15 +33,11 @@ textarea {
 }
 
 ::selection {
-  background: rgba(31, 122, 77, 0.2);
+  background: rgba(215, 255, 0, 0.5);
 }
 
-.hero-image {
-  background-image:
-    linear-gradient(90deg, rgba(13, 23, 18, 0.9) 0%, rgba(13, 23, 18, 0.72) 44%, rgba(13, 23, 18, 0.36) 100%),
-    url("https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1800&q=80");
-  background-position: center;
-  background-size: cover;
+img {
+  display: block;
 }
 
 .focus-ring {
@@ -47,5 +45,5 @@ textarea {
 }
 
 .focus-ring:focus-visible {
-  box-shadow: 0 0 0 3px rgba(31, 122, 77, 0.28);
+  box-shadow: 0 0 0 3px rgba(215, 255, 0, 0.45), 0 0 0 6px rgba(18, 18, 18, 0.22);
 }

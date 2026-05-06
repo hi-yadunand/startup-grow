@@ -41,15 +41,17 @@ export default function AdminPanel() {
   }, []);
 
   return (
-    <section id="dashboard" className="bg-white py-16">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col gap-4 border-b border-slate-200 pb-5 md:flex-row md:items-center md:justify-between">
+    <section id="dashboard" className="bg-cream py-20 lg:py-28">
+      <div className="mx-auto max-w-[1720px] px-4 sm:px-6 lg:px-10">
+        <div className="grid gap-6 border-b border-ink/10 pb-8 md:grid-cols-[1fr_auto] md:items-end">
           <div>
-            <p className="text-sm font-semibold uppercase text-skydeep">Admin module</p>
-            <h2 className="mt-1 text-3xl font-bold text-ink">Service request dashboard</h2>
+            <p className="text-sm font-black uppercase text-zinc-500">Admin module</p>
+            <h2 className="mt-4 text-4xl font-black leading-tight text-ink sm:text-5xl lg:text-7xl">
+              Service request dashboard
+            </h2>
           </div>
           <button
-            className="focus-ring inline-flex items-center justify-center gap-2 rounded-md border border-slate-300 px-4 py-2 text-sm font-semibold text-ink transition hover:border-leaf hover:text-leaf"
+            className="focus-ring inline-flex w-fit items-center justify-center gap-2 rounded-full border border-ink px-5 py-3 text-sm font-black uppercase text-ink transition hover:bg-ink hover:text-white"
             type="button"
             onClick={loadRequests}
           >
@@ -59,11 +61,11 @@ export default function AdminPanel() {
         </div>
 
         {message ? (
-          <p className="mt-4 rounded-md bg-red-50 px-4 py-3 text-sm text-red-700">{message}</p>
+          <p className="mt-5 rounded-md bg-red-50 px-4 py-3 text-sm font-semibold text-red-700">{message}</p>
         ) : null}
 
-        <div className="mt-6 overflow-hidden rounded-lg border border-slate-200">
-          <div className="grid grid-cols-12 bg-slate-50 px-4 py-3 text-xs font-bold uppercase text-slate-500">
+        <div className="mt-8 overflow-hidden rounded-lg border border-ink/10 bg-white shadow-soft">
+          <div className="grid grid-cols-12 bg-ink px-4 py-4 text-xs font-black uppercase text-white/60">
             <span className="col-span-4">Startup</span>
             <span className="col-span-3 hidden md:block">Service</span>
             <span className="col-span-3 hidden lg:block">Founder</span>
@@ -71,7 +73,7 @@ export default function AdminPanel() {
           </div>
 
           {loading ? (
-            <div className="flex items-center gap-3 px-4 py-8 text-sm text-slate-600">
+            <div className="flex items-center gap-3 px-4 py-8 text-sm font-semibold text-zinc-600">
               <ClipboardList size={18} aria-hidden="true" />
               Loading requests
             </div>
@@ -79,20 +81,20 @@ export default function AdminPanel() {
             requests.map((request) => (
               <div
                 key={request.id}
-                className="grid grid-cols-12 gap-3 border-t border-slate-100 px-4 py-4 text-sm"
+                className="grid grid-cols-12 gap-3 border-t border-ink/10 px-4 py-5 text-sm"
               >
                 <div className="col-span-4">
-                  <p className="font-bold text-ink">{request.startupName}</p>
-                  <p className="mt-1 text-xs text-slate-500">{request.city} - {request.stage}</p>
+                  <p className="font-black text-ink">{request.startupName}</p>
+                  <p className="mt-1 text-xs font-semibold text-zinc-500">{request.city} - {request.stage}</p>
                 </div>
-                <div className="col-span-3 hidden text-slate-700 md:block">{request.service}</div>
-                <div className="col-span-3 hidden text-slate-700 lg:block">
+                <div className="col-span-3 hidden font-semibold text-zinc-700 md:block">{request.service}</div>
+                <div className="col-span-3 hidden font-semibold text-zinc-700 lg:block">
                   <p>{request.founderName}</p>
-                  <p className="mt-1 text-xs text-slate-500">{request.email}</p>
+                  <p className="mt-1 text-xs text-zinc-500">{request.email}</p>
                 </div>
                 <div className="col-span-8 md:col-span-5 lg:col-span-2">
                   <select
-                    className="focus-ring w-full rounded-md border border-slate-200 bg-white px-3 py-2 text-sm text-ink"
+                    className="focus-ring w-full rounded-md border border-ink/10 bg-cream px-3 py-2 text-sm font-bold text-ink"
                     value={request.status}
                     onChange={(event) => changeStatus(request.id, event.target.value)}
                   >
@@ -104,7 +106,7 @@ export default function AdminPanel() {
               </div>
             ))
           ) : (
-            <div className="px-4 py-8 text-sm text-slate-600">No service requests yet.</div>
+            <div className="px-4 py-8 text-sm font-semibold text-zinc-600">No service requests yet.</div>
           )}
         </div>
       </div>
