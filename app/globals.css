@@ -47,3 +47,30 @@ img {
 .focus-ring:focus-visible {
   box-shadow: 0 0 0 3px rgba(215, 255, 0, 0.45), 0 0 0 6px rgba(18, 18, 18, 0.22);
 }
+
+.startupgrow-wordmark {
+  color: #121212;
+  display: inline-flex;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.startupgrow-wordmark.light {
+  color: #ffffff;
+}
+
+.public-arolax-page .header__navicon .open-offcanvas {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 24px;
+  justify-content: center;
+  line-height: 1;
+  padding: 0;
+}

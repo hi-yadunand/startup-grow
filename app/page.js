@@ -1,444 +1,492 @@
-import {
-  ArrowRight,
-  BarChart3,
-  Code2,
-  Compass,
-  Mail,
-  MousePointerClick,
-  PenLine,
-  Play,
-  Search,
-  Send,
-  Share2,
-  Sparkles,
-  Users
-} from "lucide-react";
-import AdminPanel from "@/components/AdminPanel";
-import QuoteForm from "@/components/QuoteForm";
+import Script from "next/script";
 
-const services = [
-  {
-    title: "SEO",
-    description: "Keyword planning, technical fixes, and search content for steady organic traffic.",
-    icon: Search
-  },
-  {
-    title: "PPC Advertising",
-    description: "Google and Instagram campaigns designed around startup budgets and conversion goals.",
-    icon: MousePointerClick
-  },
-  {
-    title: "Social Media Marketing",
-    description: "Content calendars, profile management, and founder-led storytelling for growing teams.",
-    icon: Share2
-  },
-  {
-    title: "Content Marketing",
-    description: "Blogs, videos, launch posts, and product education that turn attention into trust.",
-    icon: PenLine
-  },
-  {
-    title: "Email Marketing",
-    description: "Campaigns, newsletters, and launch sequences for leads, users, and early customers.",
-    icon: Mail
-  },
-  {
-    title: "Web Design & Development",
-    description: "Responsive websites, landing pages, and product interfaces built for conversion.",
-    icon: Code2
-  }
-];
-
-const portfolio = [
-  {
-    name: "Fintech MVP",
-    result: "Built launch site, lead form, and investor-ready brand kit.",
-    metric: "42% more demo requests",
-    tags: ["Web", "Branding"],
-    image: "/arolax/works/work-02.webp"
-  },
-  {
-    name: "D2C Food Brand",
-    result: "Improved Instagram content flow and product page messaging.",
-    metric: "3.1x social reach",
-    tags: ["Social", "Content"],
-    image: "/arolax/works/work-03.webp"
-  },
-  {
-    name: "Edtech Platform",
-    result: "Created SEO content plan and high-intent landing pages.",
-    metric: "68% traffic lift",
-    tags: ["SEO", "Growth"],
-    image: "/arolax/works/work-01.webp"
-  },
-  {
-    name: "Founder Launch",
-    result: "Shaped pitch-ready positioning and a conversion-focused launch flow.",
-    metric: "2.4x inquiry quality",
-    tags: ["PPC", "Identity"],
-    image: "/arolax/works/work-04.webp"
-  }
-];
-
-const processSteps = [
-  {
-    title: "Requirement analysis",
-    description: "Founder goals, market, city, budget, and launch urgency are mapped into one brief.",
-    icon: Users
-  },
-  {
-    title: "Design",
-    description: "Visual direction, offer hierarchy, and page structure are shaped for credibility.",
-    icon: PenLine
-  },
-  {
-    title: "Development",
-    description: "Responsive pages, forms, and request records are wired into the platform.",
-    icon: Code2
-  },
-  {
-    title: "Testing and deployment",
-    description: "The team checks flows, records, and campaign handoff before launch.",
-    icon: BarChart3
-  }
-];
-
-const serviceNames = services.map((service) => service.title);
-
-function ButtonGroup({ href, children, tone = "dark" }) {
-  const isLight = tone === "light";
-  const circleClass = isLight
-    ? "border-white/20 bg-white text-ink"
-    : "border-ink bg-ink text-white";
-  const labelClass = isLight
-    ? "border-white/20 bg-white text-ink"
-    : "border-ink bg-ink text-white";
-
-  return (
-    <a className="focus-ring group inline-flex w-fit items-center rounded-full" href={href}>
-      <span
-        className={`grid h-12 w-12 place-items-center rounded-full border transition group-hover:-mr-2 group-hover:scale-75 ${circleClass}`}
-      >
-        <ArrowRight size={17} aria-hidden="true" />
-      </span>
-      <span
-        className={`grid h-12 place-items-center rounded-full border px-5 text-sm font-bold uppercase whitespace-nowrap transition ${labelClass}`}
-      >
-        {children}
-      </span>
-      <span
-        className={`-ml-2 grid h-12 w-12 scale-75 place-items-center rounded-full border opacity-0 transition group-hover:ml-0 group-hover:scale-100 group-hover:opacity-100 ${circleClass}`}
-      >
-        <ArrowRight size={17} aria-hidden="true" />
-      </span>
-    </a>
-  );
-}
+const asset = (path) => `/arolax/assets/${path}`;
 
 export default function Home() {
   return (
-    <main className="overflow-hidden bg-cream text-ink">
-      <section className="relative isolate min-h-[92vh] bg-acid">
-        <img
-          className="absolute inset-0 -z-10 h-full w-full object-cover"
-          src="/arolax/gallery/hero-lime.webp"
-          alt=""
-          aria-hidden="true"
-        />
+    <>
+      <link rel="stylesheet" href={asset("css/bootstrap.min.css")} />
+      <link rel="stylesheet" href={asset("css/all.min.css")} />
+      <link rel="stylesheet" href={asset("css/swiper-bundle.min.css")} />
+      <link rel="stylesheet" href={asset("css/progressbar.css")} />
+      <link rel="stylesheet" href={asset("css/meanmenu.min.css")} />
+      <link rel="stylesheet" href={asset("css/magnific-popup.css")} />
+      <link rel="stylesheet" href={asset("css/master-branding-agency.css")} />
 
-        <header className="relative z-10">
-          <nav className="mx-auto flex max-w-[1720px] items-center justify-between gap-5 px-4 py-5 sm:px-6 lg:px-10">
-            <a className="focus-ring flex items-center gap-3 rounded-md" href="#top" aria-label="StartupGrow home">
-              <span className="grid h-10 w-10 place-items-center rounded-full bg-ink text-acid">
-                <Sparkles size={19} aria-hidden="true" />
-              </span>
-              <span className="text-xl font-black uppercase">StartupGrow</span>
-            </a>
+      <div className="font-heading-instumentsans-semibold public-arolax-page">
+        <div className="cursor1"></div>
+        <div className="cursor2"></div>
+        <div className="progress-wrap">
+          <svg className="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+          </svg>
+        </div>
 
-            <div className="hidden items-center gap-8 rounded-full border border-ink/10 bg-white/25 px-6 py-3 text-sm font-bold uppercase backdrop-blur md:flex">
-              <a className="focus-ring rounded-md hover:text-black/60" href="#services">Services</a>
-              <a className="focus-ring rounded-md hover:text-black/60" href="#portfolio">Work</a>
-              <a className="focus-ring rounded-md hover:text-black/60" href="#dashboard">Dashboard</a>
+        <header className="header-area">
+          <div className="container large">
+            <div className="header-area__inner">
+              <div className="header__logo">
+                <a className="startupgrow-wordmark" href="#home" aria-label="StartupGrow home">
+                  StartupGrow
+                </a>
+              </div>
+              <div className="header__nav pos-center">
+                <nav className="main-menu">
+                  <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#works">projects</a></li>
+                    <li><a href="#team">team</a></li>
+                    <li><a href="#journal">blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div className="header__button">
+                <div className="wc-btn-group">
+                  <a className="wc-btn wc-btn-circle" href="#contact">
+                    <i className="fa-solid fa-arrow-right"></i>
+                  </a>
+                  <a className="wc-btn wc-btn-primary" href="#contact">Get started</a>
+                  <a className="wc-btn wc-btn-circle" href="#contact">
+                    <i className="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div className="header__navicon d-xl-none">
+                <button className="open-offcanvas" type="button" data-open-canvas aria-label="Open menu">
+                  <i className="fa-solid fa-bars"></i>
+                </button>
+              </div>
             </div>
-
-            <div className="hidden sm:block">
-              <ButtonGroup href="#quote">Get started</ButtonGroup>
-            </div>
-            <a
-              className="focus-ring grid h-11 w-11 place-items-center rounded-full bg-ink text-white sm:hidden"
-              href="#quote"
-              aria-label="Get started"
-            >
-              <ArrowRight size={18} aria-hidden="true" />
-            </a>
-          </nav>
+          </div>
         </header>
 
-        <div
-          id="top"
-          className="relative z-10 mx-auto grid max-w-[1720px] gap-10 px-4 pb-14 pt-10 sm:px-6 lg:grid-cols-[1fr_390px] lg:px-10 lg:pb-20 lg:pt-16"
-        >
-          <div>
-            <p className="inline-flex items-center gap-2 rounded-full border border-ink/20 bg-white/25 px-4 py-2 text-sm font-bold uppercase backdrop-blur">
-              <Compass size={16} aria-hidden="true" />
-              Digital growth agency for Indian startups
-            </p>
-            <h1 className="mt-8 max-w-5xl text-6xl font-black uppercase leading-[0.88] sm:text-8xl lg:text-[150px] xl:text-[190px] 2xl:text-[216px]">
-              Startup
-              <br />
-              Grow
-            </h1>
-          </div>
-
-          <div className="self-end">
-            <div className="overflow-hidden rounded-lg bg-ink p-3 text-white shadow-arolax">
-              <div className="relative overflow-hidden rounded-md">
-                <img
-                  className="h-48 w-full object-cover sm:h-64 lg:h-72"
-                  src="/arolax/gallery/media-tile.webp"
-                  alt="Abstract black digital blocks with orange light accents"
-                />
-                <span className="absolute inset-0 bg-black/10" aria-hidden="true" />
-                <span className="absolute left-1/2 top-1/2 grid h-16 w-16 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-acid text-ink">
-                  <Play size={22} fill="currentColor" aria-hidden="true" />
-                </span>
+        <div className="offcanvas-3__area">
+          <div className="offcanvas-3__inner">
+            <div className="offcanvas-3__meta-wrapper">
+              <div>
+                <button className="close-button close-offcanvas" type="button" data-close-canvas aria-label="Close menu">
+                  <span></span>
+                  <span></span>
+                </button>
               </div>
-              <div className="grid grid-cols-3 gap-3 px-1 py-4 text-center">
-                <div>
-                  <p className="text-2xl font-black">6</p>
-                  <p className="mt-1 text-xs uppercase text-white/60">Services</p>
+              <div>
+                <div className="offcanvas-3__meta mb-145 d-none d-md-block">
+                  <ul>
+                    <li><a href="tel:+919876543210" className="unnerline"><u>+91 98765 43210</u></a></li>
+                    <li><a href="mailto:contact@startupgrow.in">contact@startupgrow.in</a></li>
+                    <li><a href="#contact">StartupGrow Studio, <br />Kochi, India</a></li>
+                  </ul>
                 </div>
-                <div>
-                  <p className="text-2xl font-black">4</p>
-                  <p className="mt-1 text-xs uppercase text-white/60">Stages</p>
-                </div>
-                <div>
-                  <p className="text-2xl font-black">1</p>
-                  <p className="mt-1 text-xs uppercase text-white/60">Dashboard</p>
+                <div className="offcanvas-3__social d-none d-md-block">
+                  <p className="title">Follow Me</p>
+                  <div className="offcanvas-3__social-links">
+                    <a href="#contact"><i className="fa-brands fa-facebook-f"></i></a>
+                    <a href="#contact"><i className="fa-brands fa-twitter"></i></a>
+                    <a href="#contact"><i className="fa-brands fa-dribbble"></i></a>
+                    <a href="#contact"><i className="fa-brands fa-instagram"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="relative z-10 mx-auto max-w-[1720px] px-4 pb-12 sm:px-6 lg:px-10">
-          <div className="grid gap-8 border-t border-ink/20 pt-10 lg:grid-cols-[0.35fr_0.65fr]">
-            <p className="text-sm font-black uppercase">Who we are</p>
-            <div className="grid gap-7 lg:grid-cols-[1fr_auto] lg:items-end">
-              <p className="max-w-3xl text-2xl font-semibold leading-tight sm:text-3xl lg:text-4xl">
-                StartupGrow turns early-stage ideas into credible digital launches with brand, website, marketing, and request tracking in one place.
-              </p>
-              <ButtonGroup href="#quote">Build brief</ButtonGroup>
+            <div className="offcanvas-3__menu-wrapper">
+              <nav className="nav-menu offcanvas-3__menu">
+                <ul>
+                  <li><a href="#home">home</a></li>
+                  <li><a href="#about">about</a></li>
+                  <li><a href="#services">services</a></li>
+                  <li><a href="#works">projects</a></li>
+                  <li><a href="#team">team</a></li>
+                  <li><a href="#journal">blog</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
-      </section>
 
-      <section id="portfolio" className="bg-cream py-20 lg:py-28">
-        <div className="mx-auto max-w-[1720px] px-4 sm:px-6 lg:px-10">
-          <div className="grid gap-8 lg:grid-cols-[0.75fr_0.25fr] lg:items-end">
-            <h2 className="max-w-4xl text-5xl font-black uppercase leading-none sm:text-6xl lg:text-8xl">
-              Selected work
-            </h2>
-            <p className="text-lg leading-8 text-zinc-600">
-              The original Arolax portfolio rhythm, adapted for startup websites, marketing, and growth proof points.
-            </p>
-          </div>
-
-          <div className="mt-12 grid gap-8 sm:grid-cols-2 xl:grid-cols-4">
-            {portfolio.map((item) => (
-              <article key={item.name} className="group">
-                <div className="overflow-hidden rounded-lg bg-zinc-100">
-                  <img
-                    className="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105"
-                    src={item.image}
-                    alt={`${item.name} visual mockup`}
-                  />
-                </div>
-                <div className="mt-6">
-                  <p className="text-sm font-black uppercase text-zinc-500">{item.metric}</p>
-                  <h3 className="mt-2 text-2xl font-black leading-tight">{item.name}</h3>
-                  <p className="mt-3 text-sm leading-6 text-zinc-600">{item.result}</p>
-                  <div className="mt-5 flex flex-wrap gap-2">
-                    {item.tags.map((tag) => (
-                      <span key={tag} className="rounded-full border border-ink/10 px-4 py-2 text-xs font-bold uppercase">
-                        {tag}
-                      </span>
-                    ))}
+        <div className="has-smooth" id="has_smooth"></div>
+        <div id="smooth-wrapper">
+          <div id="smooth-content">
+            <div className="body-wrapper body-branding-agency">
+              <main>
+                <section id="home" className="hero-area section-item">
+                  <div className="area-bg">
+                    <img src={asset("imgs/gallery/img-s-33.webp")} alt="lime green brand background" />
                   </div>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+                  <div className="container large">
+                    <div className="hero-area-inner">
+                      <div className="section-content">
+                        <div className="section-title-wrapper">
+                          <div className="title-wrapper">
+                            <h1 className="section-title has_char_anim" data-delay="0.15" data-translateX="50">
+                              We <br />
+                              grow <span className="has_fade_anim" data-fade-from="left" data-delay="1">Pro</span>
+                              brand
+                              Value
+                            </h1>
+                          </div>
+                        </div>
+                        <div className="video-wrapper has_fade_anim" data-ease="power3.out">
+                          <div className="thumb p-relative">
+                            <img src={asset("imgs/gallery/img-s-32.webp")} alt="abstract digital brand system" />
+                            <a
+                              href="https://crowdytheme.com/assets/wp-content/uploads/2024/06/arolux-branding-agency-video.mp4"
+                              className="wc-btn wc-btn-circle video-popup pos-center"
+                              aria-label="Play brand film"
+                            >
+                              <i className="fa-solid fa-play"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
-      <section className="bg-lavender py-20 lg:py-28">
-        <div className="mx-auto grid max-w-[1720px] gap-10 px-4 sm:px-6 lg:grid-cols-[0.7fr_0.3fr] lg:px-10">
-          <h2 className="max-w-5xl text-4xl font-black leading-tight sm:text-5xl lg:text-7xl">
-            Building a growth system is hard. StartupGrow keeps the work sharp, simple, and ready for launch.
-          </h2>
-          <div className="flex items-end justify-start lg:justify-end">
-            <p className="text-[150px] font-black leading-none sm:text-[220px] lg:text-[300px]">6</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="services" className="bg-ink py-20 text-white lg:py-28">
-        <div className="mx-auto max-w-[1720px] px-4 sm:px-6 lg:px-10">
-          <div className="max-w-5xl">
-            <p className="text-sm font-black uppercase text-white/50">Core services</p>
-            <h2 className="mt-5 text-4xl font-black leading-tight sm:text-5xl lg:text-7xl">
-              We solve startup growth problems with a different method.
-            </h2>
-          </div>
-
-          <div className="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-            {services.map((service, index) => {
-              const Icon = service.icon;
-              return (
-                <article
-                  key={service.title}
-                  className="rounded-lg bg-soot p-7 transition duration-300 hover:-translate-y-1 hover:bg-[#242424] lg:p-9"
-                >
-                  <div className="flex items-center justify-between gap-4">
-                    <span className="text-lg font-black text-white/70">0{index + 1}</span>
-                    <div className="grid h-12 w-12 place-items-center rounded-full bg-acid text-ink">
-                      <Icon size={22} aria-hidden="true" />
+                    <div id="about" className="about-area">
+                      <div className="about-area-inner section-spacing-bottom">
+                        <div className="section-content">
+                          <div className="section-title-wrapper">
+                            <div className="subtitle-wrapper">
+                              <span className="section-subtitle">Who we are</span>
+                            </div>
+                          </div>
+                          <div className="content-last">
+                            <div className="text-wrapper">
+                              <p className="text has_text_move_anim">
+                                StartupGrow is a full-service digital partner for purpose-driven startups. We build
+                                brands that look good, sound clear, and turn early attention into growth.
+                              </p>
+                            </div>
+                            <div className="btn-wrapper has_fade_anim" data-fade-from="left">
+                              <div className="wc-btn-group">
+                                <a className="wc-btn wc-btn-circle" href="#contact"><i className="fa-solid fa-arrow-right"></i></a>
+                                <a className="wc-btn wc-btn-primary" href="#contact">Get started</a>
+                                <a className="wc-btn wc-btn-circle" href="#contact"><i className="fa-solid fa-arrow-right"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <h3 className="mt-16 text-2xl font-black leading-tight">{service.title}</h3>
-                  <p className="mt-5 leading-7 text-white/60">{service.description}</p>
-                </article>
-              );
-            })}
-          </div>
+                </section>
 
-          <div className="mt-14 flex justify-center">
-            <p className="rounded-full bg-soot px-6 py-4 text-center text-sm font-semibold text-white/75 sm:px-10">
-              Save your precious time finding a solution. <a className="focus-ring rounded-md text-white underline" href="#quote">Request a quote now</a>
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-mint py-20 lg:py-28">
-        <div className="mx-auto max-w-[1720px] px-4 sm:px-6 lg:px-10">
-          <div className="grid gap-10 lg:grid-cols-[0.4fr_0.6fr]">
-            <div>
-              <p className="text-sm font-black uppercase text-zinc-500">Process</p>
-              <h2 className="mt-5 text-4xl font-black leading-tight sm:text-5xl">
-                From founder brief to live digital system.
-              </h2>
-            </div>
-            <div className="grid gap-4 md:grid-cols-2">
-              {processSteps.map((step, index) => {
-                const Icon = step.icon;
-                return (
-                  <article key={step.title} className="border-l border-ink/20 py-6 pl-6">
-                    <span className="text-sm font-black text-zinc-500">0{index + 1}</span>
-                    <div className="mt-8 grid h-16 w-16 place-items-center rounded-full bg-ink text-white">
-                      <Icon size={23} aria-hidden="true" />
+                <section id="works" className="work-area section-style section-item">
+                  <div className="container large">
+                    <div className="work-area-inner section-spacing">
+                      <div className="section-header">
+                        <div className="section-title-wrapper">
+                          <div className="title-wrapper">
+                            <h2 className="section-title has_fade_anim">Selected work</h2>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="works-wrapper-box">
+                        <div className="works-wrapper">
+                          {[
+                            ["Fintech MVP", "Website", "Branding", "imgs/works/img-s-31.webp"],
+                            ["D2C Food Brand", "Social", "Business", "imgs/works/img-s-32.webp"],
+                            ["Edtech Platform", "SEO", "Growth", "imgs/works/img-s-33.webp"],
+                            ["Founder Launch", "Identity", "Campaign", "imgs/works/img-s-34.webp"]
+                          ].map(([title, tagOne, tagTwo, image]) => (
+                            <div className="work-box" key={title}>
+                              <div className="thumb">
+                                <a href="#contact"><img src={asset(image)} alt={`${title} case study`} /></a>
+                              </div>
+                              <div className="content">
+                                <h3 className="title">{title}</h3>
+                                <div className="tags">
+                                  <div className="tag">{tagOne}</div>
+                                  <div className="tag">{tagTwo}</div>
+                                </div>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                      <div className="section-content section-spacing-top">
+                        <div></div>
+                        <div className="content-last">
+                          <div className="text-wrapper">
+                            <p className="text has_text_move_anim">
+                              We deliver startup brands with sharp strategy, conversion-focused websites, and campaign
+                              systems built by a team that understands early-stage constraints.
+                            </p>
+                          </div>
+                          <div className="btn-wrapper has_fade_anim" data-fade-from="left">
+                            <div className="wc-btn-group">
+                              <a className="wc-btn wc-btn-circle" href="#works"><i className="fa-solid fa-arrow-right"></i></a>
+                              <a className="wc-btn wc-btn-primary" href="#works">View all works</a>
+                              <a className="wc-btn wc-btn-circle" href="#works"><i className="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <h3 className="mt-8 text-2xl font-black">{step.title}</h3>
-                    <p className="mt-4 leading-7 text-zinc-600">{step.description}</p>
-                  </article>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
+                  </div>
+                </section>
 
-      <section id="quote" className="bg-blush py-20 lg:py-28">
-        <div className="mx-auto grid max-w-[1720px] gap-10 px-4 sm:px-6 lg:grid-cols-[0.42fr_0.58fr] lg:px-10">
-          <div>
-            <p className="text-sm font-black uppercase text-zinc-500">Request module</p>
-            <h2 className="mt-5 max-w-2xl text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">
-              A clean path from inquiry to service planning.
-            </h2>
-            <p className="mt-6 max-w-xl text-lg leading-8 text-zinc-600">
-              StartupGrow collects the details a digital team needs: stage, budget, city, service area, and business goal. The backend stores each request for follow-up.
-            </p>
-            <div className="mt-8 grid gap-4">
-              {["Affordable service bundles", "Responsive startup website", "MongoDB-backed request records"].map((item) => (
-                <div key={item} className="flex items-center gap-3 text-sm font-black uppercase">
-                  <span className="grid h-10 w-10 place-items-center rounded-full bg-ink text-white">
-                    <ArrowRight size={16} aria-hidden="true" />
-                  </span>
-                  {item}
+                <section className="fun-fact-area section-style section-item">
+                  <div className="container large">
+                    <div className="fun-fact-area-inner section-spacing">
+                      <div className="section-header">
+                        <div className="section-title-wrapper">
+                          <div className="title-wrapper">
+                            <h2 className="section-title has_fade_anim">
+                              Designing great digital launches is hard. But we make the system simple for every startup.
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="counter-wrapper-box">
+                        <div className="counter-box overflow-hidden">
+                          <img className="shape-1 show-light img_anim_reveal" src={asset("imgs/shape/img-s-47.webp")} alt="counter shape" />
+                          <img className="shape-1 show-dark img_anim_reveal" src={asset("imgs/shape/img-s-47-light.webp")} alt="counter shape" />
+                          <h3 className="number wc-counter has_fade_anim" data-fade-from="left">150</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section id="services" className="service-area section-style section-item">
+                  <div className="container large">
+                    <div className="service-area-inner section-spacing">
+                      <div className="section-header">
+                        <div className="section-title-wrapper">
+                          <div className="title-wrapper">
+                            <h2 className="section-title has_fade_anim">We solve your brand problem in a different method</h2>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="services-wrapper-box">
+                        <div className="services-wrapper">
+                          {[
+                            ["01", "Brand Strategy", "We align positioning, market focus, and offer clarity for early-stage teams.", "imgs/icon/icon-s-1-light.webp"],
+                            ["02", "Brand Identity", "We create a credible visual system across web, social, and launch materials.", "imgs/icon/icon-s-2-light.webp"],
+                            ["03", "Web Development", "We build responsive landing pages and product websites for conversion.", "imgs/icon/icon-s-3-light.webp"],
+                            ["04", "Growth Support", "We support SEO, content, social, email, and performance campaigns.", "imgs/icon/icon-s-4-light.webp"]
+                          ].map(([number, title, text, icon], index) => (
+                            <div className="has_fade_anim" data-delay={`${0.15 * (index + 1)}`} key={title}>
+                              <a href="#contact">
+                                <div className="service-box">
+                                  <span className="number">{number}</span>
+                                  <div className="icon"><img src={asset(icon)} alt="service icon" /></div>
+                                  <div className="content">
+                                    <h3 className="title">{title}</h3>
+                                    <p className="text">{text}</p>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                      <div className="info-text has_fade_anim" data-fade-from="left">
+                        <p className="text">Save your precious time for finding a solution. <br /><a className="wc-btn wc-btn-underline" href="#contact">Contact us now</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section id="team" className="team-area section-style section-item">
+                  <div className="container large">
+                    <div className="team-area-inner section-spacing">
+                      <div className="section-header">
+                        <div className="section-title-wrapper">
+                          <div className="title-wrapper">
+                            <h2 className="section-title has_fade_anim">The talented team behind the creative design</h2>
+                          </div>
+                        </div>
+                        <div className="text-wrapper">
+                          <p className="text has_fade_anim">
+                            Our dedication and commitment to excellence help startup teams move confidently in the digital realm.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="team-wrapper-box">
+                        <div className="team-wrapper">
+                          {[
+                            ["Yadunand Pavithran", "Project Lead", "imgs/team/img-s-15.webp"],
+                            ["Nashid Nihal C", "Growth Strategist", "imgs/team/img-s-16.webp"],
+                            ["Gokul Krishna", "Developer", "imgs/team/img-s-17.webp"]
+                          ].map(([name, role, image]) => (
+                            <div className="team-box" key={name}>
+                              <div className="thumb"><a href="#team"><img src={asset(image)} alt={name} /></a></div>
+                              <div className="content">
+                                <div className="top">
+                                  <h3 className="name"><a href="#team">{name}</a></h3>
+                                  <p className="post">{role}</p>
+                                </div>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section id="journal" className="blog-area section-style section-item">
+                  <div className="container large">
+                    <div className="blog-area-inner section-spacing">
+                      <div className="section-header">
+                        <div className="section-title-wrapper">
+                          <div className="title-wrapper">
+                            <h2 className="section-title has_fade_anim">Journal from StartupGrow</h2>
+                          </div>
+                        </div>
+                        <div className="btn-wrapper has_fade_anim" data-fade-from="right">
+                          <div className="wc-btn-group">
+                            <a className="wc-btn wc-btn-circle" href="#journal"><i className="fa-solid fa-arrow-right"></i></a>
+                            <a className="wc-btn wc-btn-primary" href="#journal">read all posts</a>
+                            <a className="wc-btn wc-btn-circle" href="#journal"><i className="fa-solid fa-arrow-right"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="blogs-wrapper-box">
+                        <div className="blogs-wrapper">
+                          {[
+                            ["A simple guide to launch-ready website positioning", "imgs/blog/img-s-8.webp"],
+                            ["How early-stage teams can plan content before launch", "imgs/blog/img-s-9.webp"]
+                          ].map(([title, image], index) => (
+                            <article className="blog has_fade_anim" data-fade-from="right" data-delay={`${0.15 * (index + 1)}`} key={title}>
+                              <div className="thumb"><a href="#journal"><img src={asset(image)} alt={title} /></a></div>
+                              <div className="content">
+                                <h2 className="title"><a href="#journal">{title}</a></h2>
+                                <div className="meta-list">
+                                  <a href="#journal"><span className="meta tag">Branding</span></a>
+                                  <span className="meta date">06 May 2026</span>
+                                </div>
+                              </div>
+                            </article>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section id="contact" className="cta-area section-style section-item">
+                  <div className="container large">
+                    <div className="cta-area-inner section-spacing">
+                      <div className="section-content">
+                        <div className="section-title-wrapper">
+                          <div className="subtitle-wrapper">
+                            <span className="section-subtitle has_fade_anim">Have a project in mind?</span>
+                          </div>
+                          <div className="title-wrapper">
+                            <h2 className="section-title has_fade_anim">Let&apos;s work together</h2>
+                          </div>
+                        </div>
+                        <div className="btn-wrapper has_fade_anim">
+                          <div className="wc-btn-group">
+                            <a className="wc-btn wc-btn-circle" href="mailto:contact@startupgrow.in"><i className="fa-solid fa-arrow-right"></i></a>
+                            <a className="wc-btn wc-btn-primary" href="mailto:contact@startupgrow.in">contact us</a>
+                            <a className="wc-btn wc-btn-circle" href="mailto:contact@startupgrow.in"><i className="fa-solid fa-arrow-right"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </main>
+
+              <footer className="footer-area section-style pb-0">
+                <div className="container large">
+                  <div className="footer-area-inner section-spacing-top">
+                    <div className="footer-widget-wrapper">
+                      <div className="footer-logo">
+                        <a className="startupgrow-wordmark light" href="#home">StartupGrow</a>
+                      </div>
+                    </div>
+                    <div className="footer-widget-wrapper">
+                      <h2 className="title">Service</h2>
+                      <ul className="footer-nav-list">
+                        <li><a href="#services">Web Design</a></li>
+                        <li><a href="#services">Branding</a></li>
+                        <li><a href="#services">SEO</a></li>
+                        <li><a href="#services">Social Media</a></li>
+                        <li><a href="#services">Development</a></li>
+                      </ul>
+                    </div>
+                    <div className="footer-widget-wrapper">
+                      <h2 className="title">Company</h2>
+                      <ul className="footer-nav-list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Agency</a></li>
+                        <li><a href="#works">Achievement</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                      </ul>
+                    </div>
+                    <div className="footer-widget-wrapper newsletter">
+                      <h2 className="title">Newsletter</h2>
+                      <div className="newsletter-text">
+                        <p className="text">Feel free to reach out if you want to collaborate with us, or simply have a chat.</p>
+                      </div>
+                      <form action="#contact" className="subscribe-form">
+                        <div className="input-field">
+                          <input type="email" placeholder="Enter your email" aria-label="Email address" />
+                          <button type="submit" className="subscribe-btn">
+                            <img src={asset("imgs/icon/arrow-light.webp")} alt="submit" />
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                    <div className="footer-widget-wrapper location">
+                      <h2 className="title">Kerala</h2>
+                      <ul className="footer-nav-list">
+                        <li><a href="#contact">StartupGrow Studio, <br />Kochi</a></li>
+                      </ul>
+                    </div>
+                    <div className="footer-widget-wrapper location">
+                      <h2 className="title">India</h2>
+                      <ul className="footer-nav-list">
+                        <li><a href="#contact">Digital solutions for <br />Indian startups</a></li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-              ))}
+                <div className="copyright-area">
+                  <div className="container large">
+                    <div className="copyright-area-inner">
+                      <p className="text">© 2026 StartupGrow Agency</p>
+                    </div>
+                  </div>
+                </div>
+              </footer>
             </div>
           </div>
-          <QuoteForm services={serviceNames} />
         </div>
-      </section>
+      </div>
 
-      <AdminPanel />
-
-      <section className="bg-mint py-20 text-center lg:py-28">
-        <div className="mx-auto max-w-[1720px] px-4 sm:px-6 lg:px-10">
-          <p className="text-2xl font-normal uppercase sm:text-3xl">Have a startup in mind?</p>
-          <h2 className="mx-auto mt-5 max-w-5xl text-6xl font-black uppercase leading-none sm:text-8xl lg:text-[150px]">
-            Let's work together
-          </h2>
-          <div className="mt-8 flex justify-center">
-            <ButtonGroup href="#quote">Contact us</ButtonGroup>
-          </div>
-        </div>
-      </section>
-
-      <footer className="bg-ink py-16 text-white">
-        <div className="mx-auto grid max-w-[1720px] gap-10 px-4 sm:px-6 md:grid-cols-2 lg:grid-cols-[1.2fr_0.8fr_0.8fr_1fr] lg:px-10">
-          <div>
-            <a className="focus-ring flex w-fit items-center gap-3 rounded-md" href="#top" aria-label="StartupGrow home">
-              <span className="grid h-11 w-11 place-items-center rounded-full bg-acid text-ink">
-                <Sparkles size={20} aria-hidden="true" />
-              </span>
-              <span className="text-2xl font-black uppercase">StartupGrow</span>
-            </a>
-            <p className="mt-6 max-w-sm leading-7 text-white/60">
-              Digital Solutions Platform for Indian Startups.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-black">Service</h3>
-            <ul className="mt-5 space-y-3 text-white/60">
-              <li><a className="focus-ring rounded-md hover:text-white" href="#services">Web Design</a></li>
-              <li><a className="focus-ring rounded-md hover:text-white" href="#services">Branding</a></li>
-              <li><a className="focus-ring rounded-md hover:text-white" href="#services">SEO</a></li>
-              <li><a className="focus-ring rounded-md hover:text-white" href="#services">Marketing</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-black">Company</h3>
-            <ul className="mt-5 space-y-3 text-white/60">
-              <li><a className="focus-ring rounded-md hover:text-white" href="#top">Home</a></li>
-              <li><a className="focus-ring rounded-md hover:text-white" href="#portfolio">Work</a></li>
-              <li><a className="focus-ring rounded-md hover:text-white" href="#quote">Contact</a></li>
-              <li><a className="focus-ring rounded-md hover:text-white" href="#dashboard">Dashboard</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-black">Project team</h3>
-            <p className="mt-5 leading-7 text-white/60">
-              Yadunand Pavithran
-              <br />
-              Nashid Nihal C
-              <br />
-              Gokul Krishna
-            </p>
-            <a className="focus-ring mt-6 inline-flex items-center gap-2 rounded-md text-sm font-bold uppercase text-white underline" href="#quote">
-              Send request
-              <Send size={16} aria-hidden="true" />
-            </a>
-          </div>
-        </div>
-      </footer>
-    </main>
+      <Script src={asset("js/jquery-3.6.0.min.js")} strategy="afterInteractive" />
+      <Script src={asset("js/bootstrap.bundle.min.js")} strategy="afterInteractive" />
+      <Script src={asset("js/jquery.magnific-popup.min.js")} strategy="afterInteractive" />
+      <Script src={asset("js/swiper-bundle.min.js")} strategy="afterInteractive" />
+      <Script src={asset("js/counter.js")} strategy="afterInteractive" />
+      <Script src={asset("js/progressbar.js")} strategy="afterInteractive" />
+      <Script src={asset("js/gsap.min.js")} strategy="afterInteractive" />
+      <Script src={asset("js/ScrollSmoother.min.js")} strategy="afterInteractive" />
+      <Script src={asset("js/ScrollToPlugin.min.js")} strategy="afterInteractive" />
+      <Script src={asset("js/ScrollTrigger.min.js")} strategy="afterInteractive" />
+      <Script src={asset("js/SplitText.min.js")} strategy="afterInteractive" />
+      <Script src={asset("js/jquery.meanmenu.min.js")} strategy="afterInteractive" />
+      <Script src={asset("js/backToTop.js")} strategy="afterInteractive" />
+      <Script src={asset("js/main.js")} strategy="afterInteractive" />
+      <Script src={asset("js/error-handling.js")} strategy="afterInteractive" />
+      <Script src={asset("js/offcanvas.js")} strategy="afterInteractive" />
+      <Script id="arolax-offcanvas-bind" strategy="afterInteractive">
+        {`
+          document.addEventListener("click", function(event) {
+            if (event.target.closest("[data-open-canvas]") && window.showCanvas3) window.showCanvas3();
+            if (event.target.closest("[data-close-canvas]") && window.hideCanvas3) window.hideCanvas3();
+          });
+        `}
+      </Script>
+    </>
   );
 }
