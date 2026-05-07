@@ -1,5 +1,4 @@
 import Script from "next/script";
-import PublicRouteReset from "@/components/PublicRouteReset";
 import UnifiedFooter from "@/components/UnifiedFooter";
 
 export default function SiteLayout({ children }) {
@@ -12,9 +11,8 @@ export default function SiteLayout({ children }) {
       <link rel="stylesheet" href="/assets/css/meanmenu.min.css" />
       <link rel="stylesheet" href="/assets/css/magnific-popup.css" />
       <link rel="stylesheet" href="/assets/css/master-branding-agency.css" />
-      <link rel="stylesheet" href="/assets/css/contact-overrides.css?v=4" />
+      <link rel="stylesheet" href="/assets/css/contact-overrides.css?v=3" />
       
-      <PublicRouteReset />
       {children}
 
       <UnifiedFooter />

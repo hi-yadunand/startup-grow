@@ -83,17 +83,6 @@
   display: none !important;
 }
 
-.public-arolax-page #smooth-wrapper,
-.public-arolax-page #smooth-content {
-  position: static !important;
-  inset: auto !important;
-  height: auto !important;
-  min-height: 0 !important;
-  overflow: visible !important;
-  transform: none !important;
-  translate: none !important;
-}
-
 /* Shared footer design used on every public page. */
 .startupgrow-unified-footer {
   --footer-bg: #111111;
