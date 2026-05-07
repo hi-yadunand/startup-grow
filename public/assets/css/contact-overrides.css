@@ -83,10 +83,6 @@
   display: none !important;
 }
 
-.font-heading-instumentsans-semibold:has(.public-arolax-page) > .startupgrow-layout-footer {
-  display: none !important;
-}
-
 /* Shared footer design used on every public page. */
 .startupgrow-unified-footer {
   --footer-bg: #111111;
