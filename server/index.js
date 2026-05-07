@@ -4,6 +4,7 @@ const cors = require("cors");
 const express = require("express");
 const { connectDatabase, getDatabaseStatus, isDatabaseConnected } = require("./db");
 const ServiceRequest = require("./models/ServiceRequest");
+const ContactLead = require("./models/ContactLead");
 
 const app = express();
 const port = Number(process.env.PORT) || 4000;
@@ -11,10 +12,11 @@ const allowedOrigins = getAllowedOrigins();
 
 const validStatuses = ["New", "Contacted", "In progress", "Closed"];
 const memoryRequests = [];
+const memoryLeads = [];
 
 const services = [
-  "SEO",
-  "PPC Advertising",
+  "Search Engine Optimisation",
+  "Pay-Per-Click Advertising (PPC)",
   "Social Media Marketing",
   "Content Marketing",
   "Email Marketing",
@@ -132,8 +134,145 @@ function validateRequest(body) {
   return { payload };
 }
 
+function formatLead(lead) {
+  return {
+    id: String(lead._id || lead.id),
+    name: lead.name,
+    email: lead.email,
+    phone: lead.phone,
+    subject: lead.subject,
+    service: lead.service,
+    message: lead.message,
+    status: lead.status,
+    createdAt: lead.createdAt
+  };
+}
+
+function validateLead(body) {
+  const payload = {
+    name: cleanString(body.name),
+    email: cleanString(body.email).toLowerCase(),
+    phone: cleanString(body.phone),
+    subject: cleanString(body.subject),
+    service: cleanString(body.service),
+    message: cleanString(body.message)
+  };
+
+  const missingFields = Object.entries(payload)
+    .filter(([, value]) => !value)
+    .map(([key]) => key);
+
+  if (missingFields.length) {
+    return {
+      error: `Missing required fields: ${missingFields.join(", ")}`
+    };
+  }
+
+  if (!payload.email.includes("@")) {
+    return {
+      error: "Please provide a valid email address."
+    };
+  }
+
+  if (!services.includes(payload.service)) {
+    return {
+      error: "Please select a valid service."
+    };
+  }
+
+  return { payload };
+}
+
 app.get("/api/services", (request, response) => {
   response.json({ data: services });
+});
+
+app.post("/api/leads", async (request, response) => {
+  const validation = validateLead(request.body);
+
+  if (validation.error) {
+    return response.status(400).json({ message: validation.error });
+  }
+
+  try {
+    await connectDatabase();
+
+    if (isDatabaseConnected()) {
+      const created = await ContactLead.create(validation.payload);
+      return response.status(201).json({ data: formatLead(created) });
+    }
+
+    const created = {
+      id: `mem_lead_${Date.now()}`,
+      ...validation.payload,
+      status: "New",
+      createdAt: new Date().toISOString()
+    };
+    memoryLeads.unshift(created);
+
+    return response.status(201).json({ data: formatLead(created) });
+  } catch (error) {
+    console.error(error);
+    return response.status(500).json({ message: "Unable to create contact lead." });
+  }
+});
+
+app.get("/api/leads", async (request, response) => {
+  try {
+    await connectDatabase();
+
+    if (isDatabaseConnected()) {
+      const leads = await ContactLead.find().sort({ createdAt: -1 }).limit(50);
+      return response.json({ data: leads.map(formatLead) });
+    }
+
+    return response.json({ data: memoryLeads.slice(0, 50).map(formatLead) });
+  } catch (error) {
+    console.error(error);
+    return response.status(500).json({ message: "Unable to load contact leads." });
+  }
+});
+
+app.patch("/api/leads/:id/status", async (request, response) => {
+  const status = cleanString(request.body.status);
+
+  if (!validStatuses.includes(status)) {
+    return response.status(400).json({ message: "Invalid status." });
+  }
+
+  try {
+    await connectDatabase();
+
+    if (isDatabaseConnected()) {
+      const updated = await ContactLead.findByIdAndUpdate(
+        request.params.id,
+        { status },
+        { new: true }
+      );
+
+      if (!updated) {
+        return response.status(404).json({ message: "Lead not found." });
+      }
+
+      return response.json({ data: formatLead(updated) });
+    }
+
+    const index = memoryLeads.findIndex((item) => item.id === request.params.id);
+
+    if (index === -1) {
+      return response.status(404).json({ message: "Lead not found." });
+    }
+
+    memoryLeads[index] = {
+      ...memoryLeads[index],
+      status
+    };
+
+    return response.json({ data: formatLead(memoryLeads[index]) });
+  } catch (error) {
+    console.error(error);
+    return response.status(500).json({ message: "Unable to update lead status." });
+  }
 });
 
 app.post("/api/requests", async (request, response) => {
