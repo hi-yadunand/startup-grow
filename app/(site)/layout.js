@@ -1,5 +1,4 @@
 import Script from "next/script";
-import UnifiedFooter from "@/components/UnifiedFooter";
 
 export default function SiteLayout({ children }) {
   return (
@@ -14,8 +13,6 @@ export default function SiteLayout({ children }) {
       <link rel="stylesheet" href="/assets/css/contact-overrides.css?v=4" />
       
       {children}
-
-      <UnifiedFooter />
 
       <Script src="/assets/js/jquery-3.6.0.min.js" strategy="beforeInteractive" />
       <Script src="/assets/js/bootstrap.bundle.min.js" strategy="afterInteractive" />
