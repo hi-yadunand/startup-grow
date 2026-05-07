@@ -78,6 +78,11 @@
   }
 }
 
+/* Use the home footer everywhere: hide inner-page CTA footers. */
+.public-arolax-page .footer-area:not(.section-style) {
+  display: none !important;
+}
+
 /* Contact form status + select styling (contact page only). */
 .public-arolax-page .agency-form-status {
   margin-top: 14px;
