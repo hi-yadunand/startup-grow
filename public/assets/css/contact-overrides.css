@@ -83,10 +83,6 @@
   display: none !important;
 }
 
-.font-heading-instumentsans-semibold:has(.public-arolax-page) > .startupgrow-layout-footer {
-  display: none !important;
-}
-
 /* Shared footer design used on every public page. */
 .startupgrow-unified-footer {
   --footer-bg: #111111;
@@ -100,15 +96,13 @@
   margin-top: 0 !important;
 }
 
-.startupgrow-unified-footer .container.large,
-.public-arolax-page .startupgrow-unified-footer .container.large {
+.startupgrow-unified-footer .container.large {
   max-width: 100% !important;
   padding-left: clamp(32px, 5vw, 96px) !important;
   padding-right: clamp(32px, 5vw, 96px) !important;
 }
 
-.startupgrow-unified-footer .footer-area-inner,
-.public-arolax-page .startupgrow-unified-footer .footer-area-inner {
+.startupgrow-unified-footer .footer-area-inner {
   display: grid !important;
   grid-template-columns: minmax(180px, 1.1fr) minmax(180px, 0.75fr) minmax(180px, 0.75fr) minmax(300px, 1.25fr) !important;
   gap: clamp(36px, 5vw, 96px) !important;
@@ -118,31 +112,26 @@
   border-bottom: 1px solid var(--footer-line) !important;
 }
 
-.startupgrow-unified-footer .footer-widget-wrapper,
-.public-arolax-page .startupgrow-unified-footer .footer-widget-wrapper {
+.startupgrow-unified-footer .footer-widget-wrapper {
   min-width: 0 !important;
   width: auto !important;
 }
 
-.startupgrow-unified-footer .footer-widget-wrapper:first-child,
-.public-arolax-page .startupgrow-unified-footer .footer-widget-wrapper:first-child {
+.startupgrow-unified-footer .footer-widget-wrapper:first-child {
   border-right: 1px solid var(--footer-line) !important;
 }
 
-.startupgrow-unified-footer .footer-logo,
-.public-arolax-page .startupgrow-unified-footer .footer-logo {
+.startupgrow-unified-footer .footer-logo {
   padding-top: 4px !important;
 }
 
-.startupgrow-unified-footer .startupgrow-wordmark.light,
-.public-arolax-page .startupgrow-unified-footer .startupgrow-wordmark.light {
+.startupgrow-unified-footer .startupgrow-wordmark.light {
   color: #ffffff !important;
   font-size: clamp(22px, 2vw, 34px) !important;
   line-height: 1 !important;
 }
 
-.startupgrow-unified-footer .title,
-.public-arolax-page .startupgrow-unified-footer .title {
+.startupgrow-unified-footer .title {
   color: #ffffff !important;
   font-size: clamp(32px, 3vw, 46px) !important;
   font-weight: 800 !important;
@@ -151,15 +140,13 @@
   letter-spacing: 0 !important;
 }
 
-.startupgrow-unified-footer .footer-nav-list,
-.public-arolax-page .startupgrow-unified-footer .footer-nav-list {
+.startupgrow-unified-footer .footer-nav-list {
   display: block !important;
   margin: 0 !important;
   padding: 0 !important;
 }
 
-.startupgrow-unified-footer .footer-nav-list li,
-.public-arolax-page .startupgrow-unified-footer .footer-nav-list li {
+.startupgrow-unified-footer .footer-nav-list li {
   color: var(--footer-muted) !important;
   font-size: clamp(18px, 1.45vw, 24px) !important;
   font-weight: 700 !important;
@@ -167,24 +154,20 @@
   list-style: none !important;
 }
 
-.startupgrow-unified-footer .footer-nav-list li + li,
-.public-arolax-page .startupgrow-unified-footer .footer-nav-list li + li {
+.startupgrow-unified-footer .footer-nav-list li + li {
   margin-top: 8px !important;
 }
 
-.startupgrow-unified-footer .footer-nav-list a,
-.public-arolax-page .startupgrow-unified-footer .footer-nav-list a {
+.startupgrow-unified-footer .footer-nav-list a {
   color: inherit !important;
   text-decoration: none !important;
 }
 
-.startupgrow-unified-footer .footer-nav-list a:hover,
-.public-arolax-page .startupgrow-unified-footer .footer-nav-list a:hover {
+.startupgrow-unified-footer .footer-nav-list a:hover {
   color: #ffffff !important;
 }
 
-.startupgrow-unified-footer .newsletter-text .text,
-.public-arolax-page .startupgrow-unified-footer .newsletter-text .text {
+.startupgrow-unified-footer .newsletter-text .text {
   color: var(--footer-muted) !important;
   max-width: 580px !important;
   font-size: clamp(18px, 1.45vw, 25px) !important;
@@ -193,13 +176,11 @@
   margin: 0 !important;
 }
 
-.startupgrow-unified-footer .subscribe-form,
-.public-arolax-page .startupgrow-unified-footer .subscribe-form {
+.startupgrow-unified-footer .subscribe-form {
   margin-top: clamp(36px, 4vw, 58px) !important;
 }
 
-.startupgrow-unified-footer .input-field,
-.public-arolax-page .startupgrow-unified-footer .input-field {
+.startupgrow-unified-footer .input-field {
   display: flex !important;
   align-items: center !important;
   gap: 16px !important;
@@ -210,8 +191,7 @@
   background: var(--footer-panel) !important;
 }
 
-.startupgrow-unified-footer .input-field input,
-.public-arolax-page .startupgrow-unified-footer .input-field input {
+.startupgrow-unified-footer .input-field input {
   width: 100% !important;
   border: 0 !important;
   border-left: 1px solid rgba(255, 255, 255, 0.12) !important;
@@ -223,38 +203,32 @@
   font-weight: 700 !important;
 }
 
-.startupgrow-unified-footer .input-field input::placeholder,
-.public-arolax-page .startupgrow-unified-footer .input-field input::placeholder {
+.startupgrow-unified-footer .input-field input::placeholder {
   color: var(--footer-muted) !important;
   opacity: 1 !important;
 }
 
-.startupgrow-unified-footer .subscribe-btn,
-.public-arolax-page .startupgrow-unified-footer .subscribe-btn {
+.startupgrow-unified-footer .subscribe-btn {
   flex: 0 0 auto !important;
   border: 0 !important;
   background: transparent !important;
   padding: 0 !important;
 }
 
-.startupgrow-unified-footer .subscribe-btn img,
-.public-arolax-page .startupgrow-unified-footer .subscribe-btn img {
+.startupgrow-unified-footer .subscribe-btn img {
   width: clamp(44px, 4vw, 72px) !important;
 }
 
-.startupgrow-unified-footer .copyright-area,
-.public-arolax-page .startupgrow-unified-footer .copyright-area {
+.startupgrow-unified-footer .copyright-area {
   background: var(--footer-bg) !important;
 }
 
-.startupgrow-unified-footer .copyright-area .container.large,
-.public-arolax-page .startupgrow-unified-footer .copyright-area .container.large {
+.startupgrow-unified-footer .copyright-area .container.large {
   padding-left: clamp(32px, 5vw, 96px) !important;
   padding-right: clamp(32px, 5vw, 96px) !important;
 }
 
-.startupgrow-unified-footer .copyright-area-inner,
-.public-arolax-page .startupgrow-unified-footer .copyright-area-inner {
+.startupgrow-unified-footer .copyright-area-inner {
   display: flex !important;
   align-items: center !important;
   min-height: 124px !important;
@@ -262,8 +236,7 @@
   border-top: 0 !important;
 }
 
-.startupgrow-unified-footer .copyright-area .text,
-.public-arolax-page .startupgrow-unified-footer .copyright-area .text {
+.startupgrow-unified-footer .copyright-area .text {
   color: rgba(255, 255, 255, 0.28) !important;
   font-size: clamp(18px, 1.35vw, 24px) !important;
   font-weight: 800 !important;
@@ -272,46 +245,38 @@
 }
 
 @media (max-width: 1199px) {
-  .startupgrow-unified-footer .footer-area-inner,
-  .public-arolax-page .startupgrow-unified-footer .footer-area-inner {
+  .startupgrow-unified-footer .footer-area-inner {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     min-height: auto !important;
   }
 
-  .startupgrow-unified-footer .footer-widget-wrapper:first-child,
-  .public-arolax-page .startupgrow-unified-footer .footer-widget-wrapper:first-child {
+  .startupgrow-unified-footer .footer-widget-wrapper:first-child {
     border-right: 0 !important;
   }
 }
 
 @media (max-width: 767px) {
-  .startupgrow-unified-footer,
-  .public-arolax-page .startupgrow-unified-footer {
+  .startupgrow-unified-footer {
     border-radius: 34px 34px 0 0 !important;
   }
 
   .startupgrow-unified-footer .container.large,
-  .startupgrow-unified-footer .copyright-area .container.large,
-  .public-arolax-page .startupgrow-unified-footer .container.large,
-  .public-arolax-page .startupgrow-unified-footer .copyright-area .container.large {
+  .startupgrow-unified-footer .copyright-area .container.large {
     padding-left: 24px !important;
     padding-right: 24px !important;
   }
 
-  .startupgrow-unified-footer .footer-area-inner,
-  .public-arolax-page .startupgrow-unified-footer .footer-area-inner {
+  .startupgrow-unified-footer .footer-area-inner {
     grid-template-columns: 1fr !important;
     padding-top: 64px !important;
     padding-bottom: 54px !important;
   }
 
-  .startupgrow-unified-footer .title,
-  .public-arolax-page .startupgrow-unified-footer .title {
+  .startupgrow-unified-footer .title {
     margin-bottom: 18px !important;
   }
 
-  .startupgrow-unified-footer .copyright-area-inner,
-  .public-arolax-page .startupgrow-unified-footer .copyright-area-inner {
+  .startupgrow-unified-footer .copyright-area-inner {
     min-height: 92px !important;
   }
 }
