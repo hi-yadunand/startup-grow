@@ -313,7 +313,7 @@ export default function AboutPage() {
   return (
     <>
       <link rel="stylesheet" href="/assets/css/master-about.css" />
-      <link rel="stylesheet" href="/assets/css/contact-overrides.css?v=3" />
+      <link rel="stylesheet" href="/assets/css/contact-overrides.css" />
       <div
         className={`public-arolax-page font-heading-beatricetrial-regular-2`}
         dangerouslySetInnerHTML={{ __html: pageHtml }}
