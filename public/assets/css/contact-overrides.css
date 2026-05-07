@@ -104,21 +104,28 @@
 
 .startupgrow-unified-footer .footer-area-inner {
   display: grid !important;
-  grid-template-columns: minmax(180px, 1.1fr) minmax(180px, 0.75fr) minmax(180px, 0.75fr) minmax(300px, 1.25fr) !important;
-  gap: clamp(36px, 5vw, 96px) !important;
+  grid-template-columns: minmax(220px, 0.95fr) minmax(170px, 0.72fr) minmax(170px, 0.72fr) minmax(320px, 1.1fr) !important;
+  gap: clamp(32px, 4vw, 80px) !important;
   min-height: clamp(560px, 55vw, 790px) !important;
   padding-top: clamp(130px, 12vw, 170px) !important;
   padding-bottom: clamp(80px, 8vw, 150px) !important;
   border-bottom: 1px solid var(--footer-line) !important;
+  justify-content: space-between !important;
+  align-items: start !important;
 }
 
 .startupgrow-unified-footer .footer-widget-wrapper {
   min-width: 0 !important;
   width: auto !important;
+  grid-row: auto !important;
+  grid-column: auto !important;
+  order: 0 !important;
+  position: relative !important;
 }
 
 .startupgrow-unified-footer .footer-widget-wrapper:first-child {
   border-right: 1px solid var(--footer-line) !important;
+  min-height: 100% !important;
 }
 
 .startupgrow-unified-footer .footer-logo {
@@ -250,8 +257,41 @@
     min-height: auto !important;
   }
 
+.startupgrow-unified-footer .footer-widget-wrapper:first-child {
+  border-right: 0 !important;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .startupgrow-unified-footer .footer-area-inner {
+    grid-template-columns: minmax(170px, 0.9fr) minmax(150px, 0.75fr) minmax(150px, 0.75fr) minmax(280px, 1.1fr) !important;
+    gap: 28px !important;
+    min-height: clamp(500px, 60vw, 700px) !important;
+    padding-top: 96px !important;
+    padding-bottom: 80px !important;
+  }
+
+  .startupgrow-unified-footer .footer-widget-wrapper.newsletter {
+    grid-column: auto !important;
+    order: 0 !important;
+  }
+
   .startupgrow-unified-footer .footer-widget-wrapper:first-child {
-    border-right: 0 !important;
+    border-right: 1px solid var(--footer-line) !important;
+  }
+
+  .startupgrow-unified-footer .title {
+    font-size: clamp(26px, 3vw, 36px) !important;
+  }
+
+  .startupgrow-unified-footer .footer-nav-list li,
+  .startupgrow-unified-footer .newsletter-text .text {
+    font-size: clamp(16px, 2vw, 20px) !important;
+  }
+
+  .startupgrow-unified-footer .input-field {
+    min-height: 84px !important;
+    padding: 0 22px !important;
   }
 }
 
@@ -270,6 +310,7 @@
     grid-template-columns: 1fr !important;
     padding-top: 64px !important;
     padding-bottom: 54px !important;
+    min-height: auto !important;
   }
 
   .startupgrow-unified-footer .title {

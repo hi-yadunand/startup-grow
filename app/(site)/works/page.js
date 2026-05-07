@@ -237,7 +237,7 @@ export default function WorksPage() {
   return (
     <>
       <link rel="stylesheet" href="/assets/css/master-works.css" />
-      <link rel="stylesheet" href="/assets/css/contact-overrides.css?v=7" />
+      <link rel="stylesheet" href="/assets/css/contact-overrides.css?v=8" />
       <div
         className={`public-arolax-page font-heading-beatricetrial-regular-2`}
         dangerouslySetInnerHTML={{ __html: pageHtml }}
