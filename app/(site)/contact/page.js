@@ -161,8 +161,8 @@ const pageHtml = `<div id="preloader">
 
 
 
-          <section class="contact-area"><div class="container"><div class="contact-area-inner section-spacing"><div class="section-header"><div class="section-title-wrapper"><div class="title-wrapper"><h2 class="section-title large has_fade_anim">Send your
-                        startup request!</h2></div></div><div class="text-wrapper"><p class="text has_fade_anim">Tell us what your startup needs and the team will plan the next step.</p></div></div><div class="section-content"><div class="info-box has_fade_anim"><div class="text-wrapper"><p class="text">Share your website, branding, SEO, social media, content, PPC, or email marketing requirement.</p></div><ul class="contact-list"><li><a href="tel:+881750660600">Contact and Request Module</a></li><li><a href="#">startupgrow@example.com</a></li><li>Digital Solutions <br>for Indian Startups</li></ul></div><div class="contact-wrap has_fade_anim" data-delay="0.30"><form action="#"><div class="contact-formwrap"><div class="contact-formfield"><input type="text" name="Name" id="Name" placeholder="Name*"></div><div class="contact-formfield"><input type="text" name="Email" id="Email" placeholder="Email*"></div><div class="contact-formfield"><input type="text" name="Phone" id="Phone" placeholder="Phone"></div><div class="contact-formfield"><input type="text" name="Subject" id="Subject" placeholder="Subject*"></div><div class="contact-formfield messages"><input type="text" name="Messages" id="Messages" placeholder="Messages*"></div></div><div class="submit-btn"><button type="submit" class="wc-btn wc-btn-primary btn-text-flip"><span data-text="Send Message">Send Message</span></button></div></form></div></div></div></div></section>
+          <section class="contact-area"><div class="container"><div class="contact-area-inner section-spacing"><div class="section-header"><div class="section-title-wrapper"><div class="title-wrapper"><h2 class="section-title large has_fade_anim">Send us your
+                        project brief</h2></div></div><div class="text-wrapper"><p class="text has_fade_anim">Pick a service, share your goals, and our team will reply with next steps.</p></div></div><div class="section-content"><div class="info-box has_fade_anim"><div class="text-wrapper"><p class="text">We help brands grow with SEO, PPC, social media, content, email marketing, and web design & development.</p></div><ul class="contact-list"><li><a href="tel:+91-0000000000">Digital Agency Enquiry</a></li><li><a href="mailto:startupgrow@example.com">startupgrow@example.com</a></li><li>Digital growth partners <br>for modern teams</li></ul></div><div class="contact-wrap has_fade_anim" data-delay="0.30"><form id="agency-contact-form"><div class="contact-formwrap"><div class="contact-formfield"><input type="text" name="name" id="agency_name" placeholder="Name*"></div><div class="contact-formfield"><input type="email" name="email" id="agency_email" placeholder="Email*"></div><div class="contact-formfield"><input type="text" name="phone" id="agency_phone" placeholder="Phone*"></div><div class="contact-formfield"><input type="text" name="subject" id="agency_subject" placeholder="Subject*"></div><div class="contact-formfield"><select name="service" id="agency_service" aria-label="Service"><option value="">Select a service*</option><option>Search Engine Optimisation</option><option>Pay-Per-Click Advertising (PPC)</option><option>Social Media Marketing</option><option>Content Marketing</option><option>Email Marketing</option><option>Web Design & Development</option></select></div><div class="contact-formfield messages"><input type="text" name="message" id="agency_message" placeholder="Message*"></div></div><div class="submit-btn"><button id="agency-submit" type="submit" class="wc-btn wc-btn-primary btn-text-flip"><span data-text="Send Message">Send Message</span></button></div><p id="agency-form-status" class="agency-form-status" aria-live="polite"></p></form></div></div></div></div></section>
 
 
         </main>
@@ -240,6 +240,52 @@ export default function ContactPage() {
     if (typeof window !== "undefined" && window.initArolax) {
       window.initArolax();
     }
+
+    const form = document.getElementById("agency-contact-form");
+    const statusEl = document.getElementById("agency-form-status");
+    const submitBtn = document.getElementById("agency-submit");
+
+    if (!form) return;
+
+    const API_BASE = (process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000").replace(/\/$/, "");
+
+    async function onSubmit(event) {
+      event.preventDefault();
+      if (statusEl) statusEl.textContent = "";
+      if (submitBtn) submitBtn.disabled = true;
+
+      const payload = {
+        name: document.getElementById("agency_name")?.value || "",
+        email: document.getElementById("agency_email")?.value || "",
+        phone: document.getElementById("agency_phone")?.value || "",
+        subject: document.getElementById("agency_subject")?.value || "",
+        service: document.getElementById("agency_service")?.value || "",
+        message: document.getElementById("agency_message")?.value || ""
+      };
+
+      try {
+        const response = await fetch(`${API_BASE}/api/leads`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+        const data = await response.json().catch(() => ({}));
+
+        if (!response.ok) {
+          throw new Error(data.message || "Request failed. Please try again.");
+        }
+
+        form.reset();
+        if (statusEl) statusEl.textContent = "Thanks! Your message was sent. Our team will reach out shortly.";
+      } catch (error) {
+        if (statusEl) statusEl.textContent = error.message || "Unable to send your message right now.";
+      } finally {
+        if (submitBtn) submitBtn.disabled = false;
+      }
+    }
+
+    form.addEventListener("submit", onSubmit);
+    return () => form.removeEventListener("submit", onSubmit);
   }, []);
 
   return (

@@ -78,3 +78,24 @@
   }
 }
 
+/* Contact form status + select styling (contact page only). */
+.public-arolax-page .agency-form-status {
+  margin-top: 14px;
+  font-size: 14px;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.public-arolax-page .contact-formfield select {
+  width: 100%;
+  height: 60px;
+  padding: 0 30px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.public-arolax-page .contact-formfield select option {
+  color: #0b1220;
+}
+
