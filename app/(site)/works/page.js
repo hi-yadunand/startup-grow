@@ -143,7 +143,7 @@ const pageHtml = `<div id="preloader">
   </header>
 
 
-  <div class="has-smooth" id="has_smooth"></div>
+  <div id="has_smooth"></div>
   <div id="smooth-wrapper">
     <div id="smooth-content">
       <div class="body-wrapper body-corporate-agency">
@@ -229,7 +229,7 @@ export default function WorksPage() {
   return (
     <>
       <link rel="stylesheet" href="/assets/css/master-works.css" />
-      <link rel="stylesheet" href="/assets/css/contact-overrides.css?v=3" />
+      <link rel="stylesheet" href="/assets/css/contact-overrides.css?v=4" />
       <div
         className={`public-arolax-page font-heading-beatricetrial-regular-2`}
         dangerouslySetInnerHTML={{ __html: pageHtml }}
