@@ -262,7 +262,7 @@ export default function ContactPage() {
       <link rel="stylesheet" href="/assets/css/master-contact.css" />
       <link rel="stylesheet" href="/assets/css/contact-overrides.css?v=9" />
       <div
-        className={`public-arolax-page font-heading-beatricetrial-regular-2`}
+        className={`public-arolax-page startupgrow-contact-page font-heading-beatricetrial-regular-2`}
         dangerouslySetInnerHTML={{ __html: pageHtml }}
       />
       {formTarget
