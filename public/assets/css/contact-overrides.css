@@ -16,6 +16,7 @@
   position: static !important;
   float: none !important;
   transform: none !important;
+  z-index: 2 !important;
 }
 
 .public-arolax-page .footer-area .footer-area-inner > .footer-cta {
@@ -26,8 +27,17 @@
   gap: 24px !important;
   align-items: start !important;
   position: static !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  inset: auto !important;
   float: none !important;
   transform: none !important;
+  width: auto !important;
+  max-width: 100% !important;
+  clear: both !important;
+  z-index: 1 !important;
 }
 
 .public-arolax-page .footer-area .footer-widget-wrapper {
@@ -46,6 +56,19 @@
 
   .public-arolax-page .footer-area .footer-widget-wrapper.newsletter {
     grid-column: 1 / -1 !important;
+  }
+}
+
+/* Stack CTA below heading earlier to avoid any “designed overlap” at laptop widths. */
+@media (max-width: 1399px) {
+  .public-arolax-page .footer-area .footer-area-inner > .section-header {
+    flex-basis: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .public-arolax-page .footer-area .footer-area-inner > .footer-cta {
+    flex-basis: 100% !important;
+    max-width: 100% !important;
   }
 }
 
