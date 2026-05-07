@@ -311,19 +311,27 @@ export default function HomePage() {
               <div className="footer-widget-wrapper newsletter">
                 <h2 className="title">Abstract</h2>
                 <div className="newsletter-text">
-                  <p className="text">
-                    StartupGrow is a web-based digital solutions platform that helps startups build their online presence
-                    through web development and marketing services.
-                  </p>
+                  <p className="text">StartupGrow helps early-stage Indian startups build their online presence through web development and digital marketing services.</p>
                 </div>
                 <form action="#" className="subscribe-form">
                   <div className="input-field">
                     <input type="email" placeholder="Enter your email" />
-                    <button type="submit" className="subscribe-btn">
-                      <img src="/assets/imgs/icon/arrow-light.webp" alt="icon" />
-                    </button>
+                    <button type="submit" className="subscribe-btn"><img src="/assets/imgs/icon/arrow-light.webp" alt="icon" /></button>
                   </div>
                 </form>
+              </div>
+              <div className="footer-widget-wrapper location">
+                <h2 className="title">Project</h2>
+                <ul className="footer-nav-list">
+                  <li><a href="/works">Academic Innovation Project<br />for Indian Startups</a></li>
+                </ul>
+              </div>
+              <div className="footer-widget-wrapper location">
+                <h2 className="title">Contact</h2>
+                <ul className="footer-nav-list">
+                  <li><a href="mailto:startupgrow@example.com">startupgrow@example.com</a></li>
+                  <li><a href="/contact">Digital Agency Enquiry</a></li>
+                </ul>
               </div>
             </div>
           </div>

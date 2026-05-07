@@ -205,22 +205,33 @@ const pageHtml = `<div id="preloader">
                   <li><a href="/about">Objective</a></li>
                   <li><a href="/works">Project Scope</a></li>
                   <li><a href="/services">Services</a></li>
-                  <li><a href="/contact">Contact</a></li>
+                  <li><a href="/contact">Contact Us</a></li>
                 </ul>
               </div>
               <div class="footer-widget-wrapper newsletter">
                 <h2 class="title">Abstract</h2>
                 <div class="newsletter-text">
-                  <p class="text">StartupGrow is a web-based digital solutions platform that helps startups build their online presence through web development and marketing services.</p>
+                  <p class="text">StartupGrow helps early-stage Indian startups build their online presence through web development and digital marketing services.</p>
                 </div>
                 <form action="#" class="subscribe-form">
                   <div class="input-field">
                     <input type="email" placeholder="Enter your email">
-                    <button type="submit" class="subscribe-btn">
-                      <img src="/assets/imgs/icon/arrow-light.webp" alt="icon">
-                    </button>
+                    <button type="submit" class="subscribe-btn"><img src="/assets/imgs/icon/arrow-light.webp" alt="icon"></button>
                   </div>
                 </form>
+              </div>
+              <div class="footer-widget-wrapper location">
+                <h2 class="title">Project</h2>
+                <ul class="footer-nav-list">
+                  <li><a href="/works">Academic Innovation Project<br>for Indian Startups</a></li>
+                </ul>
+              </div>
+              <div class="footer-widget-wrapper location">
+                <h2 class="title">Contact</h2>
+                <ul class="footer-nav-list">
+                  <li><a href="mailto:startupgrow@example.com">startupgrow@example.com</a></li>
+                  <li><a href="/contact">Digital Agency Enquiry</a></li>
+                </ul>
               </div>
             </div>
           </div>
