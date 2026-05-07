@@ -305,6 +305,29 @@
   }
 }
 
+/* Contact page service request form. */
+.public-arolax-page .startupgrow-service-request-area .section-content {
+  grid-template-columns: minmax(260px, 360px) minmax(0, 1fr) !important;
+}
+
+.public-arolax-page .startupgrow-service-request-area .contact-wrap {
+  min-width: 0 !important;
+}
+
+.startupgrow-contact-quote-form form {
+  box-shadow: 0 24px 80px rgba(18, 18, 18, 0.08) !important;
+}
+
+.startupgrow-contact-quote-form textarea {
+  min-height: 150px !important;
+}
+
+@media (max-width: 991px) {
+  .public-arolax-page .startupgrow-service-request-area .section-content {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 /* Contact form status + select styling (contact page only). */
 .public-arolax-page .agency-form-status {
   margin-top: 14px;
