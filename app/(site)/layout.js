@@ -1,4 +1,5 @@
 import Script from "next/script";
+import ArolaxRuntime from "@/components/ArolaxRuntime";
 
 export default function SiteLayout({ children }) {
   return (
@@ -13,6 +14,7 @@ export default function SiteLayout({ children }) {
       <link rel="stylesheet" href="/assets/css/contact-overrides.css?v=4" />
       
       {children}
+      <ArolaxRuntime />
 
       <Script src="/assets/js/jquery-3.6.0.min.js" strategy="beforeInteractive" />
       <Script src="/assets/js/bootstrap.bundle.min.js" strategy="afterInteractive" />
@@ -28,7 +30,7 @@ export default function SiteLayout({ children }) {
       <Script src="/assets/js/jquery.meanmenu.min.js" strategy="afterInteractive" />
       <Script src="/assets/js/backToTop.js" strategy="afterInteractive" />
       <Script src="/assets/js/main.js" strategy="afterInteractive" />
-      <Script src="/assets/js/error-handling.js" strategy="afterInteractive" />
+      <Script src="/assets/js/arolax-init.js?v=1" strategy="afterInteractive" />
       <Script src="/assets/js/offcanvas.js" strategy="afterInteractive" />
     </div>
   );
