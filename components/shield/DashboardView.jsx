@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { RefreshCcw, Mail, Building, Tag, CheckCircle2, CircleDashed, Clock, ChevronRight, BellRing } from "lucide-react";
+import { RefreshCcw, Mail, Building, Tag, CheckCircle2, CircleDashed, Clock, ChevronRight } from "lucide-react";
 import { fetchServiceRequests, updateRequestStatus } from "@/lib/api";
 
 const statuses = ["New", "Contacted", "In progress", "Closed"];
@@ -26,12 +26,9 @@ export default function DashboardView() {
   const [loading, setLoading] = useState(true);
   const [message, setMessage] = useState("");
   const [refreshing, setRefreshing] = useState(false);
-  const newRequestCount = requests.filter((request) => request.status === "New").length;
 
-  async function loadRequests({ silent = false } = {}) {
-    if (!silent) {
-      setLoading(true);
-    }
+  async function loadRequests() {
+    setLoading(true);
     setMessage("");
     try {
       const payload = await fetchServiceRequests();
@@ -39,9 +36,7 @@ export default function DashboardView() {
     } catch (error) {
       setMessage(error.message || "Unable to load requests.");
     } finally {
-      if (!silent) {
-        setLoading(false);
-      }
+      setLoading(false);
     }
   }
 
@@ -64,11 +59,6 @@ export default function DashboardView() {
 
   useEffect(() => {
     loadRequests();
-    const interval = setInterval(() => {
-      loadRequests({ silent: true });
-    }, 15000);
-
-    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -103,30 +93,6 @@ export default function DashboardView() {
           {message}
         </div>
       )}
-
-      {!loading && newRequestCount > 0 ? (
-        <div className="flex flex-col gap-3 rounded-2xl border border-emerald-500/20 bg-emerald-500/10 px-5 py-4 text-emerald-100 shadow-[0_0_30px_rgba(16,185,129,0.08)] sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-300 ring-1 ring-emerald-500/30">
-              <BellRing size={18} />
-            </div>
-            <div>
-              <p className="text-sm font-black text-white">
-                {newRequestCount} new service {newRequestCount === 1 ? "request" : "requests"}
-              </p>
-              <p className="mt-1 text-xs font-semibold text-emerald-200/80">
-                Contact page submissions are waiting for review.
-              </p>
-            </div>
-          </div>
-          <button
-            className="inline-flex items-center justify-center rounded-lg border border-emerald-400/30 px-3 py-2 text-xs font-black uppercase tracking-wide text-emerald-100 transition hover:bg-emerald-400/10"
-            onClick={handleRefresh}
-          >
-            Refresh
-          </button>
-        </div>
-      ) : null}
 
       <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] backdrop-blur-xl shadow-2xl">
         <div className="grid grid-cols-12 gap-4 border-b border-white/10 bg-black/20 px-6 py-4 text-xs font-bold uppercase tracking-wider text-slate-400">
