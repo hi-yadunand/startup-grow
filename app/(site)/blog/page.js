@@ -246,7 +246,7 @@ export default function BlogPage() {
   return (
     <>
       <link rel="stylesheet" href="/assets/css/master-blog.css" />
-      <link rel="stylesheet" href="/assets/css/contact-overrides.css?v=8" />
+      <link rel="stylesheet" href="/assets/css/contact-overrides.css?v=9" />
       <div
         className={`public-arolax-page font-heading-beatricetrial-regular-2`}
         dangerouslySetInnerHTML={{ __html: pageHtml }}
