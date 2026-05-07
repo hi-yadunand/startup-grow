@@ -281,7 +281,30 @@
   }
 }
 
-/* Team page: use the three named project member photos. */
+/* Public team cards: keep only the three real project members and crop their photos. */
+.public-arolax-page .team-area .team-wrapper .team-box:nth-child(n + 4),
+.team-area.section-style .team-wrapper .team-box:nth-child(n + 4) {
+  display: none !important;
+}
+
+.public-arolax-page .team-area .team-box .thumb,
+.team-area.section-style .team-box .thumb {
+  overflow: hidden !important;
+  background: #111111 !important;
+}
+
+.public-arolax-page .team-area .team-box .thumb img[src*="/team-members/"],
+.team-area.section-style .team-box .thumb img[src*="/team-members/"] {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center top !important;
+}
+
+.team-area.section-style .team-box .thumb {
+  aspect-ratio: 4 / 5 !important;
+}
+
 .public-arolax-page .startupgrow-team-members .team-wrapper {
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
 }

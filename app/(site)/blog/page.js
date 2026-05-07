@@ -192,7 +192,7 @@ const pageHtml = `<div id="preloader">
                   <h2 class="title">Team</h2>
                   <ul class="footer-nav-list">
                     <li>Yadunand Pavithran, <br>
-                      Nashid Nihal C</li>
+                      Nashith Nihal C</li>
                   </ul>
                 </div>
                 <div class="footer-widget-wrapper">
@@ -246,7 +246,7 @@ export default function BlogPage() {
   return (
     <>
       <link rel="stylesheet" href="/assets/css/master-blog.css" />
-      <link rel="stylesheet" href="/assets/css/contact-overrides.css?v=3" />
+      <link rel="stylesheet" href="/assets/css/contact-overrides.css?v=6" />
       <div
         className={`public-arolax-page font-heading-beatricetrial-regular-2`}
         dangerouslySetInnerHTML={{ __html: pageHtml }}
