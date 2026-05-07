@@ -78,6 +78,256 @@
   }
 }
 
+/* Use the home footer everywhere: hide inner-page CTA footers. */
+.public-arolax-page .footer-area:not(.section-style) {
+  display: none !important;
+}
+
+/* Shared footer design used on every public page. */
+.startupgrow-unified-footer {
+  --footer-bg: #111111;
+  --footer-line: rgba(255, 255, 255, 0.08);
+  --footer-muted: rgba(255, 255, 255, 0.56);
+  --footer-panel: #242424;
+  background: var(--footer-bg) !important;
+  border-radius: clamp(46px, 6vw, 96px) clamp(46px, 6vw, 96px) 0 0 !important;
+  color: #ffffff !important;
+  overflow: hidden !important;
+  margin-top: 0 !important;
+}
+
+.startupgrow-unified-footer .container.large {
+  max-width: 100% !important;
+  padding-left: clamp(32px, 5vw, 96px) !important;
+  padding-right: clamp(32px, 5vw, 96px) !important;
+}
+
+.startupgrow-unified-footer .footer-area-inner {
+  display: grid !important;
+  grid-template-columns: minmax(180px, 1.1fr) minmax(180px, 0.75fr) minmax(180px, 0.75fr) minmax(300px, 1.25fr) !important;
+  gap: clamp(36px, 5vw, 96px) !important;
+  min-height: clamp(560px, 55vw, 790px) !important;
+  padding-top: clamp(130px, 12vw, 170px) !important;
+  padding-bottom: clamp(80px, 8vw, 150px) !important;
+  border-bottom: 1px solid var(--footer-line) !important;
+}
+
+.startupgrow-unified-footer .footer-widget-wrapper {
+  min-width: 0 !important;
+  width: auto !important;
+}
+
+.startupgrow-unified-footer .footer-widget-wrapper:first-child {
+  border-right: 1px solid var(--footer-line) !important;
+}
+
+.startupgrow-unified-footer .footer-logo {
+  padding-top: 4px !important;
+}
+
+.startupgrow-unified-footer .startupgrow-wordmark.light {
+  color: #ffffff !important;
+  font-size: clamp(22px, 2vw, 34px) !important;
+  line-height: 1 !important;
+}
+
+.startupgrow-unified-footer .title {
+  color: #ffffff !important;
+  font-size: clamp(32px, 3vw, 46px) !important;
+  font-weight: 800 !important;
+  line-height: 1.1 !important;
+  margin: 0 0 34px !important;
+  letter-spacing: 0 !important;
+}
+
+.startupgrow-unified-footer .footer-nav-list {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.startupgrow-unified-footer .footer-nav-list li {
+  color: var(--footer-muted) !important;
+  font-size: clamp(18px, 1.45vw, 24px) !important;
+  font-weight: 700 !important;
+  line-height: 1.45 !important;
+  list-style: none !important;
+}
+
+.startupgrow-unified-footer .footer-nav-list li + li {
+  margin-top: 8px !important;
+}
+
+.startupgrow-unified-footer .footer-nav-list a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.startupgrow-unified-footer .footer-nav-list a:hover {
+  color: #ffffff !important;
+}
+
+.startupgrow-unified-footer .newsletter-text .text {
+  color: var(--footer-muted) !important;
+  max-width: 580px !important;
+  font-size: clamp(18px, 1.45vw, 25px) !important;
+  font-weight: 700 !important;
+  line-height: 1.45 !important;
+  margin: 0 !important;
+}
+
+.startupgrow-unified-footer .subscribe-form {
+  margin-top: clamp(36px, 4vw, 58px) !important;
+}
+
+.startupgrow-unified-footer .input-field {
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+  min-height: clamp(82px, 8vw, 118px) !important;
+  padding: 0 clamp(24px, 3vw, 34px) !important;
+  border: 0 !important;
+  border-radius: 24px !important;
+  background: var(--footer-panel) !important;
+}
+
+.startupgrow-unified-footer .input-field input {
+  width: 100% !important;
+  border: 0 !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.12) !important;
+  outline: 0 !important;
+  padding-left: 16px !important;
+  background: transparent !important;
+  color: #ffffff !important;
+  font-size: clamp(16px, 1.2vw, 20px) !important;
+  font-weight: 700 !important;
+}
+
+.startupgrow-unified-footer .input-field input::placeholder {
+  color: var(--footer-muted) !important;
+  opacity: 1 !important;
+}
+
+.startupgrow-unified-footer .subscribe-btn {
+  flex: 0 0 auto !important;
+  border: 0 !important;
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+.startupgrow-unified-footer .subscribe-btn img {
+  width: clamp(44px, 4vw, 72px) !important;
+}
+
+.startupgrow-unified-footer .copyright-area {
+  background: var(--footer-bg) !important;
+}
+
+.startupgrow-unified-footer .copyright-area .container.large {
+  padding-left: clamp(32px, 5vw, 96px) !important;
+  padding-right: clamp(32px, 5vw, 96px) !important;
+}
+
+.startupgrow-unified-footer .copyright-area-inner {
+  display: flex !important;
+  align-items: center !important;
+  min-height: 124px !important;
+  padding: 0 !important;
+  border-top: 0 !important;
+}
+
+.startupgrow-unified-footer .copyright-area .text {
+  color: rgba(255, 255, 255, 0.28) !important;
+  font-size: clamp(18px, 1.35vw, 24px) !important;
+  font-weight: 800 !important;
+  line-height: 1.4 !important;
+  margin: 0 !important;
+}
+
+@media (max-width: 1199px) {
+  .startupgrow-unified-footer .footer-area-inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    min-height: auto !important;
+  }
+
+  .startupgrow-unified-footer .footer-widget-wrapper:first-child {
+    border-right: 0 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .startupgrow-unified-footer {
+    border-radius: 34px 34px 0 0 !important;
+  }
+
+  .startupgrow-unified-footer .container.large,
+  .startupgrow-unified-footer .copyright-area .container.large {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  .startupgrow-unified-footer .footer-area-inner {
+    grid-template-columns: 1fr !important;
+    padding-top: 64px !important;
+    padding-bottom: 54px !important;
+  }
+
+  .startupgrow-unified-footer .title {
+    margin-bottom: 18px !important;
+  }
+
+  .startupgrow-unified-footer .copyright-area-inner {
+    min-height: 92px !important;
+  }
+}
+
+/* Team page: use the three named project member photos. */
+.public-arolax-page .startupgrow-team-members .team-wrapper {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+.public-arolax-page .startupgrow-team-members .team-box .thumb {
+  aspect-ratio: 4 / 5 !important;
+  overflow: hidden !important;
+  background: #f3f3f3 !important;
+}
+
+.public-arolax-page .startupgrow-team-members .team-box .thumb img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center top !important;
+}
+
+@media (max-width: 767px) {
+  .public-arolax-page .startupgrow-team-members .team-wrapper {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Contact page service request form. */
+.public-arolax-page .startupgrow-service-request-area .section-content {
+  grid-template-columns: minmax(260px, 360px) minmax(0, 1fr) !important;
+}
+
+.public-arolax-page .startupgrow-service-request-area .contact-wrap {
+  min-width: 0 !important;
+}
+
+.startupgrow-contact-quote-form form {
+  box-shadow: 0 24px 80px rgba(18, 18, 18, 0.08) !important;
+}
+
+.startupgrow-contact-quote-form textarea {
+  min-height: 150px !important;
+}
+
+@media (max-width: 991px) {
+  .public-arolax-page .startupgrow-service-request-area .section-content {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 /* Contact form status + select styling (contact page only). */
 .public-arolax-page .agency-form-status {
   margin-top: 14px;
@@ -98,4 +348,3 @@
 .public-arolax-page .contact-formfield select option {
   color: #0b1220;
 }
-

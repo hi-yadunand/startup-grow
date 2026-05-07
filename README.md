@@ -62,6 +62,8 @@ CLIENT_ORIGIN=http://localhost:3000
 NEXT_PUBLIC_API_URL=http://localhost:4000
 ```
 
+`NEXT_PUBLIC_API_URL` is optional for the Next.js app. If it is blank or the external backend is missing a route, the frontend uses the same-origin `/api/*` routes.
+
 Run the backend API:
 
 ```bash
@@ -89,8 +91,12 @@ http://localhost:3000
 | POST | `/api/requests` | Create a service request |
 | GET | `/api/requests` | Get recent service requests |
 | PATCH | `/api/requests/:id/status` | Update request status |
+| POST | `/api/leads` | Create a public contact lead |
+| GET | `/api/leads` | Get recent contact leads |
+| PATCH | `/api/leads/:id/status` | Update lead status |
 
 If `MONGODB_URI` is not configured or MongoDB is unavailable, the API runs with temporary in-memory storage for demo use.
+The Next.js app also exposes these `/api/*` routes, so the public contact page and `/shield` dashboard can use the same-origin API on Vercel or fall back from an external API URL if that backend is missing a route.
 
 ## Documentation
 
