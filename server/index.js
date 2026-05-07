@@ -47,10 +47,7 @@ function isAllowedOrigin(origin) {
     return true;
   }
 
-  return (
-    /^https:\/\/startup-grow(?:-[a-z0-9-]+)?\.vercel\.app$/i.test(cleanOrigin) ||
-    /^https:\/\/startup-grow-[a-z0-9-]+-yadunand-pavithrans-projects\.vercel\.app$/i.test(cleanOrigin)
-  );
+  return /^https:\/\/startup-grow-[a-z0-9-]+-yadunand-pavithrans-projects\.vercel\.app$/i.test(cleanOrigin);
 }
 
 app.get("/api/health", async (request, response) => {

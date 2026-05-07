@@ -1,6 +1,5 @@
 "use client";
 import { useEffect } from "react";
-import { createContactLead } from "@/lib/api";
 
 const pageHtml = `<div id="preloader">
     <div id="container" class="container-preloader">
@@ -248,6 +247,8 @@ export default function ContactPage() {
 
     if (!form) return;
 
+    const API_BASE = (process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000").replace(/\/$/, "");
+
     async function onSubmit(event) {
       event.preventDefault();
       if (statusEl) statusEl.textContent = "";
@@ -263,7 +264,17 @@ export default function ContactPage() {
       };
 
       try {
-        await createContactLead(payload);
+        const response = await fetch(`${API_BASE}/api/leads`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+        const data = await response.json().catch(() => ({}));
+
+        if (!response.ok) {
+          throw new Error(data.message || "Request failed. Please try again.");
+        }
+
         form.reset();
         if (statusEl) statusEl.textContent = "Thanks! Your message was sent. Our team will reach out shortly.";
       } catch (error) {

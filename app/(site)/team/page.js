@@ -159,7 +159,7 @@ const pageHtml = `<div id="preloader">
 
 
 
-          <section class="team-area startupgrow-team-members"><div class="container"><div class="team-area-inner section-spacing"><div class="section-header"><div class="section-title-wrapper"><div class="title-wrapper"><h2 class="section-title has_text_move_anim">Bringing planning, design, and development together!</h2></div></div><div class="text-wrapper"><p class="text has_fade_anim">The team works together on research, design, development, testing, and presentation.</p></div></div><div class="team-wrapper-box"><div class="team-wrapper"><div class="team-box has_fade_anim" data-delay="0.15"><a href="/team"><div class="thumb"><img src="/team-members/Yadunand%20Pavithran.jpg" alt="Yadunand Pavithran"></div><div class="content"><h3 class="title">Yadunand Pavithran</h3><p class="text">Team Member</p></div></a></div><div class="team-box has_fade_anim" data-delay="0.30"><a href="/team"><div class="thumb"><img src="/team-members/Nashith%20Nihal%20C.jpeg" alt="Nashith Nihal C"></div><div class="content"><h3 class="title">Nashith Nihal C</h3><p class="text">Team Member</p></div></a></div><div class="team-box has_fade_anim" data-delay="0.45"><a href="/team"><div class="thumb"><img src="/team-members/Gokul%20Krishna.jpeg" alt="Gokul Krishna"></div><div class="content"><h3 class="title">Gokul Krishna</h3><p class="text">Team Member</p></div></a></div></div></div></div></div></section>
+          <section class="team-area"><div class="container"><div class="team-area-inner section-spacing"><div class="section-header"><div class="section-title-wrapper"><div class="title-wrapper"><h2 class="section-title has_text_move_anim">Bringing planning, design, and development together!</h2></div></div><div class="text-wrapper"><p class="text has_fade_anim">The team works together on research, design, development, testing, and presentation.</p></div></div><div class="team-wrapper-box"><div class="team-wrapper"><div class="team-box has_fade_anim" data-delay="0.15"><a href="/team"><div class="thumb"><img src="/assets/imgs/team/img-s-1.webp" alt="team icon"></div><div class="content"><h3 class="title">Yadunand Pavithran</h3><p class="text">Team Member</p></div></a></div><div class="team-box has_fade_anim" data-delay="0.30"><a href="/team"><div class="thumb"><img src="/assets/imgs/team/img-s-2.webp" alt="team icon"></div><div class="content"><h3 class="title">Nashid Nihal C</h3><p class="text">Team Member</p></div></a></div><div class="team-box has_fade_anim" data-delay="0.45"><a href="/team"><div class="thumb"><img src="/assets/imgs/team/img-s-3.webp" alt="team icon"></div><div class="content"><h3 class="title">Gokul Krishna</h3><p class="text">Team Member</p></div></a></div><div class="team-box has_fade_anim" data-delay="0.60"><a href="/team"><div class="thumb"><img src="/assets/imgs/team/img-s-4.webp" alt="team icon"></div><div class="content"><h3 class="title">StartupGrow Team</h3><p class="text">Team Member</p></div></a></div></div></div></div></div></section>
 
 
 
@@ -192,7 +192,7 @@ const pageHtml = `<div id="preloader">
                   <h2 class="title">Team</h2>
                   <ul class="footer-nav-list">
                     <li>Yadunand Pavithran, <br>
-                      Nashith Nihal C</li>
+                      Nashid Nihal C</li>
                   </ul>
                 </div>
                 <div class="footer-widget-wrapper">

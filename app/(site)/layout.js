@@ -14,7 +14,7 @@ export default function SiteLayout({ children }) {
       
       {children}
 
-      <footer className="footer-area section-style pb-0 startupgrow-unified-footer">
+      <footer className="footer-area section-style pb-0">
         <div className="container large">
           <div className="footer-area-inner section-spacing-top">
             <div className="footer-widget-wrapper">
@@ -25,8 +25,8 @@ export default function SiteLayout({ children }) {
             <div className="footer-widget-wrapper">
               <h2 className="title">Service</h2>
               <ul className="footer-nav-list">
-                <li><a href="/services">SEO</a></li>
-                <li><a href="/services">PPC Advertising</a></li>
+                <li><a href="/services">Search Engine Optimisation</a></li>
+                <li><a href="/services">Pay-Per-Click Advertising (PPC)</a></li>
                 <li><a href="/services">Social Media Marketing</a></li>
                 <li><a href="/services">Content Marketing</a></li>
                 <li><a href="/services">Email Marketing</a></li>
@@ -37,8 +37,8 @@ export default function SiteLayout({ children }) {
               <h2 className="title">Company</h2>
               <ul className="footer-nav-list">
                 <li><a href="/">Home</a></li>
-                <li><a href="/about">Objective</a></li>
-                <li><a href="/works">Project Scope</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/works">Works</a></li>
                 <li><a href="/services">Services</a></li>
                 <li><a href="/contact">Contact</a></li>
               </ul>
