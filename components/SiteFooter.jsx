@@ -1,20 +1,20 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { usePathname } from "next/navigation";
 
 function FooterMarkup() {
   return (
-    <footer className="footer-area section-style pb-0 startupgrow-unified-footer">
+    <footer className="footer-area section-style pb-0 startupgrow-unified-footer" data-startupgrow-footer>
       <div className="container large">
         <div className="footer-area-inner section-spacing-top">
-          <div className="footer-widget-wrapper">
+          <div className="footer-widget-wrapper has_fade_anim" data-fade-from="left">
             <div className="footer-logo">
               <a href="/"><span className="startupgrow-wordmark light">STARTUPGROW</span></a>
             </div>
           </div>
-          <div className="footer-widget-wrapper">
+          <div className="footer-widget-wrapper has_fade_anim" data-delay="0.15">
             <h2 className="title">Service</h2>
             <ul className="footer-nav-list">
               <li><a href="/services">SEO</a></li>
@@ -25,7 +25,7 @@ function FooterMarkup() {
               <li><a href="/services">Web Design &amp; Development</a></li>
             </ul>
           </div>
-          <div className="footer-widget-wrapper">
+          <div className="footer-widget-wrapper has_fade_anim" data-delay="0.30">
             <h2 className="title">Company</h2>
             <ul className="footer-nav-list">
               <li><a href="/">Home</a></li>
@@ -35,7 +35,7 @@ function FooterMarkup() {
               <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
-          <div className="footer-widget-wrapper newsletter">
+          <div className="footer-widget-wrapper newsletter has_fade_anim" data-fade-from="right" data-delay="0.45">
             <h2 className="title">Abstract</h2>
             <div className="newsletter-text">
               <p className="text">
@@ -57,7 +57,7 @@ function FooterMarkup() {
       <div className="copyright-area">
         <div className="container large">
           <div className="copyright-area-inner">
-            <p className="text">© 2026 STARTUPGROW - Academic Innovation Project for Indian Startups</p>
+            <p className="text has_fade_anim" data-fade-from="left">© 2026 STARTUPGROW - Academic Innovation Project for Indian Startups</p>
           </div>
         </div>
       </div>
@@ -68,6 +68,7 @@ function FooterMarkup() {
 export default function SiteFooter() {
   const pathname = usePathname();
   const [target, setTarget] = useState(null);
+  const animationRef = useRef(null);
 
   useEffect(() => {
     let attempts = 0;
@@ -105,6 +106,71 @@ export default function SiteFooter() {
     }
 
     const timer = window.setTimeout(() => {
+      const footer = document.querySelector("[data-startupgrow-footer]");
+
+      if (footer && window.gsap && window.ScrollTrigger) {
+        if (animationRef.current) {
+          animationRef.current.revert();
+        }
+
+        animationRef.current = window.gsap.context(() => {
+          const widgets = footer.querySelectorAll(".footer-widget-wrapper");
+          const copyright = footer.querySelector(".copyright-area .text");
+
+          window.gsap.fromTo(
+            footer,
+            { y: 90, autoAlpha: 0 },
+            {
+              y: 0,
+              autoAlpha: 1,
+              duration: 1.1,
+              ease: "power2.out",
+              scrollTrigger: {
+                trigger: footer,
+                start: "top 88%",
+                once: true,
+              },
+            }
+          );
+
+          window.gsap.fromTo(
+            widgets,
+            { y: 60, autoAlpha: 0 },
+            {
+              y: 0,
+              autoAlpha: 1,
+              duration: 1,
+              ease: "power2.out",
+              stagger: 0.12,
+              scrollTrigger: {
+                trigger: footer,
+                start: "top 82%",
+                once: true,
+              },
+            }
+          );
+
+          if (copyright) {
+            window.gsap.fromTo(
+              copyright,
+              { y: 24, autoAlpha: 0 },
+              {
+                y: 0,
+                autoAlpha: 1,
+                duration: 0.8,
+                delay: 0.35,
+                ease: "power2.out",
+                scrollTrigger: {
+                  trigger: copyright,
+                  start: "top 96%",
+                  once: true,
+                },
+              }
+            );
+          }
+        }, footer);
+      }
+
       if (window.ScrollTrigger) {
         window.ScrollTrigger.refresh();
       }
@@ -116,6 +182,14 @@ export default function SiteFooter() {
 
     return () => window.clearTimeout(timer);
   }, [target]);
+
+  useEffect(() => {
+    return () => {
+      if (animationRef.current) {
+        animationRef.current.revert();
+      }
+    };
+  }, []);
 
   if (!target) {
     return null;
