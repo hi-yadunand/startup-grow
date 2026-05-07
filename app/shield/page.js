@@ -1,13 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { LayoutDashboard, PlusCircle, LogOut, Activity, Hexagon, User } from "lucide-react";
+import { LayoutDashboard, PlusCircle, LogOut, Activity, Hexagon, User, Inbox } from "lucide-react";
 import DashboardView from "@/components/shield/DashboardView";
+import LeadsView from "@/components/shield/LeadsView";
 import QuoteForm from "@/components/QuoteForm";
 
 const services = [
-  "SEO",
-  "PPC Advertising",
+  "Search Engine Optimisation",
+  "Pay-Per-Click Advertising (PPC)",
   "Social Media Marketing",
   "Content Marketing",
   "Email Marketing",
@@ -61,6 +62,21 @@ export default function ShieldDashboard() {
             <PlusCircle className="h-5 w-5" />
             Test Request
             {activeTab === "new-request" && (
+              <span className="ml-auto flex h-2 w-2 rounded-full bg-indigo-500 shadow-[0_0_8px_rgba(99,102,241,1)]"></span>
+            )}
+          </button>
+
+          <button
+            onClick={() => setActiveTab("leads")}
+            className={`flex w-full items-center gap-3 rounded-xl px-4 py-3 text-sm font-semibold transition-all duration-300 ${
+              activeTab === "leads"
+                ? "bg-indigo-500/10 text-indigo-400 shadow-[inset_0_1px_0_rgba(255,255,255,0.1)] ring-1 ring-indigo-500/50"
+                : "text-slate-400 hover:bg-white/5 hover:text-white"
+            }`}
+          >
+            <Inbox className="h-5 w-5" />
+            Contact Leads
+            {activeTab === "leads" && (
               <span className="ml-auto flex h-2 w-2 rounded-full bg-indigo-500 shadow-[0_0_8px_rgba(99,102,241,1)]"></span>
             )}
           </button>
@@ -138,6 +154,22 @@ export default function ShieldDashboard() {
                    <QuoteForm services={services} />
                 </div>
               </div>
+            </div>
+          )}
+
+          {activeTab === "leads" && (
+            <div className="animate-in fade-in slide-in-from-bottom-4 duration-700 fill-mode-both">
+              <header className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+                <div>
+                  <h2 className="text-3xl font-black tracking-tight text-white sm:text-4xl">
+                    Contact Leads
+                  </h2>
+                  <p className="mt-2 text-slate-400">
+                    Submissions from the public contact page.
+                  </p>
+                </div>
+              </header>
+              <LeadsView />
             </div>
           )}
         </div>
