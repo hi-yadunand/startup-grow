@@ -11,7 +11,7 @@ export default function SiteLayout({ children }) {
       <link rel="stylesheet" href="/assets/css/meanmenu.min.css" />
       <link rel="stylesheet" href="/assets/css/magnific-popup.css" />
       <link rel="stylesheet" href="/assets/css/master-branding-agency.css" />
-      <link rel="stylesheet" href="/assets/css/contact-overrides.css?v=6" />
+      <link rel="stylesheet" href="/assets/css/contact-overrides.css?v=7" />
       
       {children}
       <SiteFooter />

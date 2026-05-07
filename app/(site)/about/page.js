@@ -175,7 +175,7 @@ const pageHtml = `<div id="preloader">
 
 
 
-          <section class="team-area"><div class="container"><div class="team-area-inner section-spacing"><div class="section-header"><div class="section-title-wrapper"><div class="title-wrapper"><h2 class="section-title has_fade_anim">Project team</h2></div></div><div class="text-wrapper"><p class="text has_fade_anim">We deploy world-class creative design, team on demand. that can design surest measure's of success is when a client partner with more than once build, ship scale your vision most efficient.</p></div></div><div class="team-wrapper-box"><div class="team-wrapper"><div class="team-box has_fade_anim" data-fade-from="left" data-delay="0.15"><a href="/team"><div class="thumb"><img src="/team-members/Yadunand%20Pavithran.jpg" alt="Yadunand Pavithran"></div><div class="content"><h3 class="title">Yadunand Pavithran</h3><p class="text">Team Member</p></div></a></div><div class="team-box has_fade_anim" data-fade-from="left" data-delay="0.30"><a href="/team"><div class="thumb"><img src="/team-members/Nashith%20Nihal%20C.jpeg" alt="Nashith Nihal C"></div><div class="content"><h3 class="title">Nashith Nihal C</h3><p class="text">Team Member</p></div></a></div><div class="team-box has_fade_anim" data-fade-from="left" data-delay="0.45"><a href="/team"><div class="thumb"><img src="/team-members/Gokul%20Krishna.jpeg" alt="Gokul Krishna"></div><div class="content"><h3 class="title">Gokul Krishna</h3><p class="text">Team Member</p></div></a></div></div></div></div></div></section>
+          <section class="team-area startupgrow-about-team"><div class="container"><div class="team-area-inner section-spacing"><div class="section-header"><div class="section-title-wrapper"><div class="title-wrapper"><h2 class="section-title has_fade_anim">Project team</h2></div></div><div class="text-wrapper"><p class="text has_fade_anim">StartupGrow was developed by a student team with guidance and support from faculty and institution.</p></div></div><div class="team-wrapper-box"><div class="team-wrapper"><div class="team-box has_fade_anim" data-fade-from="left" data-delay="0.15"><a href="/team"><div class="thumb"><img src="/team-members/Yadunand%20Pavithran.jpg" alt="Yadunand Pavithran"></div><div class="content"><h3 class="title">Yadunand Pavithran</h3><p class="text">Team Member</p></div></a></div><div class="team-box has_fade_anim" data-fade-from="left" data-delay="0.30"><a href="/team"><div class="thumb"><img src="/team-members/Nashith%20Nihal%20C.jpeg" alt="Nashith Nihal C"></div><div class="content"><h3 class="title">Nashith Nihal C</h3><p class="text">Team Member</p></div></a></div><div class="team-box has_fade_anim" data-fade-from="left" data-delay="0.45"><a href="/team"><div class="thumb"><img src="/team-members/Gokul%20Krishna.jpeg" alt="Gokul Krishna"></div><div class="content"><h3 class="title">Gokul Krishna</h3><p class="text">Team Member</p></div></a></div></div></div></div></div></section>
 
 
 
@@ -263,7 +263,7 @@ export default function AboutPage() {
   return (
     <>
       <link rel="stylesheet" href="/assets/css/master-about.css" />
-      <link rel="stylesheet" href="/assets/css/contact-overrides.css?v=6" />
+      <link rel="stylesheet" href="/assets/css/contact-overrides.css?v=7" />
       <div
         className={`public-arolax-page font-heading-beatricetrial-regular-2`}
         dangerouslySetInnerHTML={{ __html: pageHtml }}
