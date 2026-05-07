@@ -81,32 +81,25 @@ img {
 
 /* Inner pages only (all routes using `.public-arolax-page`): prevent footer CTA overlap. */
 .public-arolax-page .footer-area .footer-area-inner {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  align-items: flex-start !important;
-  justify-content: space-between !important;
-  gap: clamp(24px, 4vw, 56px) !important;
-  position: relative !important;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: clamp(24px, 4vw, 56px);
 }
 
 .public-arolax-page .footer-area .footer-area-inner > .section-header {
-  flex: 1 1 520px !important;
-  min-width: min(520px, 100%) !important;
-  position: static !important;
-  float: none !important;
-  transform: none !important;
+  flex: 1 1 520px;
+  min-width: min(520px, 100%);
 }
 
 .public-arolax-page .footer-area .footer-area-inner > .footer-cta {
-  flex: 1 1 520px !important;
-  min-width: min(520px, 100%) !important;
-  display: grid !important;
-  grid-template-columns: repeat(2, minmax(180px, 1fr)) minmax(240px, 1fr) !important;
-  gap: 24px !important;
-  align-items: start !important;
-  position: static !important;
-  float: none !important;
-  transform: none !important;
+  flex: 1 1 520px;
+  min-width: min(520px, 100%);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(180px, 1fr)) minmax(240px, 1fr);
+  gap: 24px;
+  align-items: start;
 }
 
 .public-arolax-page .footer-area .footer-widget-wrapper {
@@ -120,16 +113,16 @@ img {
 
 @media (max-width: 991px) {
   .public-arolax-page .footer-area .footer-area-inner > .footer-cta {
-    grid-template-columns: repeat(2, minmax(180px, 1fr)) !important;
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
   }
 
   .public-arolax-page .footer-area .footer-widget-wrapper.newsletter {
-    grid-column: 1 / -1 !important;
+    grid-column: 1 / -1;
   }
 }
 
 @media (max-width: 575px) {
   .public-arolax-page .footer-area .footer-area-inner > .footer-cta {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr;
   }
 }
