@@ -78,8 +78,12 @@
   }
 }
 
-/* Hide any leftover legacy inner-page CTA footer. */
+/* Use the home footer everywhere: hide inner-page CTA footers. */
 .public-arolax-page .footer-area:not(.section-style) {
+  display: none !important;
+}
+
+.font-heading-instumentsans-semibold:has(.public-arolax-page) > .startupgrow-layout-footer {
   display: none !important;
 }
 

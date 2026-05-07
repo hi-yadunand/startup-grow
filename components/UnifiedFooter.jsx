@@ -1,6 +1,7 @@
 "use client";
 
-import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 
 function FooterContent() {
   return (
@@ -66,14 +67,28 @@ function FooterContent() {
 }
 
 export default function UnifiedFooter() {
-  const pathname = usePathname();
+  const [innerFooter, setInnerFooter] = useState(null);
 
-  if (pathname !== "/") {
-    return null;
+  useEffect(() => {
+    const target = document.querySelector(
+      ".public-arolax-page #smooth-content .body-wrapper > footer.footer-area:not(.section-style)"
+    );
+
+    if (!target) {
+      return;
+    }
+
+    target.replaceChildren();
+    target.className = "footer-area section-style pb-0 startupgrow-unified-footer startupgrow-inner-footer";
+    setInnerFooter(target);
+  }, []);
+
+  if (innerFooter) {
+    return createPortal(<FooterContent />, innerFooter);
   }
 
   return (
-    <footer className="footer-area section-style pb-0 startupgrow-unified-footer">
+    <footer className="footer-area section-style pb-0 startupgrow-unified-footer startupgrow-layout-footer">
       <FooterContent />
     </footer>
   );
