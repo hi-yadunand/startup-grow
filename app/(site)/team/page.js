@@ -169,63 +169,55 @@ const pageHtml = `<div id="preloader">
         </main>
 
 
-        <footer class="footer-area">
-          <div class="container">
+        <footer class="footer-area section-style pb-0 startupgrow-unified-footer">
+          <div class="container large">
             <div class="footer-area-inner section-spacing-top">
-              <div class="shape-1">
-                <img class="show-light" src="/assets/imgs/shape/img-s-33.webp" alt="shape">
-                <img class="show-dark" src="/assets/imgs/shape/img-s-33-light.webp" alt="shape">
+              <div class="footer-widget-wrapper">
+                <div class="footer-logo">
+                  <a href="/"><span class="startupgrow-wordmark light">STARTUPGROW</span></a>
+                </div>
               </div>
-              <div class="section-header">
-                <div class="section-title-wrapper">
-                  <div class="title-wrapper">
-                    <h2 class="section-title has_fade_anim"><span>Get started</span> <br>
-                      now</h2>
+              <div class="footer-widget-wrapper">
+                <h2 class="title">Service</h2>
+                <ul class="footer-nav-list">
+                  <li><a href="/services">SEO</a></li>
+                  <li><a href="/services">PPC Advertising</a></li>
+                  <li><a href="/services">Social Media Marketing</a></li>
+                  <li><a href="/services">Content Marketing</a></li>
+                  <li><a href="/services">Email Marketing</a></li>
+                  <li><a href="/services">Web Design &amp; Development</a></li>
+                </ul>
+              </div>
+              <div class="footer-widget-wrapper">
+                <h2 class="title">Company</h2>
+                <ul class="footer-nav-list">
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/about">Objective</a></li>
+                  <li><a href="/works">Project Scope</a></li>
+                  <li><a href="/services">Services</a></li>
+                  <li><a href="/contact">Contact</a></li>
+                </ul>
+              </div>
+              <div class="footer-widget-wrapper newsletter">
+                <h2 class="title">Abstract</h2>
+                <div class="newsletter-text">
+                  <p class="text">StartupGrow is a web-based digital solutions platform that helps startups build their online presence through web development and marketing services.</p>
+                </div>
+                <form action="#" class="subscribe-form">
+                  <div class="input-field">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit" class="subscribe-btn">
+                      <img src="/assets/imgs/icon/arrow-light.webp" alt="icon">
+                    </button>
                   </div>
-                </div>
-                <div class="text-wrapper">
-                  <p class="text has_fade_anim">If your startup needs a website, branding, or digital marketing support, we would love to hear from you!</p>
-                </div>
-              </div>
-              <div class="footer-cta">
-                <div class="footer-widget-wrapper">
-                  <h2 class="title">Team</h2>
-                  <ul class="footer-nav-list">
-                    <li>Yadunand Pavithran, <br>
-                      Nashith Nihal C</li>
-                  </ul>
-                </div>
-                <div class="footer-widget-wrapper">
-                  <h2 class="title">Project</h2>
-                  <ul class="footer-nav-list">
-                    <li>Gokul Krishna, <br>
-                      StartupGrow</li>
-                  </ul>
-                </div>
-                <div class="footer-widget-wrapper newsletter">
-                  <form action="#" class="subscribe-form">
-                    <div class="input-field">
-                      <input type="email" placeholder="Enter your email">
-                      <button type="submit" class="subscribe-btn"><img src="/assets/imgs/icon/arrow-light.webp"
-                          alt="icon"></button>
-                    </div>
-                  </form>
-                </div>
+                </form>
               </div>
             </div>
           </div>
           <div class="copyright-area">
-            <div class="container">
+            <div class="container large">
               <div class="copyright-area-inner">
-                <div class="copyright-text">
-                  <p class="text">© 2026 STARTUPGROW – Academic Innovation Project for Indian Startups</p>
-                </div>
-                <ul class="footer-nav-list">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Career</a></li>
-                  <li><a href="#">Sitemap</a></li>
-                </ul>
+                <p class="text">© 2026 STARTUPGROW – Academic Innovation Project for Indian Startups</p>
               </div>
             </div>
           </div>
