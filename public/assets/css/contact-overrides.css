@@ -1,57 +1,49 @@
-/* Inner pages footer CTA layout fix (prevents overlap at medium widths).
-   Scoped to `.public-arolax-page` so home page is unaffected. */
+/* Contact page: footer CTA layout fix (prevents overlap at medium widths). */
 
-.public-arolax-page .footer-area .footer-area-inner {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  align-items: flex-start !important;
-  justify-content: space-between !important;
-  gap: clamp(24px, 4vw, 56px) !important;
-  position: relative !important;
+.footer-area .footer-area-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: clamp(24px, 4vw, 56px);
 }
 
-.public-arolax-page .footer-area .footer-area-inner > .section-header {
-  flex: 1 1 520px !important;
-  min-width: min(520px, 100%) !important;
-  position: static !important;
-  float: none !important;
-  transform: none !important;
+.footer-area .footer-area-inner > .section-header {
+  flex: 1 1 520px;
+  min-width: min(520px, 100%);
 }
 
-.public-arolax-page .footer-area .footer-area-inner > .footer-cta {
-  flex: 1 1 520px !important;
-  min-width: min(520px, 100%) !important;
-  display: grid !important;
-  grid-template-columns: repeat(2, minmax(180px, 1fr)) minmax(240px, 1fr) !important;
-  gap: 24px !important;
-  align-items: start !important;
-  position: static !important;
-  float: none !important;
-  transform: none !important;
+.footer-area .footer-area-inner > .footer-cta {
+  flex: 1 1 520px;
+  min-width: min(520px, 100%);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(180px, 1fr)) minmax(240px, 1fr);
+  gap: 24px;
+  align-items: start;
 }
 
-.public-arolax-page .footer-area .footer-widget-wrapper {
-  width: auto !important;
-  min-width: 0 !important;
+.footer-area .footer-widget-wrapper {
+  width: auto;
+  min-width: 0;
 }
 
-.public-arolax-page .footer-area .footer-widget-wrapper.newsletter {
-  min-width: 240px !important;
+.footer-area .footer-widget-wrapper.newsletter {
+  min-width: 240px;
 }
 
 @media (max-width: 991px) {
-  .public-arolax-page .footer-area .footer-area-inner > .footer-cta {
-    grid-template-columns: repeat(2, minmax(180px, 1fr)) !important;
+  .footer-area .footer-area-inner > .footer-cta {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
   }
 
-  .public-arolax-page .footer-area .footer-widget-wrapper.newsletter {
-    grid-column: 1 / -1 !important;
+  .footer-area .footer-widget-wrapper.newsletter {
+    grid-column: 1 / -1;
   }
 }
 
 @media (max-width: 575px) {
-  .public-arolax-page .footer-area .footer-area-inner > .footer-cta {
-    grid-template-columns: 1fr !important;
+  .footer-area .footer-area-inner > .footer-cta {
+    grid-template-columns: 1fr;
   }
 }
 
