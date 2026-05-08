@@ -254,10 +254,10 @@
 }
 
 .public-arolax-page .startupgrow-public-request-form {
-  background: #121212 !important;
-  border: 0 !important;
+  background: #242424 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
   border-radius: 0 32px 0 32px !important;
-  box-shadow: none !important;
+  box-shadow: 0 22px 70px rgba(18, 18, 18, 0.14) !important;
   padding: 30px !important;
 }
 
@@ -268,7 +268,7 @@
 }
 
 .public-arolax-page .startupgrow-public-request-form label {
-  color: rgba(255, 255, 255, 0.58) !important;
+  color: rgba(255, 255, 255, 0.72) !important;
   display: block !important;
   font-size: 11px !important;
   font-weight: 900 !important;
@@ -282,7 +282,7 @@
 .public-arolax-page .startupgrow-public-request-form textarea {
   background: transparent !important;
   border: 0 !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.24) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.32) !important;
   border-radius: 0 !important;
   color: #ffffff !important;
   display: block !important;
@@ -298,7 +298,7 @@
 
 .public-arolax-page .startupgrow-public-request-form input::placeholder,
 .public-arolax-page .startupgrow-public-request-form textarea::placeholder {
-  color: rgba(255, 255, 255, 0.42) !important;
+  color: rgba(255, 255, 255, 0.55) !important;
 }
 
 .public-arolax-page .startupgrow-public-request-form select option {
