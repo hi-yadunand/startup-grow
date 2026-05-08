@@ -173,7 +173,7 @@ const pageHtml = `<div id="preloader">
 
 
           <section class="contact-area startupgrow-service-request-area"><div class="container"><div class="contact-area-inner section-spacing"><div class="section-header"><div class="section-title-wrapper"><div class="title-wrapper"><h2 class="section-title large has_fade_anim">Send us your
-                        project brief</h2></div></div><div class="text-wrapper"><p class="text has_fade_anim">Pick a service, share your goals, and our team will reply with next steps.</p></div></div><div class="section-content"><div class="info-box has_fade_anim"><div class="text-wrapper"><p class="text">We help brands grow with SEO, PPC, social media, content, email marketing, and web design & development.</p></div><ul class="contact-list"><li><a href="tel:+91-0000000000">Digital Agency Enquiry</a></li><li><a href="mailto:startupgrow@example.com">startupgrow@example.com</a></li><li>Digital growth partners <br>for modern teams</li></ul></div><div class="contact-wrap has_fade_anim" data-delay="0.30"><div id="agency-service-request-form" class="agency-service-request-form"></div></div></div></div></div></section>
+                        project brief</h2></div></div><div class="text-wrapper startupgrow-public-form-column"><p class="text has_fade_anim">Pick a service, share your goals, and our team will reply with next steps.</p><div class="startupgrow-public-form-panel"><h3 class="startupgrow-public-form-title">Public Form Simulation</h3><div id="agency-service-request-form" class="agency-service-request-form"></div></div></div></div><div class="section-content"><div class="info-box has_fade_anim"><div class="text-wrapper"><p class="text">We help brands grow with SEO, PPC, social media, content, email marketing, and web design & development.</p></div><ul class="contact-list"><li><a href="tel:+91-0000000000">Digital Agency Enquiry</a></li><li><a href="mailto:startupgrow@example.com">startupgrow@example.com</a></li><li>Digital growth partners <br>for modern teams</li></ul></div></div></div></div></section>
 
 
         </main>
@@ -200,7 +200,7 @@ export default function ContactPage() {
   return (
     <>
       <link rel="stylesheet" href="/assets/css/master-contact.css" />
-      <link rel="stylesheet" href="/assets/css/contact-overrides.css?v=9" />
+      <link rel="stylesheet" href="/assets/css/contact-overrides.css?v=10" />
       <div
         className={`public-arolax-page startupgrow-contact-page font-heading-beatricetrial-regular-2`}
         dangerouslySetInnerHTML={{ __html: pageHtml }}
