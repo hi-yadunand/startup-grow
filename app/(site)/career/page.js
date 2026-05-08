@@ -174,67 +174,7 @@ const pageHtml = `<div id="preloader">
         </main>
 
 
-        <footer class="footer-area">
-          <div class="container">
-            <div class="footer-area-inner section-spacing-top">
-              <div class="shape-1">
-                <img class="show-light" src="/assets/imgs/shape/img-s-33.webp" alt="shape">
-                <img class="show-dark" src="/assets/imgs/shape/img-s-33-light.webp" alt="shape">
-              </div>
-              <div class="section-header">
-                <div class="section-title-wrapper">
-                  <div class="title-wrapper">
-                    <h2 class="section-title has_fade_anim"><span>Get started</span> <br>
-                      now</h2>
-                  </div>
-                </div>
-                <div class="text-wrapper">
-                  <p class="text has_fade_anim">If your startup needs a website, branding, or digital marketing support, we would love to hear from you!</p>
-                </div>
-              </div>
-              <div class="footer-cta">
-                <div class="footer-widget-wrapper">
-                  <h2 class="title">Team</h2>
-                  <ul class="footer-nav-list">
-                    <li>Yadunand Pavithran, <br>
-                      Nashith Nihal C</li>
-                  </ul>
-                </div>
-                <div class="footer-widget-wrapper">
-                  <h2 class="title">Project</h2>
-                  <ul class="footer-nav-list">
-                    <li>Gokul Krishna, <br>
-                      StartupGrow</li>
-                  </ul>
-                </div>
-                <div class="footer-widget-wrapper newsletter">
-                  <form action="#" class="subscribe-form">
-                    <div class="input-field">
-                      <input type="email" placeholder="Enter your email">
-                      <button type="submit" class="subscribe-btn"><img src="/assets/imgs/icon/arrow-light.webp"
-                          alt="icon"></button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="copyright-area">
-            <div class="container">
-              <div class="copyright-area-inner">
-                <div class="copyright-text">
-                  <p class="text">© 2026 STARTUPGROW – Academic Innovation Project for Indian Startups</p>
-                </div>
-                <ul class="footer-nav-list">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Career</a></li>
-                  <li><a href="#">Sitemap</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </footer>
+        <!-- Footer is shared via app/(site)/layout.js -->
 
 
       </div>

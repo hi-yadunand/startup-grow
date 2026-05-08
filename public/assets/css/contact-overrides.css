@@ -1,89 +1,13 @@
-/* Inner pages footer CTA layout fix (prevents overlap at medium widths).
-   Scoped to `.public-arolax-page` so home page is unaffected. */
-
-.public-arolax-page .footer-area .footer-area-inner {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  align-items: flex-start !important;
-  justify-content: space-between !important;
-  gap: clamp(24px, 4vw, 56px) !important;
-  position: relative !important;
-}
-
-.public-arolax-page .footer-area .footer-area-inner > .section-header {
-  flex: 1 1 520px !important;
-  min-width: min(520px, 100%) !important;
-  position: static !important;
-  float: none !important;
-  transform: none !important;
-  z-index: 2 !important;
-}
-
-.public-arolax-page .footer-area .footer-area-inner > .footer-cta {
-  flex: 1 1 520px !important;
-  min-width: min(520px, 100%) !important;
-  display: grid !important;
-  grid-template-columns: repeat(2, minmax(180px, 1fr)) minmax(240px, 1fr) !important;
-  gap: 24px !important;
-  align-items: start !important;
-  position: static !important;
-  top: auto !important;
-  right: auto !important;
-  bottom: auto !important;
-  left: auto !important;
-  inset: auto !important;
-  float: none !important;
-  transform: none !important;
-  width: auto !important;
-  max-width: 100% !important;
-  clear: both !important;
-  z-index: 1 !important;
-}
-
-.public-arolax-page .footer-area .footer-widget-wrapper {
-  width: auto !important;
-  min-width: 0 !important;
-}
-
-.public-arolax-page .footer-area .footer-widget-wrapper.newsletter {
-  min-width: 240px !important;
-}
-
-@media (max-width: 991px) {
-  .public-arolax-page .footer-area .footer-area-inner > .footer-cta {
-    grid-template-columns: repeat(2, minmax(180px, 1fr)) !important;
-  }
-
-  .public-arolax-page .footer-area .footer-widget-wrapper.newsletter {
-    grid-column: 1 / -1 !important;
-  }
-}
-
-/* Stack CTA below heading earlier to avoid any “designed overlap” at laptop widths. */
-@media (max-width: 1399px) {
-  .public-arolax-page .footer-area .footer-area-inner > .section-header {
-    flex-basis: 100% !important;
-    max-width: 100% !important;
-  }
-
-  .public-arolax-page .footer-area .footer-area-inner > .footer-cta {
-    flex-basis: 100% !important;
-    max-width: 100% !important;
-  }
-}
-
-@media (max-width: 575px) {
-  .public-arolax-page .footer-area .footer-area-inner > .footer-cta {
-    grid-template-columns: 1fr !important;
-  }
-}
-
 /* Use the home footer everywhere: hide inner-page CTA footers. */
 .public-arolax-page .footer-area:not(.section-style) {
   display: none !important;
 }
 
 /* Shared footer uses the home footer CSS exactly; only STARTUPGROW text needs logo sizing. */
+.startupgrow-unified-footer {
+  background-color: var(--black) !important;
+}
+
 .startupgrow-unified-footer .startupgrow-wordmark.light {
   color: #ffffff !important;
   font-size: 26px !important;
