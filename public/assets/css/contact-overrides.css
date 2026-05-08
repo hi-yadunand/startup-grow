@@ -228,77 +228,102 @@
 }
 
 .public-arolax-page .startupgrow-service-request-area .startupgrow-public-form-panel {
+  border-top: 1px solid #121212 !important;
   margin-top: 34px !important;
+  padding-top: 24px !important;
 }
 
 .public-arolax-page .startupgrow-service-request-area .startupgrow-public-form-title {
+  align-items: center !important;
   color: #121212 !important;
-  font-size: 24px !important;
+  display: flex !important;
+  gap: 12px !important;
+  font-size: 22px !important;
   font-weight: 900 !important;
   line-height: 1.1 !important;
-  margin: 0 0 18px !important;
+  margin: 0 0 20px !important;
+}
+
+.public-arolax-page .startupgrow-service-request-area .startupgrow-public-form-title::before {
+  background: #121212 !important;
+  border-radius: 50% !important;
+  content: "" !important;
+  display: inline-block !important;
+  height: 10px !important;
+  width: 10px !important;
 }
 
 .public-arolax-page .startupgrow-public-request-form {
-  background: #ffffff !important;
-  border: 1px solid rgba(18, 18, 18, 0.1) !important;
-  border-radius: 10px !important;
-  box-shadow: 0 18px 45px rgba(23, 32, 27, 0.12) !important;
-  padding: 24px !important;
+  background: #121212 !important;
+  border: 0 !important;
+  border-radius: 0 32px 0 32px !important;
+  box-shadow: none !important;
+  padding: 30px !important;
 }
 
 .public-arolax-page .startupgrow-public-form-grid {
   display: grid !important;
-  gap: 16px !important;
+  gap: 20px 24px !important;
   grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
 }
 
 .public-arolax-page .startupgrow-public-request-form label {
-  color: #71717a !important;
+  color: rgba(255, 255, 255, 0.58) !important;
   display: block !important;
-  font-size: 12px !important;
+  font-size: 11px !important;
   font-weight: 900 !important;
-  line-height: 1 !important;
+  letter-spacing: 0.04em !important;
+  line-height: 1.1 !important;
   text-transform: uppercase !important;
 }
 
 .public-arolax-page .startupgrow-public-request-form input,
 .public-arolax-page .startupgrow-public-request-form select,
 .public-arolax-page .startupgrow-public-request-form textarea {
-  background: #fdfaf8 !important;
-  border: 1px solid rgba(18, 18, 18, 0.1) !important;
-  border-radius: 6px !important;
-  color: #121212 !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.24) !important;
+  border-radius: 0 !important;
+  color: #ffffff !important;
   display: block !important;
-  font-size: 14px !important;
-  font-weight: 600 !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
   line-height: 1.25 !important;
-  margin-top: 8px !important;
+  margin-top: 9px !important;
   outline: none !important;
-  padding: 11px 14px !important;
+  padding: 0 0 12px !important;
   text-transform: none !important;
   width: 100% !important;
 }
 
+.public-arolax-page .startupgrow-public-request-form input::placeholder,
+.public-arolax-page .startupgrow-public-request-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.42) !important;
+}
+
+.public-arolax-page .startupgrow-public-request-form select option {
+  color: #121212 !important;
+}
+
 .public-arolax-page .startupgrow-public-request-form textarea {
-  min-height: 104px !important;
+  min-height: 94px !important;
   resize: vertical !important;
 }
 
 .public-arolax-page .startupgrow-public-request-form input:focus,
 .public-arolax-page .startupgrow-public-request-form select:focus,
 .public-arolax-page .startupgrow-public-request-form textarea:focus {
-  border-color: #121212 !important;
+  border-color: #ffffff !important;
 }
 
 .public-arolax-page .startupgrow-public-message {
-  margin-top: 16px !important;
+  margin-top: 22px !important;
 }
 
 .public-arolax-page .startupgrow-public-form-status {
   display: none !important;
-  margin-top: 14px !important;
-  border-radius: 6px !important;
+  margin-top: 18px !important;
+  border-radius: 0 16px 0 16px !important;
   font-size: 13px !important;
   font-weight: 700 !important;
   line-height: 1.45 !important;
@@ -319,18 +344,18 @@
 
 .public-arolax-page .startupgrow-public-submit {
   align-items: center !important;
-  background: #121212 !important;
+  background: #ffffff !important;
   border: 0 !important;
-  border-radius: 999px !important;
-  color: #ffffff !important;
+  border-radius: 0 20px 0 20px !important;
+  color: #121212 !important;
   display: inline-flex !important;
   gap: 10px !important;
   justify-content: center !important;
-  margin-top: 18px !important;
+  margin-top: 24px !important;
   min-height: 46px !important;
-  padding: 0 24px !important;
+  padding: 0 28px !important;
   text-transform: uppercase !important;
-  transition: background 0.2s ease !important;
+  transition: background 0.2s ease, color 0.2s ease !important;
 }
 
 .public-arolax-page .startupgrow-public-submit span {
@@ -340,11 +365,13 @@
 }
 
 .public-arolax-page .startupgrow-public-submit:hover {
-  background: #1c1c1c !important;
+  background: #d7ff00 !important;
+  color: #121212 !important;
 }
 
 .public-arolax-page .startupgrow-public-submit:disabled {
-  background: #d4d4d8 !important;
+  background: rgba(255, 255, 255, 0.36) !important;
+  color: rgba(18, 18, 18, 0.7) !important;
   cursor: not-allowed !important;
 }
 
@@ -384,7 +411,8 @@
   }
 
   .public-arolax-page .startupgrow-public-request-form {
-    padding: 18px !important;
+    border-radius: 0 24px 0 24px !important;
+    padding: 22px !important;
   }
 
   .public-arolax-page .startupgrow-public-form-grid {
