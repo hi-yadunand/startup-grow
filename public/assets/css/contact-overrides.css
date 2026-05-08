@@ -1,11 +1,17 @@
 /* Use the home footer everywhere: hide inner-page CTA footers. */
-.public-arolax-page .footer-area:not(.section-style) {
+.public-arolax-page .footer-area:not([data-startupgrow-footer]):not(.section-style) {
   display: none !important;
 }
 
 /* Shared footer uses the home footer CSS exactly; only STARTUPGROW text needs logo sizing. */
 .startupgrow-unified-footer {
   background-color: var(--black) !important;
+}
+
+.startupgrow-inner-footer {
+  border-radius: 0 !important;
+  margin-top: 0 !important;
+  overflow: visible !important;
 }
 
 .startupgrow-unified-footer .startupgrow-wordmark.light {

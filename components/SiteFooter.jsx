@@ -4,9 +4,16 @@ import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { usePathname } from "next/navigation";
 
-function FooterMarkup() {
+function FooterMarkup({ isHomePage }) {
+  const footerClassName = [
+    "footer-area",
+    "pb-0",
+    "startupgrow-unified-footer",
+    isHomePage ? "section-style" : "startupgrow-inner-footer",
+  ].join(" ");
+
   return (
-    <footer className="footer-area section-style pb-0 startupgrow-unified-footer" data-startupgrow-footer>
+    <footer className={footerClassName} data-startupgrow-footer>
       <div className="container large">
         <div className="footer-area-inner section-spacing-top">
           <div className="footer-widget-wrapper has_fade_anim" data-fade-from="left">
@@ -195,5 +202,5 @@ export default function SiteFooter() {
     return null;
   }
 
-  return createPortal(<FooterMarkup />, target);
+  return createPortal(<FooterMarkup isHomePage={pathname === "/"} />, target);
 }
