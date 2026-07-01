@@ -1,6 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import { createServiceRequest } from "@/lib/api";
+import { onlineImages } from "@/lib/onlineImages";
 
 const pageHtml = `<div id="preloader">
     <div id="container" class="container-preloader">
@@ -158,7 +159,7 @@ const pageHtml = `<div id="preloader">
           <section class="hero-area"><div class="container"><div class="hero-area-inner"><div class="section-content"><div class="section-title-wrapper"><div class="title-wrapper"><h1 class="section-title large has_fade_anim">Need digital <br>
                         support? <br>
                         contact
-                        StartupGrow!</h1></div></div><div class="content-last"><div class="col-first"><div class="image-box overflow-hidden"><img src="/assets/imgs/gallery/img-s-106.webp" data-speed="0.9" alt="image"></div><div class="contact-box"><div class="shape-1"><img src="/assets/imgs/shape/img-s-89.webp" alt="shape"></div><span class="title">Direct contact: </span><p class="link"><a href="#">startupgrow@example.com</a></p></div></div><div class="col-second"><div class="image-box"><img src="/assets/imgs/gallery/img-s-107.webp" alt="image"></div><div class="image-box overflow-hidden"><img src="/assets/imgs/gallery/img-s-108.webp" data-speed="0.9" alt="image"></div></div></div></div></div></div></section><div class="image-wrapper overflow-hidden"><img class="w-100" src="/assets/imgs/gallery/img-s-105.webp" data-speed="0.9" alt="image"></div>
+                        StartupGrow!</h1></div></div><div class="content-last"><div class="col-first"><div class="image-box overflow-hidden"><img src="${onlineImages.happyStartupTeam}" data-speed="0.9" alt="StartupGrow team ready to help founders"></div><div class="contact-box"><div class="shape-1"><img src="/assets/imgs/shape/img-s-89.webp" alt="shape"></div><span class="title">Direct contact: </span><p class="link"><a href="#">startupgrow@example.com</a></p></div></div><div class="col-second"><div class="image-box"><img src="${onlineImages.socialPresentation}" alt="Digital marketing presentation"></div><div class="image-box overflow-hidden"><img src="${onlineImages.collaborativeReview}" data-speed="0.9" alt="Founder project brief review"></div></div></div></div></div></div></section><div class="image-wrapper overflow-hidden"><img class="w-100" src="${onlineImages.marketingMeeting}" data-speed="0.9" alt="Startup marketing support workspace"></div>
 
 
 

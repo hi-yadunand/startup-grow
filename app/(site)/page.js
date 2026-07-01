@@ -1,6 +1,7 @@
 
 "use client";
 import { useEffect } from "react";
+import { onlineImages } from "@/lib/onlineImages";
 
 export default function HomePage() {
   useEffect(() => {
@@ -165,7 +166,7 @@ export default function HomePage() {
 
           <section className="hero-area section-item">
             <div className="area-bg">
-              <img src="assets/imgs/gallery/img-s-33.webp" alt="image" />
+              <img src={onlineImages.homeHero} alt="Startup team discussing growth strategy in a bright office" />
             </div>
             <div className="container large">
               <div className="hero-area-inner">
@@ -181,7 +182,7 @@ export default function HomePage() {
                   </div>
                   <div className="video-wrapper has_fade_anim" data-ease="power3.out">
                     <div className="thumb p-relative">
-                      <img src="assets/imgs/gallery/img-s-32.webp" alt="image" />
+                      <img src={onlineImages.collaborativeReview} alt="Marketing strategy review on a laptop" />
                       <a href="https://crowdytheme.com/assets/wp-content/uploads/2024/06/arolux-branding-agency-video.mp4"
                         className="wc-btn wc-btn-circle video-popup pos-center"><i className="fa-solid fa-play"></i></a>
                     </div>
@@ -225,10 +226,10 @@ export default function HomePage() {
                 </div>
                 <div className="works-wrapper-box">
                   <div className="works-wrapper">
-                    <div className="work-box"><div className="thumb"><a href="/works"><img src="assets/imgs/works/img-s-31.webp" alt="work image" /></a></div><div className="content"><h3 className="title">Professional <br />Websites</h3><div className="tags"><div className="tag">Objective</div><div className="tag">Startup Growth</div></div></div></div>
-                    <div className="work-box"><div className="thumb"><a href="/works"><img src="assets/imgs/works/img-s-32.webp" alt="work image" /></a></div><div className="content"><h3 className="title">Digital Marketing <br />Services</h3><div className="tags"><div className="tag">Objective</div><div className="tag">Startup Growth</div></div></div></div>
-                    <div className="work-box"><div className="thumb"><a href="/works"><img src="assets/imgs/works/img-s-33.webp" alt="work image" /></a></div><div className="content"><h3 className="title">Affordable <br />Solutions</h3><div className="tags"><div className="tag">Objective</div><div className="tag">Startup Growth</div></div></div></div>
-                    <div className="work-box"><div className="thumb"><a href="/works"><img src="assets/imgs/works/img-s-34.webp" alt="work image" /></a></div><div className="content"><h3 className="title">Request and <br />Communication</h3><div className="tags"><div className="tag">Objective</div><div className="tag">Startup Growth</div></div></div></div>
+                    <div className="work-box"><div className="thumb"><a href="/works"><img src={onlineImages.collaborativeReview} alt="Startup website planning session" /></a></div><div className="content"><h3 className="title">Professional <br />Websites</h3><div className="tags"><div className="tag">Objective</div><div className="tag">Startup Growth</div></div></div></div>
+                    <div className="work-box"><div className="thumb"><a href="/works"><img src={onlineImages.digitalMarketing} alt="Digital marketing dashboard on a laptop" /></a></div><div className="content"><h3 className="title">Digital Marketing <br />Services</h3><div className="tags"><div className="tag">Objective</div><div className="tag">Startup Growth</div></div></div></div>
+                    <div className="work-box"><div className="thumb"><a href="/works"><img src={onlineImages.analyticsDashboard} alt="Growth analytics dashboard" /></a></div><div className="content"><h3 className="title">Affordable <br />Solutions</h3><div className="tags"><div className="tag">Objective</div><div className="tag">Startup Growth</div></div></div></div>
+                    <div className="work-box"><div className="thumb"><a href="/works"><img src={onlineImages.happyStartupTeam} alt="Startup team collaborating around a laptop" /></a></div><div className="content"><h3 className="title">Request and <br />Communication</h3><div className="tags"><div className="tag">Objective</div><div className="tag">Startup Growth</div></div></div></div>
                   </div>
                 </div>
                 <div className="section-content section-spacing-top"><div></div><div className="content-last"><div className="text-wrapper"><p className="text has_text_move_anim">The objective is to design and develop a web-based platform that helps Indian startups grow through professional websites, SEO, social media, affordable services, and a simple request system.</p></div><div className="btn-wrapper has_fade_anim" data-fade-from="left"><div className="wc-btn-group"><a className="wc-btn wc-btn-circle" href="/works"><i className="fa-solid fa-arrow-right"></i></a><a className="wc-btn wc-btn-primary" href="/works">View all works</a><a className="wc-btn wc-btn-circle" href="/works"><i className="fa-solid fa-arrow-right"></i></a></div></div></div></div>
@@ -268,7 +269,7 @@ export default function HomePage() {
 
 
           <section className="blog-area section-style section-item">
-            <div className="container large"><div className="blog-area-inner section-spacing"><div className="section-header"><div className="section-title-wrapper"><div className="title-wrapper"><h2 className="section-title has_fade_anim">Modules of the system</h2></div></div><div className="btn-wrapper has_fade_anim" data-fade-from="right"><div className="wc-btn-group"><a className="wc-btn wc-btn-circle" href="/blog"><i className="fa-solid fa-arrow-right"></i></a><a className="wc-btn wc-btn-primary" href="/blog">view project notes</a><a className="wc-btn wc-btn-circle" href="/blog"><i className="fa-solid fa-arrow-right"></i></a></div></div></div><div className="blogs-wrapper-box"><div className="blogs-wrapper"><article className="blog has_fade_anim" data-fade-from="right" data-delay="0.15"><div className="thumb"><a href="/blog"><img src="assets/imgs/blog/img-s-8.webp" alt="blog image" /></a></div><div className="content"><h2 className="title"><a href="/blog">User Interface, Service, and Contact Modules</a></h2><div className="meta-list"><a href="#"><span className="meta tag">Project</span></a><span className="meta date">06 May 2026</span></div></div></article><article className="blog has_fade_anim" data-fade-from="right" data-delay="0.30"><div className="thumb"><a href="/blog"><img src="assets/imgs/blog/img-s-9.webp" alt="blog image" /></a></div><div className="content"><h2 className="title"><a href="/blog">Admin Module, Testing, and Deployment</a></h2><div className="meta-list"><a href="#"><span className="meta tag">Project</span></a><span className="meta date">06 May 2026</span></div></div></article></div></div></div></div>
+            <div className="container large"><div className="blog-area-inner section-spacing"><div className="section-header"><div className="section-title-wrapper"><div className="title-wrapper"><h2 className="section-title has_fade_anim">Modules of the system</h2></div></div><div className="btn-wrapper has_fade_anim" data-fade-from="right"><div className="wc-btn-group"><a className="wc-btn wc-btn-circle" href="/blog"><i className="fa-solid fa-arrow-right"></i></a><a className="wc-btn wc-btn-primary" href="/blog">view project notes</a><a className="wc-btn wc-btn-circle" href="/blog"><i className="fa-solid fa-arrow-right"></i></a></div></div></div><div className="blogs-wrapper-box"><div className="blogs-wrapper"><article className="blog has_fade_anim" data-fade-from="right" data-delay="0.15"><div className="thumb"><a href="/blog"><img src={onlineImages.businessStrategy} alt="Planning service and contact modules" /></a></div><div className="content"><h2 className="title"><a href="/blog">User Interface, Service, and Contact Modules</a></h2><div className="meta-list"><a href="#"><span className="meta tag">Project</span></a><span className="meta date">06 May 2026</span></div></div></article><article className="blog has_fade_anim" data-fade-from="right" data-delay="0.30"><div className="thumb"><a href="/blog"><img src={onlineImages.monitoringDashboard} alt="Analytics dashboard for admin testing" /></a></div><div className="content"><h2 className="title"><a href="/blog">Admin Module, Testing, and Deployment</a></h2><div className="meta-list"><a href="#"><span className="meta tag">Project</span></a><span className="meta date">06 May 2026</span></div></div></article></div></div></div></div>
           </section>
 
 

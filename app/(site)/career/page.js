@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from "react";
+import { onlineImages } from "@/lib/onlineImages";
 
 const pageHtml = `<div id="preloader">
     <div id="container" class="container-preloader">
@@ -156,11 +157,11 @@ const pageHtml = `<div id="preloader">
 
           <section class="hero-area"><div class="container"><div class="hero-area-inner"><div class="section-content"><div class="section-title-wrapper"><div class="title-wrapper"><h1 class="section-title large has_fade_anim">Build startup growth! <br><img class="shape-1" src="/assets/imgs/client/img-s-5.webp" alt="image"> academic project
                         with StartupGrow
-                      </h1></div></div><div class="text-box"><div class="subtitle-wrapper"><span class="section-subtitle has-right-line has_fade_anim" data-fade-from="left" data-delay="0.30">Career</span></div><div class="text-wrapper"><p class="text has_fade_anim" data-fade-from="left" data-delay="0.45">StartupGrow is designed as a practical project where digital services, request handling, and basic admin workflows come together.</p></div></div><div class="thumb overflow-hidden"><img src="/assets/imgs/gallery/img-s-93.webp" data-speed="0.8" alt="image"></div></div></div></div></section>
+                      </h1></div></div><div class="text-box"><div class="subtitle-wrapper"><span class="section-subtitle has-right-line has_fade_anim" data-fade-from="left" data-delay="0.30">Career</span></div><div class="text-wrapper"><p class="text has_fade_anim" data-fade-from="left" data-delay="0.45">StartupGrow is designed as a practical project where digital services, request handling, and basic admin workflows come together.</p></div></div><div class="thumb overflow-hidden"><img src="${onlineImages.marketingMeeting}" data-speed="0.8" alt="Startup project planning meeting"></div></div></div></div></section>
 
 
 
-          <section class="community-area"><div class="container"><div class="community-area-inner section-spacing"><div class="section-content"><div class="section-title-wrapper"><div class="title-wrapper"><h2 class="section-title has_fade_anim">Plan . Design . Develop </h2></div></div><div class="text-wrapper"><p class="text has_fade_anim">The project combines requirement analysis, UI design, service planning, contact flow, and request management for early-stage Indian startups.</p></div><div class="gallery-wrapper-box has_fade_anim"><div class="gallery-wrapper"><div><div class="thumb"><img src="/assets/imgs/gallery/img-s-94.webp" alt="image"></div></div><div><div class="thumb"><img src="/assets/imgs/gallery/img-s-95.webp" alt="image"></div></div><div><div class="thumb"><img src="/assets/imgs/gallery/img-s-96.webp" alt="image"></div><div class="thumb"><img src="/assets/imgs/gallery/img-s-97.webp" alt="image"></div></div></div></div></div></div></div></section>
+          <section class="community-area"><div class="container"><div class="community-area-inner section-spacing"><div class="section-content"><div class="section-title-wrapper"><div class="title-wrapper"><h2 class="section-title has_fade_anim">Plan . Design . Develop </h2></div></div><div class="text-wrapper"><p class="text has_fade_anim">The project combines requirement analysis, UI design, service planning, contact flow, and request management for early-stage Indian startups.</p></div><div class="gallery-wrapper-box has_fade_anim"><div class="gallery-wrapper"><div><div class="thumb"><img src="${onlineImages.businessStrategy}" alt="Requirement analysis and strategy notes"></div></div><div><div class="thumb"><img src="${onlineImages.collaborativeReview}" alt="UI design and website planning"></div></div><div><div class="thumb"><img src="${onlineImages.growthDashboard}" alt="Service planning analytics dashboard"></div><div class="thumb"><img src="${onlineImages.monitoringDashboard}" alt="Admin workflow dashboard"></div></div></div></div></div></div></div></section>
 
 
 

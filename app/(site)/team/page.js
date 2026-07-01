@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from "react";
+import { onlineImages } from "@/lib/onlineImages";
 
 const pageHtml = `<div id="preloader">
     <div id="container" class="container-preloader">
@@ -155,7 +156,7 @@ const pageHtml = `<div id="preloader">
 
 
           <section class="hero-area"><div class="container large"><div class="hero-area-inner"><div class="section-content"><div class="btn-wrapper has_fade_anim" data-fade-from="left"><a href="/contact" class="wc-btn wc-btn-underline">Meet the team building StartupGrow for Indian startups.<i class="fa-solid fa-arrow-right"></i></a></div><div class="content-last"><div class="section-title-wrapper"><div class="title-wrapper"><h1 class="section-title large has_text_move_anim">Team members of
-                          StartupGrow.</h1></div></div><div class="text-wrapper"><p class="text has_fade_anim" data-fade-from="left">StartupGrow is an academic innovation project built by a focused student team.</p></div><div class="fun-fact has_fade_anim" data-fade-from="bottom"><span class="number wc-counter">3</span><p class="text">Team Members</p></div></div></div></div></div></section><div class="image-wrapper"><div class="container large"><div class="p-relative"><div class="experience has_fade_anim" data-fade-from="top" data-ease="bounce"><h2 class="number wc-counter">6</h2><h2 class="text">Core <br>services</h2></div></div></div><img class="w-100 has_fade_anim" data-on-scroll="0" src="/assets/imgs/gallery/img-s-104.webp" alt="image"></div>
+                          StartupGrow.</h1></div></div><div class="text-wrapper"><p class="text has_fade_anim" data-fade-from="left">StartupGrow is an academic innovation project built by a focused student team.</p></div><div class="fun-fact has_fade_anim" data-fade-from="bottom"><span class="number wc-counter">3</span><p class="text">Team Members</p></div></div></div></div></div></section><div class="image-wrapper"><div class="container large"><div class="p-relative"><div class="experience has_fade_anim" data-fade-from="top" data-ease="bounce"><h2 class="number wc-counter">6</h2><h2 class="text">Core <br>services</h2></div></div></div><img class="w-100 has_fade_anim" data-on-scroll="0" src="${onlineImages.happyStartupTeam}" alt="StartupGrow team collaboration"></div>
 
 
 
@@ -163,7 +164,7 @@ const pageHtml = `<div id="preloader">
 
 
 
-          <section class="community-area"><div class="container"><div class="community-area-inner section-spacing"><div class="section-content"><div class="section-title-wrapper"><div class="title-wrapper"><h2 class="section-title has_fade_anim">Future . Community . Honor </h2></div></div><div class="text-wrapper"><p class="text has_fade_anim">What sets us apart is what brings us together – a shared passion for solving business challenges through strategy, design, and engineering. We are the sum total of our team, their unique perspectives, capabilities, and our ability to collaborate from ideation to deployment.</p></div><div class="gallery-wrapper-box"><div class="gallery-wrapper has_fade_anim"><div><div class="thumb"><img src="/assets/imgs/gallery/img-s-94.webp" alt="image"></div></div><div><div class="thumb"><img src="/assets/imgs/gallery/img-s-95.webp" alt="image"></div></div><div><div class="thumb"><img src="/assets/imgs/gallery/img-s-96.webp" alt="image"></div><div class="thumb"><img src="/assets/imgs/gallery/img-s-97.webp" alt="image"></div></div></div></div></div></div></div></section>
+          <section class="community-area"><div class="container"><div class="community-area-inner section-spacing"><div class="section-content"><div class="section-title-wrapper"><div class="title-wrapper"><h2 class="section-title has_fade_anim">Future . Community . Honor </h2></div></div><div class="text-wrapper"><p class="text has_fade_anim">What sets us apart is what brings us together – a shared passion for solving business challenges through strategy, design, and engineering. We are the sum total of our team, their unique perspectives, capabilities, and our ability to collaborate from ideation to deployment.</p></div><div class="gallery-wrapper-box"><div class="gallery-wrapper has_fade_anim"><div><div class="thumb"><img src="${onlineImages.marketingMeeting}" alt="Team meeting for startup marketing"></div></div><div><div class="thumb"><img src="${onlineImages.businessStrategy}" alt="Planning a growth strategy"></div></div><div><div class="thumb"><img src="${onlineImages.collaborativeReview}" alt="Reviewing a startup website"></div><div class="thumb"><img src="${onlineImages.socialPlanning}" alt="Social media content planning"></div></div></div></div></div></div></div></section>
 
 
         </main>

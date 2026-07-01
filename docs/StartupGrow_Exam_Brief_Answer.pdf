@@ -1,0 +1,205 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+3 0 obj
+<< /Length 4123 >>
+stream
+BT /F2 20 Tf 1 0 0 1 54.00 783.89 Tm (StartupGrow - Brief Project Exam Answer) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 746.89 Tm (Project: StartupGrow - Digital Solutions Platform for Indian Startups) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 732.09 Tm (Team Members: Yadunand Pavithran, Nashith Nihal C, Gokul Krishna) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 717.29 Tm (Live Website: https://startup-grow-sand.vercel.app/) Tj ET
+BT /F2 13.5 Tf 1 0 0 1 54.00 688.49 Tm (1. About Your Project) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 663.49 Tm (StartupGrow is a web-based digital solutions platform created for early-stage Indian) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 648.69 Tm (startups. Many startups have good business ideas but struggle with websites, branding,) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 633.89 Tm (SEO, social media, content, PPC advertising, and email marketing because of limited) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 619.09 Tm (budget, time, and technical knowledge. StartupGrow solves this problem by bringing these) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 604.29 Tm (digital growth services into one simple platform.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 585.49 Tm (The website allows founders to understand the services, view project details, submit a) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 570.69 Tm (service request, and share their startup goals. The admin team can view and manage) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 555.89 Tm (submitted requests through the SHIELD dashboard.) Tj ET
+BT /F2 13.5 Tf 1 0 0 1 54.00 527.09 Tm (2. Synopsis) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 502.09 Tm (StartupGrow is designed as a one-stop platform for startup digital growth. It provides six) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 487.29 Tm (core services: Search Engine Optimisation, Pay-Per-Click Advertising, Social Media) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 472.49 Tm (Marketing, Content Marketing, Email Marketing, and Web Design and Development.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 453.69 Tm (The system contains a public website, service request form, backend API, MongoDB database,) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 438.89 Tm (and admin dashboard. A founder submits details such as startup name, founder name, city,) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 424.09 Tm (startup stage, service required, budget, and project goal. The backend validates the) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 409.29 Tm (request and stores it. The admin dashboard displays the request and allows status updates) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 394.49 Tm (such as New, Contacted, In progress, and Closed.) Tj ET
+BT /F2 13.5 Tf 1 0 0 1 54.00 365.69 Tm (3. Technology Stack) Tj ET
+BT /F2 10.8 Tf 1 0 0 1 54.00 337.69 Tm (Frontend:) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 321.69 Tm (- Next.js for routing, rendering, and project structure.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 307.49 Tm (- React for reusable components, forms, and dashboard views.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 293.29 Tm (- HTML5, CSS3, JavaScript, Tailwind CSS, and Bootstrap/template CSS for UI.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 279.09 Tm (- GSAP, ScrollTrigger, Swiper, and other scripts for animations and interactions.) Tj ET
+BT /F2 10.8 Tf 1 0 0 1 54.00 257.89 Tm (Backend:) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 241.89 Tm (- Node.js and Express.js for backend logic.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 227.69 Tm (- Next.js API routes for same-origin API support on Vercel.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 213.49 Tm (- Mongoose for MongoDB schema modeling.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 199.29 Tm (- MongoDB for storing service requests and contact leads.) Tj ET
+BT /F2 10.8 Tf 1 0 0 1 54.00 178.09 Tm (Deployment and Tools:) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 162.09 Tm (- Vercel for hosting the website.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 147.89 Tm (- GitHub for source code management.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 133.69 Tm (- Visual Studio Code and Node.js for development.) Tj ET
+BT /F2 13.5 Tf 1 0 0 1 54.00 105.49 Tm (4. System Design and Diagrams) Tj ET
+BT /F2 10.8 Tf 1 0 0 1 54.00 77.49 Tm (System Architecture:) Tj ET
+BT /F1 8 Tf 1 0 0 1 506.28 28.00 Tm (Page 1) Tj ET
+endstream
+endobj
+4 0 obj
+<< /Type /Page /Parent 11 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 3 0 R >>
+endobj
+5 0 obj
+<< /Length 3963 >>
+stream
+BT /F1 10.5 Tf 1 0 0 1 54.00 783.89 Tm (User Browser -> Next.js Frontend -> API Routes / Express API -> MongoDB Database -> Admin) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 769.09 Tm (Dashboard) Tj ET
+BT /F2 10.8 Tf 1 0 0 1 54.00 747.29 Tm (Main Modules:) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 731.29 Tm (- User Interface Module: Home, About, Services, Works, Team, FAQ, Blog, and Contact pages.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 717.09 Tm (- Service Module: Displays SEO, PPC, Social Media Marketing, Content Marketing, Email) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 81.00 702.89 Tm (Marketing, and Web Development services.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 688.69 Tm (- Contact and Request Module: Collects founder and startup details through forms.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 674.49 Tm (- Admin Module: SHIELD dashboard for viewing requests, leads, and updating statuses.) Tj ET
+BT /F2 10.8 Tf 1 0 0 1 54.00 653.29 Tm (Module Diagram:) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 637.29 Tm (StartupGrow System -> User Interface Module, Service Module, Contact and Request Module,) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 622.49 Tm (Admin Module.) Tj ET
+BT /F2 13.5 Tf 1 0 0 1 54.00 593.69 Tm (5. Data Flow Diagram) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 568.69 Tm (DFD Level 0:) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 553.89 Tm (- External Entity: Startup Founder.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 539.69 Tm (- Process: StartupGrow Platform.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 525.49 Tm (- External Entity: Admin Team.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 511.29 Tm (- Data Store: Service Request Data.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 497.09 Tm (- Flow: Founder submits request to platform. Platform stores data and sends request) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 81.00 482.89 Tm (details to the admin team. Admin updates status through the platform.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 464.69 Tm (DFD Level 1:) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 449.89 Tm (- Founder explores services.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 435.69 Tm (- Founder submits a service request.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 421.49 Tm (- System validates required fields and selected service.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 407.29 Tm (- Valid request is stored in MongoDB.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 393.09 Tm (- Admin dashboard reads requests from the database.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 378.89 Tm (- Admin updates request status.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 364.69 Tm (- Updated status is stored and displayed again in the dashboard.) Tj ET
+BT /F2 13.5 Tf 1 0 0 1 54.00 336.49 Tm (6. Entity-Relationship Diagram) Tj ET
+BT /F2 10.8 Tf 1 0 0 1 54.00 308.49 Tm (Main Entities:) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 292.49 Tm (- ServiceRequest: Stores startup service inquiries.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 278.29 Tm (- ContactLead: Stores general contact form leads.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 264.09 Tm (- Service: Logical/static list of available services.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 249.89 Tm (- Admin: Logical/future entity for dashboard users.) Tj ET
+BT /F2 10.8 Tf 1 0 0 1 54.00 228.69 Tm (Relationships:) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 212.69 Tm (- One Service can be selected by many ServiceRequests.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 198.49 Tm (- One Admin can manage many ServiceRequests.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 184.29 Tm (- ContactLead is managed by the admin team.) Tj ET
+BT /F2 13.5 Tf 1 0 0 1 54.00 156.09 Tm (7. Database Design - Tables with Attributes) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 131.09 Tm (Collection: ServiceRequest) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 116.29 Tm (- _id: Primary key generated by MongoDB.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 102.09 Tm (- startupName: Name of the startup.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 87.89 Tm (- founderName: Name of the founder.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 73.69 Tm (- email: Founder email address.) Tj ET
+BT /F1 8 Tf 1 0 0 1 506.28 28.00 Tm (Page 2) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 11 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 3771 >>
+stream
+BT /F1 10.2 Tf 1 0 0 1 68.00 783.89 Tm (- phone: Contact number.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 769.69 Tm (- city: Startup city.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 755.49 Tm (- stage: Startup stage, such as Idea stage, MVP launched, Early customers, or Scaling.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 741.29 Tm (- service: Selected service.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 727.09 Tm (- budget: Budget range.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 712.89 Tm (- message: Project goal or requirement.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 698.69 Tm (- status: New, Contacted, In progress, or Closed.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 684.49 Tm (- createdAt: Request creation time.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 670.29 Tm (- updatedAt: Last update time.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 652.09 Tm (Collection: ContactLead) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 637.29 Tm (- _id: Primary key generated by MongoDB.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 623.09 Tm (- name: Lead name.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 608.89 Tm (- email: Lead email address.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 594.69 Tm (- phone: Contact number.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 580.49 Tm (- subject: Contact subject.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 566.29 Tm (- service: Interested service.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 552.09 Tm (- message: Lead message.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 537.89 Tm (- status: New, Contacted, In progress, or Closed.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 523.69 Tm (- createdAt: Lead creation time.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 509.49 Tm (- updatedAt: Last update time.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 491.29 Tm (Logical Collection: Service) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 476.49 Tm (- id: Service id.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 462.29 Tm (- name: Service name.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 448.09 Tm (- category: Service category.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 433.89 Tm (- description: Short service description.) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 415.69 Tm (Logical/Future Collection: Admin) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 400.89 Tm (- id: Admin id.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 386.69 Tm (- name: Admin name.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 372.49 Tm (- email: Admin email.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 358.29 Tm (- role: Admin role.) Tj ET
+BT /F2 13.5 Tf 1 0 0 1 54.00 330.09 Tm (8. Future Enhancements) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 305.09 Tm (- Add secure admin login and role-based access control.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 290.89 Tm (- Add client login dashboard for startups.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 276.69 Tm (- Add project progress tracking.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 262.49 Tm (- Add online payment integration.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 248.29 Tm (- Add automated email and notification system.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 234.09 Tm (- Add analytics and reporting for request performance.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 219.89 Tm (- Add AI-based service recommendations.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 205.69 Tm (- Add stronger security, rate limiting, audit logs, and protected API routes.) Tj ET
+BT /F2 13.5 Tf 1 0 0 1 54.00 177.49 Tm (9. Conclusion) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 152.49 Tm (StartupGrow is a practical and useful platform for Indian startups. It combines website) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 137.69 Tm (development and digital marketing services into one simple system. The project) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 122.89 Tm (demonstrates frontend development, backend API handling, MongoDB database design, request) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 108.09 Tm (management, and admin dashboard workflow.) Tj ET
+BT /F1 8 Tf 1 0 0 1 506.28 28.00 Tm (Page 3) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 11 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 1092 >>
+stream
+BT /F1 10.5 Tf 1 0 0 1 54.00 783.89 Tm (The current version is suitable for academic demonstration and can be expanded into a) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 769.09 Tm (stronger production platform with authentication, payments, analytics, client dashboards,) Tj ET
+BT /F1 10.5 Tf 1 0 0 1 54.00 754.29 Tm (and automation.) Tj ET
+BT /F2 13.5 Tf 1 0 0 1 54.00 725.49 Tm (Quick Viva Points) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 700.49 Tm (- StartupGrow solves the problem of scattered and expensive digital services for startups.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 686.29 Tm (- The frontend is built with Next.js and React.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 672.09 Tm (- The backend uses Node.js, Express.js, and Next.js API routes.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 657.89 Tm (- MongoDB stores service requests and contact leads.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 643.69 Tm (- SHIELD is the admin dashboard.) Tj ET
+BT /F1 10.2 Tf 1 0 0 1 68.00 629.49 Tm (- The main request statuses are New, Contacted, In progress, and Closed.) Tj ET
+BT /F1 8 Tf 1 0 0 1 506.28 28.00 Tm (Page 4) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 11 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R 8 0 R 10 0 R] /Count 4 >>
+endobj
+12 0 obj
+<< /Type /Catalog /Pages 11 0 R >>
+endobj
+xref
+0 13
+0000000000 65535 f 
+0000000009 00000 n 
+0000000079 00000 n 
+0000000154 00000 n 
+0000004329 00000 n 
+0000004472 00000 n 
+0000008487 00000 n 
+0000008630 00000 n 
+0000012453 00000 n 
+0000012596 00000 n 
+0000013740 00000 n 
+0000013884 00000 n 
+0000013961 00000 n 
+trailer
+<< /Size 13 /Root 12 0 R >>
+startxref
+14012
+%%EOF

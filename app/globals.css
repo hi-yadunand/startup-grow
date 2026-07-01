@@ -78,3 +78,25 @@ img {
   line-height: 1;
   padding: 0;
 }
+
+.body-branding-agency .hero-area .area-bg::after {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.48) 0%, rgba(255, 255, 255, 0.22) 42%, rgba(255, 255, 255, 0.04) 100%);
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.body-branding-agency .hero-area .area-bg img {
+  filter: saturate(1.02) contrast(0.98);
+}
+
+.body-branding-agency .hero-area .section-content {
+  position: relative;
+  z-index: 2;
+}
+
+.body-branding-agency .hero-area .section-title {
+  text-shadow: 0 2px 18px rgba(255, 255, 255, 0.48);
+}

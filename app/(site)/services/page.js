@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from "react";
+import { onlineImages } from "@/lib/onlineImages";
 
 const pageHtml = `<div id="preloader">
     <div id="container" class="container-preloader">
@@ -157,7 +158,7 @@ const pageHtml = `<div id="preloader">
           <section class="hero-area"><div class="container"><div class="hero-area-inner"><div class="section-content"><div class="section-title-wrapper"><div class="title-wrapper"><h1 class="section-title large has_text_move_anim">We make
                         design that
                         lead and
-                        grow online.</h1></div></div><div class="text-wrapper"><p class="text has_fade_anim">StartupGrow brings essential digital services into one clear, affordable platform for early-stage Indian startups.</p></div><div class="icon has_fade_anim" data-on-scroll="0"><img class="show-light" src="/assets/imgs/shape/img-s-82.webp" alt="image"><img class="show-dark" src="/assets/imgs/shape/img-s-82-light.webp" alt="image"></div></div><div class="thumb"><img src="/assets/imgs/gallery/img-s-86.webp" class="has_fade_anim" data-fade-offset="0" data-delay="0.45" alt="image"></div></div></div></section>
+                        grow online.</h1></div></div><div class="text-wrapper"><p class="text has_fade_anim">StartupGrow brings essential digital services into one clear, affordable platform for early-stage Indian startups.</p></div><div class="icon has_fade_anim" data-on-scroll="0"><img class="show-light" src="/assets/imgs/shape/img-s-82.webp" alt="image"><img class="show-dark" src="/assets/imgs/shape/img-s-82-light.webp" alt="image"></div></div><div class="thumb"><img src="${onlineImages.digitalMarketing}" class="has_fade_anim" data-fade-offset="0" data-delay="0.45" alt="Digital marketing dashboard for growth services"></div></div></div></section>
 
 
 
@@ -165,7 +166,7 @@ const pageHtml = `<div id="preloader">
 
 
 
-          <section class="about-area container-hd"><div class="about-area-inner"><div class="thumb"><img src="/assets/imgs/gallery/img-s-30.webp" alt="gallery image"></div><div class="section-content"><div class="bg"><img src="/assets/imgs/gallery/img-s-31.webp" alt="image"></div><div class="section-title-wrapper"><div class="title-wrapper"><h2 class="section-title has_text_move_anim">We’re simple
+          <section class="about-area container-hd"><div class="about-area-inner"><div class="thumb"><img src="${onlineImages.collaborativeReview}" alt="Startup founders reviewing service strategy"></div><div class="section-content"><div class="bg"><img src="${onlineImages.analyticsDashboard}" alt="Analytics dashboard for service performance"></div><div class="section-title-wrapper"><div class="title-wrapper"><h2 class="section-title has_text_move_anim">We’re simple
                       but pro-level
                       agency</h2></div></div><div class="text-wrapper"><p class="text has_fade_anim">Theme Builder, you have complete control over the <span>static elements</span> of your website</p></div><div class="btn-wrapper has_fade_anim" data-ease="bounce"><a href="/contact" class="wc-btn wc-btn-primary btn-text-flip"><span data-text="Learn More">Learn More</span></a></div></div></div></section>
 
