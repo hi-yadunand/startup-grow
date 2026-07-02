@@ -309,6 +309,7 @@
 }
 
 .public-arolax-page.startupgrow-contact-page .body-wrapper > .image-wrapper {
+  display: none !important;
   max-height: 520px !important;
 }
 
