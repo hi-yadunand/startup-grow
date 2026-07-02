@@ -213,6 +213,112 @@
 }
 
 /* Contact page service request form. */
+.public-arolax-page.startupgrow-contact-page .hero-area {
+  background: #ffffff !important;
+  overflow: hidden !important;
+}
+
+.public-arolax-page.startupgrow-contact-page .hero-area .hero-area-inner {
+  margin-inline-end: 0 !important;
+  padding-top: clamp(170px, 12vw, 220px) !important;
+  padding-bottom: clamp(56px, 5vw, 96px) !important;
+}
+
+.public-arolax-page.startupgrow-contact-page .hero-area .section-content {
+  align-items: start !important;
+  display: grid !important;
+  gap: clamp(36px, 5vw, 84px) !important;
+  grid-template-columns: minmax(0, 1fr) minmax(520px, 0.86fr) !important;
+}
+
+.public-arolax-page.startupgrow-contact-page .hero-area .section-title-wrapper,
+.public-arolax-page.startupgrow-contact-page .hero-area .title-wrapper {
+  min-width: 0 !important;
+}
+
+.public-arolax-page.startupgrow-contact-page .hero-area .section-title {
+  color: #121212 !important;
+  font-size: clamp(64px, 7vw, 128px) !important;
+  line-height: 0.9 !important;
+  max-width: 900px !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.public-arolax-page.startupgrow-contact-page .hero-area .startupgrow-contact-title-line {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  display: block !important;
+  font-size: inherit !important;
+  height: auto !important;
+  line-height: inherit !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  width: auto !important;
+}
+
+.public-arolax-page.startupgrow-contact-page .hero-area .content-last {
+  align-items: start !important;
+  display: grid !important;
+  gap: 24px !important;
+  grid-template-columns: minmax(190px, 260px) minmax(0, 1fr) !important;
+  margin-top: 10px !important;
+  min-width: 0 !important;
+}
+
+.public-arolax-page.startupgrow-contact-page .hero-area .content-last .col-first,
+.public-arolax-page.startupgrow-contact-page .hero-area .content-last .col-second {
+  display: grid !important;
+  gap: 24px !important;
+  min-width: 0 !important;
+}
+
+.public-arolax-page.startupgrow-contact-page .hero-area .image-box {
+  background: #f4f4f1 !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+}
+
+.public-arolax-page.startupgrow-contact-page .hero-area .image-box img {
+  height: 100% !important;
+  object-fit: cover !important;
+  width: 100% !important;
+}
+
+.public-arolax-page.startupgrow-contact-page .hero-area .col-first .image-box {
+  aspect-ratio: 4 / 5 !important;
+}
+
+.public-arolax-page.startupgrow-contact-page .hero-area .col-second .image-box:first-child {
+  aspect-ratio: 1 / 1.08 !important;
+}
+
+.public-arolax-page.startupgrow-contact-page .hero-area .col-second .image-box:last-child {
+  aspect-ratio: 16 / 9 !important;
+}
+
+.public-arolax-page.startupgrow-contact-page .hero-area .contact-box {
+  padding: 36px 24px 28px !important;
+}
+
+.public-arolax-page.startupgrow-contact-page .hero-area .contact-box .link {
+  font-size: clamp(16px, 1.1vw, 19px) !important;
+  overflow-wrap: anywhere !important;
+}
+
+.public-arolax-page.startupgrow-contact-page .body-wrapper > .image-wrapper {
+  max-height: 520px !important;
+}
+
+.public-arolax-page.startupgrow-contact-page .body-wrapper > .image-wrapper img {
+  height: min(46vw, 520px) !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  width: 100% !important;
+}
+
 .public-arolax-page .startupgrow-service-request-area .section-header {
   grid-template-columns: minmax(0, 1fr) minmax(360px, 560px) !important;
   align-items: start !important;
@@ -434,6 +540,25 @@
 }
 
 @media (max-width: 991px) {
+  .public-arolax-page.startupgrow-contact-page .hero-area .hero-area-inner {
+    padding-top: 112px !important;
+    padding-bottom: 64px !important;
+  }
+
+  .public-arolax-page.startupgrow-contact-page .hero-area .section-content {
+    grid-template-columns: 1fr !important;
+  }
+
+  .public-arolax-page.startupgrow-contact-page .hero-area .section-title {
+    font-size: clamp(52px, 12vw, 96px) !important;
+    max-width: 760px !important;
+  }
+
+  .public-arolax-page.startupgrow-contact-page .hero-area .content-last {
+    grid-template-columns: minmax(180px, 0.45fr) minmax(0, 1fr) !important;
+    margin-top: 0 !important;
+  }
+
   .public-arolax-page .startupgrow-service-request-area .section-header {
     grid-template-columns: 1fr !important;
   }
@@ -448,6 +573,40 @@
 }
 
 @media (max-width: 575px) {
+  .public-arolax-page.startupgrow-contact-page .header__button {
+    display: none !important;
+  }
+
+  .public-arolax-page.startupgrow-contact-page .hero-area .hero-area-inner {
+    padding-top: 96px !important;
+    padding-bottom: 48px !important;
+  }
+
+  .public-arolax-page.startupgrow-contact-page .hero-area .section-content {
+    gap: 28px !important;
+  }
+
+  .public-arolax-page.startupgrow-contact-page .hero-area .section-title {
+    font-size: clamp(32px, 8.8vw, 38px) !important;
+    line-height: 1.04 !important;
+    max-width: 100% !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .public-arolax-page.startupgrow-contact-page .hero-area .content-last {
+    grid-template-columns: 1fr !important;
+  }
+
+  .public-arolax-page.startupgrow-contact-page .hero-area .col-first .image-box,
+  .public-arolax-page.startupgrow-contact-page .hero-area .col-second .image-box:first-child,
+  .public-arolax-page.startupgrow-contact-page .hero-area .col-second .image-box:last-child {
+    aspect-ratio: 16 / 11 !important;
+  }
+
+  .public-arolax-page.startupgrow-contact-page .body-wrapper > .image-wrapper img {
+    height: 260px !important;
+  }
+
   .public-arolax-page .startupgrow-service-request-area .startupgrow-public-form-title {
     font-size: 20px !important;
   }
